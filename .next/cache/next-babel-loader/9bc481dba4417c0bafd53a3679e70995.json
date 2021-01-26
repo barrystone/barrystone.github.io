@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from 'react';\n\nvar NoteSection = function NoteSection() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: \"section section-note\",\n    children: \"NoteSection\"\n  });\n};\n\nexport default NoteSection;","map":null,"metadata":{},"sourceType":"module"}

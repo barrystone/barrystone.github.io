@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from 'react';\n\nconst about = () => {\n  return /*#__PURE__*/_jsx(\"div\", {\n    style: {\n      color: '#fff',\n      fontSize: '40rem'\n    },\n    children: \"about me\"\n  });\n};\n\nexport default about;","map":null,"metadata":{},"sourceType":"module"}
