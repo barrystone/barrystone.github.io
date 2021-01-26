@@ -1,0 +1,71 @@
+.project {
+  &__title {
+    background-color: $color-secondary;
+    height: 11rem;
+    width: 53rem;
+    // border: 5px $color-primary solid;
+    border-bottom: none;
+    text-align: center;
+    position: relative;
+
+    p {
+      color: $color-white;
+      font-size: 5rem;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__content {
+    background-color: $color-primary;
+    height: 35rem;
+    width: 40rem;
+    text-align: center;
+    position: relative;
+    left: 6.5rem;
+    border: $color-secondary 5px solid;
+    ul {
+      font-size: 3rem;
+      list-style: none;
+      margin-top: 1.5rem;
+      font-family: $font-style-anton;
+
+      li {
+        display: block;
+
+        a {
+          color: $color-black;
+          text-decoration: none;
+          border-bottom: $color-grey 6px solid;
+          padding-bottom: 0.6rem;
+          transition: all linear 0.2s;
+
+          &:hover {
+            border-bottom: $color-secondary 10px solid;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  &__item {
+    &--small {
+      display: inline-block;
+      font-size: 2.5rem;
+      padding-top: 2rem;
+    }
+
+    &--big {
+      display: inline-block;
+      font-size: 3.5rem;
+      padding-top: 1rem;
+    }
+  }
+}
