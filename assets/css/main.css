@@ -28,9 +28,15 @@ body {
 }
 
 .heading-primary--main {
+  font-size: 7.5rem;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
   display: block;
-  font-size: 8.5rem;
-  padding: 2.5rem 0rem;
+  padding: 2.5rem 5rem;
   text-align: center;
   border-radius: 30%;
   background-color: #f89761;
@@ -43,19 +49,21 @@ body {
 }
 
 .heading-primary--sub-1 {
-  font-family: "Kelly Slab";
-  display: inline-block;
   font-size: 4.5rem;
-  margin-bottom: 2.5rem;
-  -webkit-transform: rotateZ(4.5deg);
-          transform: rotateZ(4.5deg);
+  width: 50%;
+  font-family: "Kelly Slab";
+  display: block;
+  -webkit-transform: translateX(20%) rotateZ(8deg);
+          transform: translateX(20%) rotateZ(8deg);
 }
 
 .heading-primary--sub-2 {
+  font-size: 4.2rem;
   display: block;
   text-transform: uppercase;
-  font-size: 5rem;
-  margin-top: 5.3rem;
+  margin-top: 24rem;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
 }
 
 .paragraph-big--1 {
@@ -159,9 +167,9 @@ body {
 }
 
 .btn-primary p, .btn-primary:link p, .btn-primary:visited p {
+  font-size: 4.3rem;
   display: inline-block;
   font-weight: bold;
-  font-size: 5rem;
   color: #fff;
   text-align: center;
   position: absolute;
@@ -169,6 +177,12 @@ body {
   left: 20%;
   -webkit-transform: translate(0%, -47%);
           transform: translate(0%, -47%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover p {
+  font-size: 4.5rem;
 }
 
 .btn-primary:hover::after {
@@ -199,23 +213,22 @@ body {
   text-decoration: none;
   display: inline-block;
   background-color: #e6e6e6;
-  border: solid 10px #f89761;
+  border: solid 5px #f8874a;
   padding: 0.2rem 1.5rem;
   cursor: pointer;
-  -webkit-transition: all cubic-bezier(0, 0.76, 0.4, 1.4) 0.5s;
-  transition: all cubic-bezier(0, 0.76, 0.4, 1.4) 0.5s;
+  -webkit-transition: all cubic-bezier(0, 0.76, 0.4, 1.4) 0.2s;
+  transition: all cubic-bezier(0, 0.76, 0.4, 1.4) 0.2s;
 }
 
 .btn-secondary p {
   font-family: "Anton";
   font-size: 4.5rem;
-  color: #f89761;
+  color: #f8874a;
 }
 
 .btn-secondary:hover {
-  -webkit-transform: translateX(8%);
-          transform: translateX(8%);
-  border: solid 5px #f89761;
+  -webkit-transform: translateX(2%);
+          transform: translateX(2%);
 }
 
 .project__title {
@@ -320,15 +333,15 @@ body {
 .header__left {
   height: 100vh;
   background-color: #c4c4c4;
-  -webkit-clip-path: polygon(0 0, 58% 0%, 45% 48%, 45% 50%, 45% 52%, 58% 100%, 0 100%);
-          clip-path: polygon(0 0, 58% 0%, 45% 48%, 45% 50%, 45% 52%, 58% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 55% 0%, 45% 48%, 45% 50%, 45% 52%, 57% 100%, 0 100%);
+          clip-path: polygon(0 0, 55% 0%, 45% 48%, 45% 50%, 45% 52%, 57% 100%, 0 100%);
   -webkit-transition: all linear 0.05s;
   transition: all linear 0.05s;
 }
 
 .header:hover .header__left {
-  -webkit-clip-path: polygon(0 0, 55% 0%, 42% 48%, 42% 50%, 42% 52%, 55% 100%, 0 100%);
-          clip-path: polygon(0 0, 55% 0%, 42% 48%, 42% 50%, 42% 52%, 55% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 52% 0%, 43.5% 45%, 43.5% 50%, 43.5% 55%, 54% 100%, 0 100%);
+          clip-path: polygon(0 0, 52% 0%, 43.5% 45%, 43.5% 50%, 43.5% 55%, 54% 100%, 0 100%);
 }
 
 .header__button-box {
@@ -343,14 +356,14 @@ body {
 .header__text-box {
   display: inline-block;
   position: absolute;
-  top: 30%;
-  left: 4%;
+  top: 27%;
+  left: 2.5%;
 }
 
 .header__link-box {
   display: inline-block;
   position: absolute;
-  bottom: 8%;
+  bottom: 7%;
   left: 5%;
 }
 

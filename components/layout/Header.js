@@ -5,6 +5,8 @@ const Header = () => {
   return (
     <div>
       <div className="header">
+        <h1 className="heading-primary--main ">barrystone</h1>
+
         <div className="header__left">
           <div className="header__button-box">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
@@ -23,7 +25,6 @@ const Header = () => {
               <span className="heading-primary--sub heading-primary--sub-1 ">
                 My name is
               </span>
-              <span className="heading-primary--main ">barrystone</span>
               <span className="heading-primary--sub heading-primary--sub-2">
                 Learning and making
               </span>

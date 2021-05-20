@@ -2,6 +2,7 @@
 $color-primary: #c4c4c4;
 
 $color-secondary: #f89761;
+$color-secondary-dark: #f8874a;
 
 $color-white: #fff;
 $color-white-dark: #e6e6e6;
@@ -19,26 +20,26 @@ $font-size-small: 0.8rem;
 //GRID
 
 // testing google font
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
-$font-style-ftg: "Fredericka the Great";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+$font-style-ftg: 'Fredericka the Great';
 // body{} _base.scss
 
-@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
-$font-style-Rye: "Rye";
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+$font-style-Rye: 'Rye';
 //class: heading-primary--main  _typography.scss
 
-@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
-$font-style-ks: "Kelly Slab";
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+$font-style-ks: 'Kelly Slab';
 //class:  heading-primary--sub-1  _typography.scss
 
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-$font-style-anton: "Anton";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+$font-style-anton: 'Anton';
 //class: btn-secondary  _button.scss
 //class: project__content  _project.scss
 
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
-$font-style-cartOne: "Carter One";
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+$font-style-cartOne: 'Carter One';
 //class: arrow-big _arrow.scss
 
-@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
-$font-style-Frijole: "Frijole";
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+$font-style-Frijole: 'Frijole';
