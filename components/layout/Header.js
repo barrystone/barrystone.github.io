@@ -11,7 +11,7 @@ const Header = () => {
           <div className="header__button-box">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a className="btn-primary">
-                <p>自界</p>
+                <p>自介</p>
               </a>
             </Link>
             <Link href="/note" as={process.env.BACKEND_URL + '/note'}>

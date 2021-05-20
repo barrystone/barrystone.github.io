@@ -377,11 +377,12 @@ body {
 }
 
 .navigation__button {
+  cursor: pointer;
   background-color: #fff;
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
+  top: 4rem;
   right: 6rem;
   border-radius: 50%;
   z-index: 2000;
@@ -392,12 +393,12 @@ body {
 }
 
 .navigation__background {
-  background-image: radial-gradient(#c4c4c4, #f89761);
+  background-image: radial-gradient(#f8874a, #f89761);
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
+  top: 4.5rem;
   right: 6.5rem;
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
@@ -435,8 +436,8 @@ body {
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
+  font-size: 8rem;
+  font-weight: 700;
   padding: 1rem 2rem;
   color: #fff;
   text-decoration: none;
@@ -454,7 +455,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #c4c4c4;
+  color: #7a7a7a;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
 }
@@ -476,8 +477,8 @@ body {
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
-  height: 2px;
-  background-color: grey;
+  height: 4px;
+  background-color: #7a7a7a;
   display: inline-block;
 }
 
@@ -485,24 +486,24 @@ body {
   content: ' ';
   position: absolute;
   left: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .navigation__icon::before {
-  top: -0.8rem;
-}
-
-.navigation__icon::after {
-  top: 0.8rem;
-}
-
-.navigation__button:hover .navigation__icon::before {
   top: -1rem;
 }
 
-.navigation__button:hover .navigation__icon::after {
+.navigation__icon::after {
   top: 1rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1.3rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1.3rem;
 }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon {
