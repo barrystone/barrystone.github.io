@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -7,12 +7,12 @@ const Header = () => {
       <div className="header">
         <div className="header__left">
           <div className="header__button-box">
-            <Link href="/about">
+            <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a className="btn-primary">
                 <p>自界</p>
               </a>
             </Link>
-            <Link href="/note">
+            <Link href="/note" as={process.env.BACKEND_URL + '/note'}>
               <a className="btn-primary btn-primary--2">
                 <p>筆記</p>
               </a>
