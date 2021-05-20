@@ -25,6 +25,10 @@ $font-size-small: 0.8rem;
 $font-style-ftg: 'Fredericka the Great';
 // body{} _base.scss
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+$font-style-ng: 'Nanum Gothic';
+// body{} _base.scss
+
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 $font-style-Rye: 'Rye';
 //class: heading-primary--main  _typography.scss
