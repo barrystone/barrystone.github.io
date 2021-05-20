@@ -8,11 +8,11 @@
     &__arrow-box {
       position: absolute;
       top: 6rem;
-      left: 6rem;
+      left: 5%;
       transition: all linear 0.1s;
 
       &:hover {
-        left: 8rem;
+        left: 6%;
       }
     }
 
@@ -33,7 +33,7 @@
         width: 45%;
         position: absolute;
         top: 35em;
-        left: 5%;
+        left: 7%;
 
         &--1 {
           // background-color: lightsalmon;
@@ -41,7 +41,7 @@
 
         &--2 {
           // background-color: lightseagreen;
-          margin-top: 7rem;
+          margin-top: 5rem;
           line-height: 10rem;
         }
       }
