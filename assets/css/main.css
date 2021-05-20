@@ -71,11 +71,15 @@ body {
 }
 
 .paragraph-big--2 {
-  font-size: 5.5em;
+  font-size: 6em;
 }
 
 .paragraph-big--3 {
-  font-size: 6rem;
+  font-size: 5rem;
+}
+
+.paragraph-big--4 {
+  font-size: 4rem;
 }
 
 .paragraph-medium {
@@ -93,7 +97,7 @@ body {
 }
 
 .heading-secondary span {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -128,7 +132,7 @@ body {
 
 .arrow-big {
   display: inline-block;
-  height: 20rem;
+  height: 18rem;
   width: 40rem;
   background-color: #f89761;
   color: #fff;
@@ -528,38 +532,40 @@ body {
 .section-about__arrow-box {
   position: absolute;
   top: 6rem;
-  left: 9.5rem;
+  left: 6rem;
   -webkit-transition: all linear 0.1s;
   transition: all linear 0.1s;
 }
 
 .section-about__arrow-box:hover {
-  left: 11rem;
+  left: 8rem;
 }
 
 .section-about__text-box1 {
   font-weight: bold;
   position: absolute;
   top: 10.5em;
-  right: 15rem;
+  right: 5%;
   padding: 0.5rem 2rem;
   background-color: #e6e6e6;
 }
 
 .section-about__text-box2 {
+  width: 45%;
   position: absolute;
-  top: 38em;
-  left: 9.5rem;
+  top: 35em;
+  left: 5%;
 }
 
 .section-about__text-box2--2 {
-  margin-top: 10rem;
+  margin-top: 7rem;
+  line-height: 10rem;
 }
 
 .section-about__project-box {
   position: absolute;
   bottom: 7rem;
-  right: 20rem;
+  right: 8.5%;
 }
 
 .section-repo {

@@ -8,11 +8,11 @@
     &__arrow-box {
       position: absolute;
       top: 6rem;
-      left: 9.5rem;
+      left: 6rem;
       transition: all linear 0.1s;
 
       &:hover {
-        left: 11rem;
+        left: 8rem;
       }
     }
 
@@ -21,7 +21,7 @@
         font-weight: bold;
         position: absolute;
         top: 10.5em;
-        right: 15rem;
+        right: 5%;
         padding: 0.5rem 2rem;
 
         background-color: $color-white-dark;
@@ -30,9 +30,10 @@
 
       &-box2 {
         // background-color: lightgreen;
+        width: 45%;
         position: absolute;
-        top: 38em;
-        left: 9.5rem;
+        top: 35em;
+        left: 5%;
 
         &--1 {
           // background-color: lightsalmon;
@@ -40,7 +41,8 @@
 
         &--2 {
           // background-color: lightseagreen;
-          margin-top: 10rem;
+          margin-top: 7rem;
+          line-height: 10rem;
         }
       }
     }
@@ -48,7 +50,7 @@
     &__project-box {
       position: absolute;
       bottom: 7rem;
-      right: 20rem;
+      right: 8.5%;
 
       // background-color: lightskyblue;
     }
