@@ -8,33 +8,33 @@ const projectContent = () => {
     {
       name: 'onlene-store',
       href: 'https://github.com/barrystone/online-store',
-      class: 'project__item--big',
+      class: 'project__item--big'
     },
     {
       name: 'dev-social-network-community',
       href: 'https://github.com/barrystone/dev-social-network-community',
-      class: 'project__item--small',
+      class: 'project__item--small'
+    },
+    {
+      name: 'chatApp_react',
+      href: 'https://github.com/barrystone/chatApp_react',
+      class: 'project__item--big'
     },
     {
       name: 'natours',
       href: 'https://github.com/barrystone/natours',
-      class: 'project__item--big',
-    },
-    {
-      name: 'playerlist',
-      href: 'https://github.com/barrystone/playerlist',
-      class: 'project__item--big',
-    },
+      class: 'project__item--big'
+    }
   ];
 
   return (
-    <div className='project__content'>
+    <div className="project__content">
       <ul>
         <li>
           <a
             href={updatingData[0].href}
             className={updatingData[0].class}
-            target='_blank'
+            target="_blank"
           >
             {updatingData[0].name}
           </a>
@@ -43,7 +43,7 @@ const projectContent = () => {
           <a
             href={updatingData[1].href}
             className={updatingData[1].class}
-            target='_blank'
+            target="_blank"
           >
             {updatingData[1].name}
           </a>
@@ -52,7 +52,7 @@ const projectContent = () => {
           <a
             href={updatingData[2].href}
             className={updatingData[2].class}
-            target='_blank'
+            target="_blank"
           >
             {updatingData[2].name}
           </a>
@@ -61,7 +61,7 @@ const projectContent = () => {
           <a
             href={updatingData[3].href}
             className={updatingData[3].class}
-            target='_blank'
+            target="_blank"
           >
             {updatingData[3].name}
           </a>
