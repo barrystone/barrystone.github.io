@@ -1,0 +1,33 @@
+.arrow-big {
+  display: inline-block;
+  height: 20rem;
+  width: 40rem;
+  background-color: $color-secondary;
+  color: $color-white;
+  text-align: center;
+  clip-path: polygon(
+    0% 20%,
+    70% 20%,
+    70% 0%,
+    100% 50%,
+    70% 100%,
+    70% 80%,
+    0% 80%
+  );
+
+  position: relative;
+
+  p {
+    font-family: $font-style-cartOne;
+    display: inline-block;
+    color: $color-white;
+    z-index: 5;
+    font-size: 5.5rem;
+    vertical-align: middle;
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-29%, -50%);
+  }
+}
