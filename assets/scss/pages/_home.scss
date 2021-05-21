@@ -6,16 +6,31 @@
     position: relative;
 
     &__arrow-box {
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      transform: rotateZ(-30deg);
-      transition: all linear 0.1s;
+      a {
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        transform: rotateZ(-30deg);
+        transition: all linear 0.2s;
+        p {
+          &::after {
+            content: '作品';
+          }
+        }
 
-      &:hover {
-        transform: rotateZ(-32deg);
-        // left: 40.5%;
-        // top: 29.5%;
+        &:hover {
+          top: 49.1%;
+          left: 43.3%;
+          background-color: $color-black;
+
+          p {
+            &::after {
+              font-size: 2.6rem;
+              font-weight: 300;
+              content: 'Github';
+            }
+          }
+        }
       }
     }
 
@@ -25,7 +40,7 @@
         top: 10%;
         right: 5%;
         font-weight: bold;
-        padding: 0.5rem 2rem;
+        padding: 0.8rem 3rem;
         background-color: $color-white-dark;
       }
       &-2 {

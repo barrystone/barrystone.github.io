@@ -14,14 +14,17 @@ const AboutSection = () => {
   return (
     <div className="section section-about">
       <div className="section-about__arrow-box">
-        <Link href="/about">
-          <a className="arrow-big">
-            <p>About me</p>
-          </a>
-        </Link>
+        <a
+          href="https://github.com/barrystone?tab=repositories"
+          target="_blank"
+          className="arrow-big"
+        >
+          {/* <p>作品</p> */}
+          <p></p>
+        </a>
       </div>
       <div className="section-about__textbox-1">
-        <p className=" paragraph-big--1">NPTU computer science</p>
+        <p className=" paragraph-big--2">NPTU computer science</p>
       </div>
       <div className="section-about__textbox-2">
         <h3 className="heading-tertiary paragraph-big--4">我的技能</h3>

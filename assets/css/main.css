@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
@@ -204,7 +205,7 @@ body {
 .arrow-big {
   display: inline-block;
   height: 8rem;
-  width: 18rem;
+  width: 16rem;
   background-color: #f89761;
   color: #fff;
   text-align: center;
@@ -214,7 +215,8 @@ body {
 }
 
 .arrow-big p {
-  font-size: 2rem;
+  font-size: 3.2rem;
+  font-weight: bold;
   font-family: "Carter One";
   display: inline-block;
   color: #fff;
@@ -918,19 +920,30 @@ body {
   position: relative;
 }
 
-.section-about__arrow-box {
+.section-about__arrow-box a {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 43%;
   -webkit-transform: rotateZ(-30deg);
           transform: rotateZ(-30deg);
-  -webkit-transition: all linear 0.1s;
-  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
 }
 
-.section-about__arrow-box:hover {
-  -webkit-transform: rotateZ(-32deg);
-          transform: rotateZ(-32deg);
+.section-about__arrow-box a p::after {
+  content: '作品';
+}
+
+.section-about__arrow-box a:hover {
+  top: 49.1%;
+  left: 43.3%;
+  background-color: #000;
+}
+
+.section-about__arrow-box a:hover p::after {
+  font-size: 2.6rem;
+  font-weight: 300;
+  content: 'Github';
 }
 
 .section-about__textbox-1 {
@@ -938,7 +951,7 @@ body {
   top: 10%;
   right: 5%;
   font-weight: bold;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 3rem;
   background-color: #e6e6e6;
 }
 
