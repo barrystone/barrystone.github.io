@@ -24,8 +24,9 @@
       text-align: center;
       padding: 2rem 3rem;
 
+      text-shadow: 0.01em 0.01em 0 $color-white-dark;
       &:hover {
-        text-shadow: 0.01em 0.01em 0 $color-white;
+        text-shadow: none;
       }
     }
   }
@@ -39,13 +40,13 @@
       &-description {
         background-image: linear-gradient(
           to bottom right,
-          rgba($color-primary, 1),
-          rgba($color-primary, 0.8)
+          rgba($color-primary, 0.8),
+          rgba($color-white-dark, 1)
         );
         border-radius: 50%;
         height: 70%;
         width: 80%;
-        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
 
         &--title {
           background-color: $color-white;
@@ -62,7 +63,7 @@
 
         &--text {
           position: relative;
-          top: 10%;
+          top: 8%;
           p {
             font-family: $font-style-cartOne;
             font-size: 1.5rem;

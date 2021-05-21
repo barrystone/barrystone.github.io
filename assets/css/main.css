@@ -180,7 +180,7 @@ body {
   display: inline-block;
   color: #fff;
   z-index: 5;
-  font-size: 5.5rem;
+  font-size: 5rem;
   vertical-align: middle;
   position: absolute;
   top: 50%;
@@ -290,7 +290,7 @@ body {
 
 .project__content {
   background-color: #c4c4c4;
-  height: 33rem;
+  height: 30rem;
   width: 40rem;
   text-align: center;
   position: relative;
@@ -329,13 +329,13 @@ body {
 
 .project__item--small {
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-top: 2rem;
 }
 
 .project__item--big {
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding-top: 1rem;
 }
 
@@ -376,10 +376,11 @@ body {
   font-size: 3rem;
   text-align: center;
   padding: 2rem 3rem;
+  text-shadow: 0.01em 0.01em 0 #e6e6e6;
 }
 
 .repo__title a:hover {
-  text-shadow: 0.01em 0.01em 0 #fff;
+  text-shadow: none;
 }
 
 .repo__content {
@@ -398,13 +399,13 @@ body {
 }
 
 .repo__content .repo-description {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#c4c4c4), to(rgba(196, 196, 196, 0.8)));
-  background-image: linear-gradient(to bottom right, #c4c4c4, rgba(196, 196, 196, 0.8));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 196, 196, 0.8)), to(#e6e6e6));
+  background-image: linear-gradient(to bottom right, rgba(196, 196, 196, 0.8), #e6e6e6);
   border-radius: 50%;
   height: 70%;
   width: 80%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
 }
 
 .repo__content .repo-description--title {
@@ -423,7 +424,7 @@ body {
 
 .repo__content .repo-description--text {
   position: relative;
-  top: 10%;
+  top: 8%;
 }
 
 .repo__content .repo-description--text p {
@@ -685,7 +686,7 @@ body {
 
 .section-about__project-box {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   right: 10%;
 }
 

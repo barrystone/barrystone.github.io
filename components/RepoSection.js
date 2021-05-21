@@ -32,7 +32,7 @@ const RepoSection = ({ reposData }) => {
                 <div className="repo__content">
                   <div className="repo-description">
                     <div className="repo-description--title">
-                      <p>簡介:</p>
+                      <p>簡介</p>
                     </div>
                     <article className="repo-description--text">
                       <p>
