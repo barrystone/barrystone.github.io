@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 // import styles from '../styles/Home.module.css';
 import Header from '../components/layout/Header';
 import AboutSection from '../components/AboutSection';
@@ -6,11 +8,20 @@ import NoteSection from '../components/NoteSection';
 import Footer from '../components/layout/Footer';
 import Navigation from '../components/layout/Navigation';
 
+const CustomHead = () => {
+  return (
+    <Head>
+      <title>barrystone</title>
+    </Head>
+  );
+};
+
 export default function Home({ reposData }) {
   return (
     <div>
+      <CustomHead />
       <nav>
-        <Navigation />{' '}
+        <Navigation />
       </nav>
       <header>
         <Header />
