@@ -366,7 +366,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   background-color: #f89761;
-  border: 1px #ffc4a4 solid;
+  border: 5px #ffc4a4 solid;
 }
 
 .repo__title a {
@@ -399,13 +399,12 @@ body {
 }
 
 .repo__content .repo-description {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(196, 196, 196, 0.8)), to(#e6e6e6));
-  background-image: linear-gradient(to bottom right, rgba(196, 196, 196, 0.8), #e6e6e6);
+  background-color: rgba(122, 122, 122, 0.85);
   border-radius: 50%;
   height: 70%;
   width: 80%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(230, 230, 230, 0.55) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 1px 1px inset;
+          box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(230, 230, 230, 0.55) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 1px 1px inset;
 }
 
 .repo__content .repo-description--title {
@@ -415,23 +414,25 @@ body {
   left: 20%;
   top: 15%;
   border-radius: 50%;
+  border: 0.1px solid #c4c4c4;
 }
 
 .repo__content .repo-description--title p {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .repo__content .repo-description--text {
   position: relative;
-  top: 8%;
+  top: 5%;
 }
 
 .repo__content .repo-description--text p {
+  color: #fff;
   font-family: "Carter One";
   font-size: 1.5rem;
   padding: 2rem 5rem;
-  text-shadow: 0.06em 0.06em 0 #fff;
+  text-shadow: 0.1em 0.1em 0 #000;
   word-wrap: break-word;
 }
 
