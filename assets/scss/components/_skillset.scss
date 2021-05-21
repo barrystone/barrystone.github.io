@@ -1,0 +1,120 @@
+// Re-usable variables.
+$linearLineWidth: 0.8rem;
+$itemGutterWidth: 3.5rem;
+$itemVerticalSpacing: 0.5rem;
+
+.skillset {
+  background-color: $color-white;
+  margin: 0 auto;
+  padding: $itemVerticalSpacing 0 $itemVerticalSpacing 0;
+
+  max-width: 600px;
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transition: transform 1000ms;
+    // transform: translateX(-50%) translateY(-100%);
+    z-index: 0;
+    background-color: $color-black;
+    width: $linearLineWidth;
+  }
+
+  &.skillset--show::after {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.item {
+  display: block;
+  width: calc(50% - (#{$linearLineWidth} / 2));
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 2;
+
+    width: $linearLineWidth * 3;
+    height: $linearLineWidth * 3;
+    background: $color-secondary;
+    border-radius: 50%;
+    transform: scale(0);
+
+    // Applying the scaling animation when appropriate.
+    .skillset--show & {
+      animation: nodeSize 500ms 1500ms forwards;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $itemVerticalSpacing;
+  }
+
+  &:nth-child(odd) {
+    align-self: flex-end;
+    padding-left: $itemGutterWidth;
+    text-align: left;
+
+    &::before {
+      left: $linearLineWidth * -2;
+    }
+  }
+
+  &:nth-child(even) {
+    align-self: flex-start;
+    padding-right: $itemGutterWidth;
+    text-align: right;
+
+    &::before {
+      right: $linearLineWidth * -2;
+    }
+  }
+
+  h4,
+  p {
+    opacity: 0;
+    transition: opacity 800ms;
+
+    .skillset--show & {
+      opacity: 1;
+      transition-delay: 2500ms;
+    }
+  }
+
+  h4 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 0.15rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+@keyframes nodeSize {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

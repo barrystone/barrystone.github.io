@@ -7,44 +7,40 @@
 
     &__arrow-box {
       position: absolute;
-      top: 5%;
-      left: 5%;
+      top: 50%;
+      left: 40%;
+      transform: rotateZ(-30deg);
       transition: all linear 0.1s;
 
       &:hover {
-        left: 6%;
+        transform: rotateZ(-32deg);
+        // left: 40.5%;
+        // top: 29.5%;
       }
     }
 
-    &__text {
-      &-box1 {
-        font-weight: bold;
+    &__textbox {
+      &-1 {
         position: absolute;
         top: 10%;
         right: 5%;
+        font-weight: bold;
         padding: 0.5rem 2rem;
-
         background-color: $color-white-dark;
-        // background-color: blanchedalmond;
       }
-
-      &-box2 {
-        // background-color: lightgreen;
-        width: 45%;
+      &-2 {
         position: absolute;
-        top: 30em;
-        left: 7%;
-
-        &--1 {
-          // background-color: lightsalmon;
-        }
-
-        &--2 {
-          // background-color: lightseagreen;
-          margin-top: 5rem;
-          line-height: 7rem;
-        }
+        top: 5%;
+        left: 5%;
       }
+    }
+
+    &__skillsetbox {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+
+      width: 50rem;
     }
 
     &__project-box {
