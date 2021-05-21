@@ -1,5 +1,5 @@
 .section {
-  height: 80rem;
+  height: 65rem;
 
   &-about {
     background-color: $color-white;
@@ -7,7 +7,7 @@
 
     &__arrow-box {
       position: absolute;
-      top: 6rem;
+      top: 5%;
       left: 5%;
       transition: all linear 0.1s;
 
@@ -20,7 +20,7 @@
       &-box1 {
         font-weight: bold;
         position: absolute;
-        top: 10.5em;
+        top: 10%;
         right: 5%;
         padding: 0.5rem 2rem;
 
@@ -32,7 +32,7 @@
         // background-color: lightgreen;
         width: 45%;
         position: absolute;
-        top: 35em;
+        top: 30em;
         left: 7%;
 
         &--1 {
@@ -42,22 +42,21 @@
         &--2 {
           // background-color: lightseagreen;
           margin-top: 5rem;
-          line-height: 10rem;
+          line-height: 7rem;
         }
       }
     }
 
     &__project-box {
       position: absolute;
-      bottom: 7rem;
-      right: 8.5%;
+      bottom: 5%;
+      right: 10%;
 
       // background-color: lightskyblue;
     }
   }
 
   &-repo {
-    height: 65rem;
     background-color: $color-primary;
 
     &__heading {

@@ -100,19 +100,19 @@ body {
 }
 
 .paragraph-big--1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .paragraph-big--2 {
-  font-size: 6em;
+  font-size: 5em;
 }
 
 .paragraph-big--3 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .paragraph-big--4 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .paragraph-medium {
@@ -130,7 +130,7 @@ body {
 }
 
 .heading-secondary span {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -270,8 +270,8 @@ body {
 
 .project__title {
   background-color: #f89761;
-  height: 11rem;
-  width: 53rem;
+  height: 8rem;
+  width: 50rem;
   border-bottom: none;
   text-align: center;
   position: relative;
@@ -279,7 +279,7 @@ body {
 
 .project__title p {
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -290,18 +290,18 @@ body {
 
 .project__content {
   background-color: #c4c4c4;
-  height: 35rem;
+  height: 33rem;
   width: 40rem;
   text-align: center;
   position: relative;
-  left: 6.5rem;
+  left: 5rem;
   border: #f89761 5px solid;
 }
 
 .project__content ul {
   font-size: 3rem;
   list-style: none;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   font-family: "Anton";
 }
 
@@ -642,7 +642,7 @@ body {
 }
 
 .section {
-  height: 80rem;
+  height: 65rem;
 }
 
 .section-about {
@@ -652,7 +652,7 @@ body {
 
 .section-about__arrow-box {
   position: absolute;
-  top: 6rem;
+  top: 5%;
   left: 5%;
   -webkit-transition: all linear 0.1s;
   transition: all linear 0.1s;
@@ -665,7 +665,7 @@ body {
 .section-about__text-box1 {
   font-weight: bold;
   position: absolute;
-  top: 10.5em;
+  top: 10%;
   right: 5%;
   padding: 0.5rem 2rem;
   background-color: #e6e6e6;
@@ -674,23 +674,22 @@ body {
 .section-about__text-box2 {
   width: 45%;
   position: absolute;
-  top: 35em;
+  top: 30em;
   left: 7%;
 }
 
 .section-about__text-box2--2 {
   margin-top: 5rem;
-  line-height: 10rem;
+  line-height: 7rem;
 }
 
 .section-about__project-box {
   position: absolute;
-  bottom: 7rem;
-  right: 8.5%;
+  bottom: 5%;
+  right: 10%;
 }
 
 .section-repo {
-  height: 65rem;
   background-color: #c4c4c4;
 }
 
