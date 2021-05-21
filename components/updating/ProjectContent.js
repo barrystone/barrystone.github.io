@@ -28,7 +28,8 @@ const projectContent = () => {
   ];
 
   return (
-    <div className="project__content">
+    // <div className="project__content">
+    <div className="brick">
       <ul>
         <li>
           <a

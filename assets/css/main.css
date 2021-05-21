@@ -436,6 +436,86 @@ body {
   word-wrap: break-word;
 }
 
+.brick ul {
+  font-size: 3rem;
+  list-style: none;
+  margin-top: 0.5rem;
+  font-family: "Anton";
+}
+
+.brick ul li {
+  width: 40rem;
+  height: 8rem;
+  border-radius: 5rem;
+  margin: 2rem 0;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+  line-height: 4.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.brick ul li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.brick ul li:nth-child(odd) {
+  background: -webkit-gradient(linear, left top, right top, from(#f89761), to(#f8874a));
+  background: linear-gradient(to right, #f89761, #f8874a);
+  text-align: left;
+  padding-left: 20%;
+  -webkit-transform: perspective(1000px) rotateY(30deg);
+          transform: perspective(1000px) rotateY(30deg);
+}
+
+.brick ul li:nth-child(odd):hover {
+  -webkit-transform: perspective(600px) rotateY(30deg);
+          transform: perspective(600px) rotateY(30deg);
+  padding-left: 5%;
+  background: #fff;
+}
+
+.brick ul li:nth-child(odd) a {
+  border-bottom: #fff 5px solid;
+}
+
+.brick ul li:nth-child(odd) a:hover {
+  color: #f89761;
+  border-bottom: #f89761 5px solid;
+}
+
+.brick ul li:nth-child(even) {
+  text-align: right;
+  padding-right: 20%;
+  -webkit-transform: perspective(1000px) rotateY(-30deg);
+          transform: perspective(1000px) rotateY(-30deg);
+}
+
+.brick ul li:nth-child(even):hover {
+  -webkit-transform: perspective(600px) rotateY(-30deg);
+          transform: perspective(600px) rotateY(-30deg);
+  padding-right: 5%;
+  background: -webkit-gradient(linear, right top, left top, from(#f89761), to(#f8874a));
+  background: linear-gradient(to left, #f89761, #f8874a);
+}
+
+.brick ul li:nth-child(even) a {
+  border-bottom: #f89761 5px solid;
+}
+
+.brick ul li:nth-child(even) a:hover {
+  color: #fff;
+  border-bottom: #fff 5px solid;
+}
+
+.brick ul li:hover li a {
+  border: none !important;
+}
+
 .footer {
   background-color: #000;
   height: 10rem;
@@ -688,7 +768,7 @@ body {
 .section-about__project-box {
   position: absolute;
   bottom: 8%;
-  right: 10%;
+  right: 13%;
 }
 
 .section-repo {

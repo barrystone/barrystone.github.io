@@ -26,9 +26,9 @@ const AboutSection = () => {
         </p>
       </div>
       <div className="section-about__project-box">
-        <div className="project__title">
+        {/* <div className="project__title">
           <p>作品</p>
-        </div>
+        </div> */}
         <ProjectContent />
       </div>
     </div>
