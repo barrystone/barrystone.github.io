@@ -23,11 +23,10 @@ body {
     background-color: $color-white-dark;
     padding: 1rem 1.5rem;
     &-1 {
-      font-size: 4.5rem;
-      width: 50%;
+      font-size: 4rem;
+      display: inline-block;
       font-family: $font-style-ks;
-      display: block;
-      transform: translateX(20%) rotateZ(8deg);
+      transform: translateX(20%) translateY(-10%) rotateZ(10deg);
     }
     &-2 {
       font-size: 4.2rem;

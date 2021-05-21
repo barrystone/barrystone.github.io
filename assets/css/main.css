@@ -50,12 +50,11 @@ body {
 }
 
 .heading-primary--sub-1 {
-  font-size: 4.5rem;
-  width: 50%;
+  font-size: 4rem;
+  display: inline-block;
   font-family: "Kelly Slab";
-  display: block;
-  -webkit-transform: translateX(20%) rotateZ(8deg);
-          transform: translateX(20%) rotateZ(8deg);
+  -webkit-transform: translateX(20%) translateY(-10%) rotateZ(10deg);
+          transform: translateX(20%) translateY(-10%) rotateZ(10deg);
 }
 
 .heading-primary--sub-2 {

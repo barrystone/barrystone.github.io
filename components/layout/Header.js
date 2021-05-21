@@ -6,7 +6,6 @@ const Header = () => {
     <div>
       <div className="header">
         <h1 className="heading-primary--main ">barrystone</h1>
-
         <div className="header__left">
           <div className="header__button-box">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
@@ -22,10 +21,12 @@ const Header = () => {
           </div>
           <div className="header__text-box">
             <h1 className="heading-primary">
-              <span className="heading-primary--sub heading-primary--sub-1 ">
-                My name is
-              </span>
-              <span className="heading-primary--sub heading-primary--sub-2">
+              <p className="animate__animated animate__rotateInDownLeft slow">
+                <span className="heading-primary--sub  heading-primary--sub-1 ">
+                  My name is
+                </span>
+              </p>
+              <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft slow">
                 Learning and making
               </span>
             </h1>
