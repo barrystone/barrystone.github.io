@@ -6,10 +6,12 @@ const RepoSection = ({ reposData }) => {
     // dots: true,
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000
   };
 
   return (
@@ -37,9 +39,9 @@ const RepoSection = ({ reposData }) => {
                     <article className="repo-description--text">
                       <p>
                         {repo.description
-                          ? repo.description.toString().length <= 70
+                          ? repo.description.toString().length <= 60
                             ? repo.description
-                            : repo.description.slice(0, 70) + ' ...'
+                            : repo.description.slice(0, 60) + ' ...'
                           : ' 尚未有簡介  !'}
                       </p>
                     </article>

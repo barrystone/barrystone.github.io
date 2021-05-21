@@ -11,6 +11,7 @@
   background-color: $color-white;
   display: flex;
   flex-direction: column;
+  border: 1px $color-black solid;
 
   &__title {
     flex: 1;
@@ -22,10 +23,13 @@
       text-decoration: none;
       font-size: 3rem;
       text-align: center;
+      transition: all 0.3s;
       padding: 2rem 3rem;
+      text-transform: capitalize;
 
-      text-shadow: 0.01em 0.01em 0 $color-white-dark;
+      text-shadow: 0.05em 0.05em 0 $color-primary;
       &:hover {
+        transform: scale(1.05);
         text-shadow: none;
       }
     }
@@ -44,7 +48,8 @@
         //   rgba($color-primary, 0.8),
         //   rgba($color-white-dark, 1)
         // );
-        background-color: rgba($color-grey, 0.85);
+        // background-color: rgba($color-grey, 0.85);
+        background-color: $color-primary;
         border-radius: 50%;
         height: 70%;
         width: 80%;
@@ -72,11 +77,13 @@
           position: relative;
           top: 5%;
           p {
-            color: $color-white;
-            font-family: $font-style-cartOne;
-            font-size: 1.5rem;
+            // color: $color-white;
+            color: $color-black;
+            font-size: 1.7rem;
+            // font-weight: 100;
             padding: 2rem 5rem;
-            text-shadow: 0.1em 0.1em 0 $color-black;
+            // text-shadow: 0.1em 0.1em 0 $color-black;
+            // text-shadow: 0.1em 0.1em 0 $color-white;
             word-wrap: break-word;
           }
         }

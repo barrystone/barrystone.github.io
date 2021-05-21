@@ -122,10 +122,11 @@ body {
 .heading-secondary {
   display: block;
   height: 11rem;
-  width: 82rem;
+  width: 40%;
   margin: 6rem auto;
   background-color: #f89761;
-  border: #fff 5px solid;
+  border: #7a7a7a 5px solid;
+  border-radius: 30px;
   position: relative;
 }
 
@@ -354,6 +355,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px #000 solid;
 }
 
 .repo-wrapper {
@@ -375,11 +377,16 @@ body {
   text-decoration: none;
   font-size: 3rem;
   text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   padding: 2rem 3rem;
-  text-shadow: 0.01em 0.01em 0 #e6e6e6;
+  text-transform: capitalize;
+  text-shadow: 0.05em 0.05em 0 #c4c4c4;
 }
 
 .repo__title a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   text-shadow: none;
 }
 
@@ -399,7 +406,7 @@ body {
 }
 
 .repo__content .repo-description {
-  background-color: rgba(122, 122, 122, 0.85);
+  background-color: #c4c4c4;
   border-radius: 50%;
   height: 70%;
   width: 80%;
@@ -428,11 +435,9 @@ body {
 }
 
 .repo__content .repo-description--text p {
-  color: #fff;
-  font-family: "Carter One";
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 1.7rem;
   padding: 2rem 5rem;
-  text-shadow: 0.1em 0.1em 0 #000;
   word-wrap: break-word;
 }
 
