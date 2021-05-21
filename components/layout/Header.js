@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <div>
       <div className="header">
-        <h1 className="heading-primary--main ">barrystone</h1>
+        <h1 className="heading-primary--main " text-shadow="barrystone">
+          barrystone
+        </h1>
         <div className="header__left">
           <div className="header__button-box">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
