@@ -11,7 +11,6 @@ const RepoSection = ({ reposData }) => {
     slidesToScroll: 3,
     arrows: false
   };
-  console.log('r', reposData);
 
   return (
     <section className="section section-repo">
@@ -41,7 +40,7 @@ const RepoSection = ({ reposData }) => {
                           ? repo.description.toString().length <= 70
                             ? repo.description
                             : repo.description.slice(0, 70) + ' ...'
-                          : ' 尚未有簡介'}
+                          : ' 尚未有簡介  !'}
                       </p>
                     </article>
                   </div>
