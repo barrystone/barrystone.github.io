@@ -57,21 +57,22 @@
   }
 
   &-repo {
+    height: 65rem;
     background-color: $color-primary;
 
-    &__heading-box {
+    &__heading {
       width: 100%;
       float: left;
 
       // background-color: mediumslateblue;
     }
 
-    &__repos-box {
+    &__repos {
       width: 100%;
       float: left;
-      height: 45rem;
+      // height: 45rem;
 
-      background-color: mediumturquoise;
+      // background-color: mediumturquoise;
     }
   }
 

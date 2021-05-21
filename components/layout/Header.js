@@ -23,12 +23,12 @@ const Header = () => {
           </div>
           <div className="header__text-box">
             <h1 className="heading-primary">
-              <p className="animate__animated animate__rotateInDownLeft slow">
+              <p className="animate__animated animate__rotateInDownLeft ">
                 <span className="heading-primary--sub  heading-primary--sub-1 ">
                   My name is
                 </span>
               </p>
-              <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft slow">
+              <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft">
                 Learning and making
               </span>
             </h1>

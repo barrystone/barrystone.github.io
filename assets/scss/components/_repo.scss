@@ -1,8 +1,93 @@
 .repo {
+  &-wrapper {
+    height: 100%;
+    height: 35rem;
+  }
   height: 100%;
-  width: 48rem;
-  float: left;
-  margin-left: 10rem;
+  width: 80%;
+  margin: 0 10%;
+  border: 1px $color-primary solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
 
-  background-color: mintcream;
+  &__title {
+    flex: 1;
+    background-color: $color-secondary;
+    border: 1px $color-secondary-light solid;
+    a {
+      display: block;
+      color: $color-black;
+      text-decoration: none;
+      font-size: 3rem;
+      text-align: center;
+      padding: 2rem 3rem;
+
+      &:hover {
+        text-shadow: 0.01em 0.01em 0 $color-white;
+      }
+    }
+  }
+
+  &__content {
+    flex: 3.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .repo {
+      &-description {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba($color-primary, 1),
+          rgba($color-primary, 0.8)
+        );
+        border-radius: 50%;
+        height: 70%;
+        width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+        &--title {
+          background-color: $color-white;
+          display: inline-block;
+          position: relative;
+          left: 20%;
+          top: 15%;
+          border-radius: 50%;
+          p {
+            padding: 0.5rem;
+            font-size: 2rem;
+          }
+        }
+
+        &--text {
+          position: relative;
+          top: 10%;
+          p {
+            font-family: $font-style-cartOne;
+            font-size: 1.5rem;
+            padding: 2rem 5rem;
+            text-shadow: 0.06em 0.06em 0 $color-white;
+            word-wrap: break-word;
+          }
+        }
+      }
+
+      &-star {
+        &--icon {
+        }
+
+        &--number {
+        }
+      }
+
+      &-fork {
+        &--icon {
+        }
+
+        &--number {
+        }
+      }
+    }
+  }
 }
