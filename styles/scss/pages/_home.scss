@@ -11,7 +11,10 @@
         top: 50%;
         left: 43.5%;
         // transform: rotateZ(-30deg);
+        opacity: 0;
+        animation: arrowmove forwards 1s ease-out;
         transition: all linear 0.3s;
+        animation-delay: 2500ms;
         p {
           &::after {
             content: '作品';
@@ -19,10 +22,8 @@
         }
 
         &:hover {
-          // top: 49.1%;
-          left: 44%;
           background-color: $color-black;
-
+          transform: translateX(5%);
           p {
             &::after {
               font-size: 2.6rem;
@@ -65,6 +66,20 @@
 
       // background-color: lightskyblue;
     }
+
+    &__circlebox {
+      &-1 {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+      }
+
+      &-2 {
+        position: absolute;
+        top: 68%;
+        left: 45%;
+      }
+    }
   }
 
   &-repo {
@@ -88,5 +103,25 @@
 
   &-note {
     background-color: $color-white;
+  }
+}
+
+@keyframes arrowmove {
+  25% {
+    opacity: 1;
+    left: 44%;
+  }
+
+  50% {
+    left: 43%;
+  }
+
+  75% {
+    left: 44%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 43.8%;
   }
 }

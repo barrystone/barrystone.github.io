@@ -7,16 +7,6 @@ import Skillset from './updating/Skillset';
 const AboutSection = () => {
   return (
     <div className="section section-about">
-      <div className="section-about__arrow-box">
-        <a
-          href="https://github.com/barrystone?tab=repositories"
-          target="_blank"
-          className="arrow-big"
-        >
-          {/* <p>作品</p> */}
-          <p></p>
-        </a>
-      </div>
       <div className="section-about__textbox-1">
         <p className=" paragraph-big--2">NPTU computer science</p>
       </div>
@@ -28,6 +18,32 @@ const AboutSection = () => {
       <section className="section-about__skillsetbox">
         <Skillset />
       </section>
+      <div className="section-about__arrow-box">
+        <a
+          href="https://github.com/barrystone?tab=repositories"
+          target="_blank"
+          className="arrow-big"
+        >
+          {/* <p>作品</p> */}
+          <p></p>
+        </a>
+      </div>
+      <div className="section-about__circlebox-1">
+        <div className="circle-spinner">
+          <img src="./img/myicon_mobile.png" alt="myicon" />
+          <div className="circle-spinner__view">
+            <span />
+          </div>
+        </div>
+      </div>
+      <div className="section-about__circlebox-2">
+        <div className="circle-spinner">
+          <img src="./img/myicon_mobile.png" alt="myicon" />
+          <div className="circle-spinner__view">
+            <span />
+          </div>
+        </div>
+      </div>
 
       <div className="section-about__project-box">
         {/* <div className="project__title">
