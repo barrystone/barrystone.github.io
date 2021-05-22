@@ -8,7 +8,7 @@ import ReduxIcon from '../assets/img/tech/redux-icon.svg';
 import GraphqlIcon from '../assets/img/tech/graphql-icon.svg';
 import NodejsIcon from '../assets/img/tech/nodejs-icon.svg';
 import JsIcon from '../assets/img/tech/js-icon.svg';
-import TsIcon from '../assets/img/tech/ts-icon.svg';
+// import TsIcon from '../assets/img/tech/ts-icon.svg';
 
 const CharkmarkIcon = () => (
   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
@@ -21,7 +21,7 @@ const CharkmarkIcon = () => (
   </svg>
 );
 
-const SkillSet = () => {
+const Skillset = () => {
   useEffect(() => {
     console.clear();
 
@@ -105,4 +105,4 @@ const SkillSet = () => {
   );
 };
 
-export default SkillSet;
+export default Skillset;
