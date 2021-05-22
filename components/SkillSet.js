@@ -28,6 +28,12 @@ const SkillSet = () => {
     window.requestAnimationFrame(function () {
       document.querySelector('.skillset').classList.add('skillset--show');
     });
+    document.getElementById('skill').addEventListener('mouseover', () => {
+      document.querySelector('.skillset').classList.remove('skillset--show');
+    });
+    document.getElementById('skill').addEventListener('mouseleave', () => {
+      document.querySelector('.skillset').classList.add('skillset--show');
+    });
   }, []);
   return (
     <ul class="skillset">
