@@ -134,10 +134,10 @@ body {
   }
   &:hover {
     &:after {
-      transform: translate(-0.5rem, -0.5rem);
+      transform: translate(-0.3rem, -0.3rem);
     }
     &:before {
-      transform: translate(0.5px, 0.5px);
+      transform: translate(1px, 1px);
     }
   }
 }

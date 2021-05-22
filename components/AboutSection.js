@@ -21,7 +21,9 @@ const AboutSection = () => {
         <p className=" paragraph-big--2">NPTU computer science</p>
       </div>
       <div className="section-about__textbox-2">
-        <h3 className="heading-tertiary paragraph-big--4">我的技能</h3>
+        <h3 className="heading-tertiary paragraph-big--4">
+          <span>我的技能</span>
+        </h3>
       </div>
       <section className="section-about__skillsetbox">
         <Skillset />
