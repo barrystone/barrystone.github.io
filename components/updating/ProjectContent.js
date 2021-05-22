@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Itemscircle from './Itemscircle';
 
 //about section in Home page, updaing my favorite repos and resizing fonmat to display in client
 //a link, repon name, css class format
@@ -6,23 +7,19 @@ import React from 'react';
 const projectContent = () => {
   const updatingData = [
     {
-      name: 'onlene-store',
-      href: 'https://github.com/barrystone/online-store',
+      name: 'online-store',
       class: 'project__item--big'
     },
     {
       name: 'dev-social-network-community',
-      href: 'https://github.com/barrystone/dev-social-network-community',
       class: 'project__item--small'
     },
     {
       name: 'natours',
-      href: 'https://github.com/barrystone/natours',
       class: 'project__item--big'
     },
     {
       name: 'chatApp_react',
-      href: 'https://github.com/barrystone/chatApp_react',
       class: 'project__item--big'
     }
   ];
@@ -31,42 +28,19 @@ const projectContent = () => {
     // <div className="project__content">
     <div className="brick">
       <ul>
-        <li>
-          <a
-            href={updatingData[0].href}
-            className={updatingData[0].class}
-            target="_blank"
-          >
-            {updatingData[0].name}
-          </a>
-        </li>
-        <li>
-          <a
-            href={updatingData[1].href}
-            className={updatingData[1].class}
-            target="_blank"
-          >
-            {updatingData[1].name}
-          </a>
-        </li>
-        <li>
-          <a
-            href={updatingData[2].href}
-            className={updatingData[2].class}
-            target="_blank"
-          >
-            {updatingData[2].name}
-          </a>
-        </li>
-        <li>
-          <a
-            href={updatingData[3].href}
-            className={updatingData[3].class}
-            target="_blank"
-          >
-            {updatingData[3].name}
-          </a>
-        </li>
+        {updatingData.map((e, index) => (
+          <li>
+            <a
+              href={`https://github.com/barrystone/` + e.name}
+              className={e.class}
+              target="_blank"
+            >
+              {e.name}
+            </a>
+
+            <Itemscircle name={e.name} index={index} />
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 
 const RepoSection = ({ reposData }) => {
+  // console.log('reposData', reposData);
+
   const sliderSettings = {
     // dots: true,
     dots: false,
