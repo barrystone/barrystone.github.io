@@ -16,13 +16,13 @@ const projectContent = () => {
       class: 'project__item--small'
     },
     {
-      name: 'chatApp_react',
-      href: 'https://github.com/barrystone/chatApp_react',
+      name: 'natours',
+      href: 'https://github.com/barrystone/natours',
       class: 'project__item--big'
     },
     {
-      name: 'natours',
-      href: 'https://github.com/barrystone/natours',
+      name: 'chatApp_react',
+      href: 'https://github.com/barrystone/chatApp_react',
       class: 'project__item--big'
     }
   ];
