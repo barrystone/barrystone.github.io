@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 // import CharkmarkIcon from '../assets/img/tech/chackmark-icon.svg';
-import HtmlIcon from '../assets/img/tech/html-icon.svg';
-import CssIcon from '../assets/img/tech/css-icon.svg';
-import SassIcon from '../assets/img/tech/sass-icon.svg';
-import ReactIcon from '../assets/img/tech/react-icon.svg';
-import ReduxIcon from '../assets/img/tech/redux-icon.svg';
-import GraphqlIcon from '../assets/img/tech/graphql-icon.svg';
-import NodejsIcon from '../assets/img/tech/nodejs-icon.svg';
-import JsIcon from '../assets/img/tech/js-icon.svg';
+// import HtmlIcon from '../assets/img/tech/html-icon.svg';
+// import CssIcon from '../assets/img/tech/css-icon.svg';
+// import SassIcon from '../assets/img/tech/sass-icon.svg';
+// import ReactIcon from '../assets/img/tech/react-icon.svg';
+// import ReduxIcon from '../assets/img/tech/redux-icon.svg';
+// import GraphqlIcon from '../assets/img/tech/graphql-icon.svg';
+// import NodejsIcon from '../assets/img/tech/nodejs-icon.svg';
+// import JsIcon from '../assets/img/tech/js-icon.svg';
 // import TsIcon from '../assets/img/tech/ts-icon.svg';
 
 const CharkmarkIcon = () => (
@@ -42,7 +42,8 @@ const Skillset = () => {
         <h4>HTML</h4>
         <p>Hypertext Markup Language.</p>
         <span>
-          <HtmlIcon />
+          {/* <HtmlIcon /> */}
+          <img src="img/tech/html-icon.svg" alt="html-icon" />
         </span>
       </li>
       <li class="item">
@@ -50,7 +51,8 @@ const Skillset = () => {
         <h4>CSS</h4>
         <p>Cascading Style Sheets.</p>
         <span>
-          <CssIcon />
+          {/* <CssIcon /> */}
+          <img src="img/tech/css-icon.svg" alt="css-icon" />
         </span>
       </li>
       <li class="item">
@@ -58,7 +60,8 @@ const Skillset = () => {
         <h4>SCSS</h4>
         <p>CSS preprocessor.</p>
         <span>
-          <SassIcon />
+          {/* <SassIcon /> */}
+          <img src="img/tech/sass-icon.svg" alt="sass-icon" />
         </span>
       </li>
       <li class="item">
@@ -66,7 +69,8 @@ const Skillset = () => {
         <h4>JS</h4>
         <p>javascript</p>
         <span>
-          <JsIcon />
+          <img src="img/tech/js-icon.svg" alt="js-icon" />
+          {/* <JsIcon /> */}
         </span>
       </li>
       <li class="item">
@@ -74,7 +78,8 @@ const Skillset = () => {
         <h4>Reactjs</h4>
         <p>Reactjs</p>
         <span>
-          <ReactIcon />
+          {/* <ReactIcon /> */}
+          <img src="img/tech/react-icon.svg" alt="react-icon" />
         </span>
       </li>
       <li class="item">
@@ -82,7 +87,8 @@ const Skillset = () => {
         <h4>Reduxjs</h4>
         <p>Reduxjs</p>
         <span>
-          <ReduxIcon />
+          {/* <ReduxIcon /> */}
+          <img src="img/tech/redux-icon.svg" alt="redux-icon" />
         </span>
       </li>
       <li class="item">
@@ -90,7 +96,8 @@ const Skillset = () => {
         <h4>Graphql</h4>
         <p>Graphql</p>
         <span>
-          <GraphqlIcon />
+          {/* <GraphqlIcon /> */}
+          <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
         </span>
       </li>
       <li class="item">
@@ -98,7 +105,8 @@ const Skillset = () => {
         <h4>Nodejs</h4>
         <p>Nodejs.</p>
         <span>
-          <NodejsIcon />
+          {/* <NodejsIcon /> */}
+          <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
         </span>
       </li>
     </ul>
