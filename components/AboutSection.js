@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import ProjectContent from '../components/updating/ProjectContent';
-import Skillset from './Skillset';
+import Skillset from './updating/Skillset';
 
 const AboutSection = () => {
   return (
