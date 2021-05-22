@@ -113,7 +113,7 @@ body {
 }
 
 .paragraph-big--4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .paragraph-medium {
@@ -144,7 +144,7 @@ body {
 .heading-tertiary {
   z-index: 3;
   display: inline-block;
-  padding: 1.8rem 2.5rem;
+  padding: 1.5rem 2.2rem;
   position: relative;
   letter-spacing: 0.3rem;
 }
@@ -493,8 +493,8 @@ body {
 }
 
 .brick ul li {
-  width: 40rem;
-  height: 8rem;
+  width: 41.5rem;
+  height: 8.5rem;
   border-radius: 5rem;
   margin: 2rem 0;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -623,8 +623,8 @@ body {
 }
 
 .item h4 {
-  font-size: 2.8rem;
-  line-height: 4rem;
+  font-size: 2.7rem;
+  line-height: 3.2rem;
   margin: 0 0 0.5rem 0;
   letter-spacing: 0.15rem;
 }
@@ -636,7 +636,7 @@ body {
 
 .item span {
   position: absolute;
-  top: -0.3rem;
+  top: -1rem;
 }
 
 .item span img {
@@ -710,7 +710,7 @@ body {
 }
 
 .item:nth-child(odd) span {
-  left: 17rem;
+  left: 17.5rem;
 }
 
 .item:nth-child(even) {
@@ -725,7 +725,9 @@ body {
 }
 
 .item:nth-child(even) span {
-  left: -0.5rem;
+  left: 0rem;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
 }
 
 @-webkit-keyframes techimg {
@@ -1140,7 +1142,7 @@ body {
 .section-about__arrow-box a {
   position: absolute;
   top: 50%;
-  left: 43.5%;
+  left: 44%;
   opacity: 0;
   -webkit-animation: arrowmove forwards 1s ease-out;
           animation: arrowmove forwards 1s ease-out;
@@ -1168,42 +1170,46 @@ body {
 
 .section-about__textbox-1 {
   position: absolute;
-  top: 10%;
+  top: 8%;
   right: 5%;
   font-weight: bold;
-  padding: 0.8rem 3rem;
+  padding: 1.5rem 3rem;
   background-color: #e6e6e6;
 }
 
 .section-about__textbox-2 {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 3%;
+  left: 3%;
 }
 
 .section-about__skillsetbox {
   position: absolute;
-  top: 15%;
-  left: 5%;
+  top: 8%;
+  left: 6%;
   width: 50rem;
 }
 
 .section-about__project-box {
   position: absolute;
-  bottom: 8%;
-  right: 13%;
+  bottom: 6%;
+  right: 9%;
 }
 
 .section-about__circlebox-1 {
   position: absolute;
   top: 30%;
-  left: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .section-about__circlebox-2 {
   position: absolute;
   top: 68%;
-  left: 45%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .section-repo {
@@ -1227,34 +1233,34 @@ body {
 @-webkit-keyframes arrowmove {
   25% {
     opacity: 1;
-    left: 44%;
+    left: 44.5%;
   }
   50% {
-    left: 43%;
-  }
-  75% {
     left: 44%;
+  }
+  99% {
+    left: 44.8%;
   }
   100% {
     opacity: 1;
-    left: 43.8%;
+    left: 45%;
   }
 }
 
 @keyframes arrowmove {
   25% {
     opacity: 1;
-    left: 44%;
+    left: 44.5%;
   }
   50% {
-    left: 43%;
-  }
-  75% {
     left: 44%;
+  }
+  99% {
+    left: 44.8%;
   }
   100% {
     opacity: 1;
-    left: 43.8%;
+    left: 45%;
   }
 }
 /*# sourceMappingURL=main.css.map */

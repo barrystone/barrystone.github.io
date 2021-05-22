@@ -30,7 +30,11 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>HTML</h4>
-        <p>Hypertext Markup Language.</p>
+        <p>
+          Hypertext Markup Language
+          <br />
+          &nbsp;
+        </p>
         <span>
           <img src="img/tech/html-icon.svg" alt="html-icon" />
         </span>
@@ -38,7 +42,11 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>CSS</h4>
-        <p>Cascading Style Sheets.</p>
+        <p>
+          Cascading Style Sheets
+          <br />
+          &nbsp;
+        </p>
         <span>
           <img src="img/tech/css-icon.svg" alt="css-icon" />
         </span>
@@ -46,7 +54,10 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>SCSS</h4>
-        <p>CSS preprocessor.</p>
+        <p>
+          Syntactically Awesome
+          <br /> Style Sheets
+        </p>
         <span>
           <img src="img/tech/sass-icon.svg" alt="sass-icon" />
         </span>
@@ -54,7 +65,11 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>JS</h4>
-        <p>javascript</p>
+        <p>
+          Javascript.
+          <br />
+          King of the web dev
+        </p>
         <span>
           <img src="img/tech/js-icon.svg" alt="js-icon" />
         </span>
@@ -62,7 +77,7 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>Reactjs</h4>
-        <p>Reactjs</p>
+        <p>A JavaScript library for building user interfaces</p>
         <span>
           <img src="img/tech/react-icon.svg" alt="react-icon" />
         </span>
@@ -70,7 +85,10 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>Reduxjs</h4>
-        <p>Reduxjs</p>
+        <p>
+          A predictable state <br />
+          container for JavaScript
+        </p>
         <span>
           <img src="img/tech/redux-icon.svg" alt="redux-icon" />
         </span>
@@ -78,7 +96,10 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>Graphql</h4>
-        <p>Graphql</p>
+        <p>
+          A query language for API <br />
+          &nbsp;
+        </p>
         <span>
           <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
         </span>
@@ -86,7 +107,7 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>Nodejs</h4>
-        <p>Nodejs.</p>
+        <p>Back-end JavaScript runtime environment</p>
         <span>
           <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
         </span>

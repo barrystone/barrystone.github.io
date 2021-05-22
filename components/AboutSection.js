@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <div className="section section-about">
       <div className="section-about__textbox-1">
-        <p className=" paragraph-big--2">NPTU computer science</p>
+        <p className=" paragraph-big--3">NPTU computer science</p>
       </div>
       <div className="section-about__textbox-2">
         <h3 className="heading-tertiary paragraph-big--4" id="skill">
