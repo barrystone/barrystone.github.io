@@ -639,16 +639,12 @@ body {
   top: -0.3rem;
 }
 
-.item span svg {
+.item span img {
   opacity: 0;
-}
-
-.skillset--show .item span svg {
-  opacity: 1;
-  -webkit-transition: all ease-in 1s;
-  transition: all ease-in 1s;
-  -webkit-transition-delay: 1500ms;
-          transition-delay: 1500ms;
+  -webkit-animation: forwards 0.5s ease-in techimg;
+          animation: forwards 0.5s ease-in techimg;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .item .checkmark__circle {
@@ -730,6 +726,18 @@ body {
 
 .item:nth-child(even) span {
   left: -1rem;
+}
+
+@-webkit-keyframes techimg {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes techimg {
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes nodeSize {

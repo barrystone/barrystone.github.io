@@ -67,12 +67,14 @@ $itemVerticalSpacing: 0.3rem;
   span {
     position: absolute;
     top: -0.3rem;
-    svg {
+    img {
       opacity: 0;
+      animation: forwards 0.5s ease-in techimg;
+      animation-delay: 1500ms;
       .skillset--show & {
-        opacity: 1;
-        transition: all ease-in 1s;
-        transition-delay: 1500ms;
+        // opacity: 1;
+        // transition: all ease-in 1s;
+        // transition-delay: 1500ms;
       }
     }
   }
@@ -157,6 +159,12 @@ $itemVerticalSpacing: 0.3rem;
     span {
       left: -1rem;
     }
+  }
+}
+
+@keyframes techimg {
+  100% {
+    opacity: 1;
   }
 }
 
