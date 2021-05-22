@@ -611,8 +611,8 @@ body {
 .item h4,
 .item p {
   opacity: 0;
-  -webkit-transition: opacity 800ms;
-  transition: opacity 800ms;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .skillset--show .item h4, .skillset--show
@@ -632,6 +632,12 @@ body {
 .item p {
   font-size: 1.2rem;
   margin: 0;
+}
+
+.skillset--show .item p {
+  opacity: 1;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .item span {
@@ -654,6 +660,11 @@ body {
   stroke-miterlimit: 10;
   stroke: #f7671a;
   fill: none;
+  -webkit-animation: nane;
+          animation: nane;
+}
+
+.skillset--show .item .checkmark__circle {
   -webkit-animation: goround 5s cubic-bezier(0.65, 0, 0.45, 1) infinite;
           animation: goround 5s cubic-bezier(0.65, 0, 0.45, 1) infinite;
 }
@@ -677,7 +688,7 @@ body {
 }
 
 .item .checkmark__check {
-  opacity: 1;
+  opacity: 0;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   stroke-dasharray: 48;
@@ -690,8 +701,6 @@ body {
 
 .skillset--show .item .checkmark__check {
   opacity: 1;
-  -webkit-transition-delay: 1500ms;
-          transition-delay: 1500ms;
 }
 
 .item:not(:last-child) {
