@@ -1,7 +1,7 @@
 // Re-usable variables.
 $linearLineWidth: 0.8rem;
-$itemGutterWidth: 3.5rem;
-$itemVerticalSpacing: 0.5rem;
+$itemGutterWidth: 4.5rem;
+$itemVerticalSpacing: 0.3rem;
 
 .skillset {
   background-color: $color-white;
@@ -23,10 +23,11 @@ $itemVerticalSpacing: 0.5rem;
     top: 0;
     bottom: 0;
     left: 50%;
+    // transition: transform 1000ms;
     transition: transform 1000ms;
     // transform: translateX(-50%) translateY(-100%);
     z-index: 0;
-    background-color: $color-black;
+    background-color: $color-secondary-light;
     width: $linearLineWidth;
   }
 
@@ -40,49 +41,6 @@ $itemVerticalSpacing: 0.5rem;
   width: calc(50% - (#{$linearLineWidth} / 2));
   position: relative;
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 1.5rem;
-    z-index: 2;
-
-    width: $linearLineWidth * 3;
-    height: $linearLineWidth * 3;
-    background: $color-secondary;
-    border-radius: 50%;
-    transform: scale(0);
-
-    // Applying the scaling animation when appropriate.
-    .skillset--show & {
-      animation: nodeSize 500ms 1500ms forwards;
-    }
-  }
-
-  &:not(:last-child) {
-    margin-bottom: $itemVerticalSpacing;
-  }
-
-  &:nth-child(odd) {
-    align-self: flex-end;
-    padding-left: $itemGutterWidth;
-    text-align: left;
-
-    &::before {
-      left: $linearLineWidth * -2;
-    }
-  }
-
-  &:nth-child(even) {
-    align-self: flex-start;
-    padding-right: $itemGutterWidth;
-    text-align: right;
-
-    &::before {
-      right: $linearLineWidth * -2;
-    }
-  }
-
   h4,
   p {
     opacity: 0;
@@ -90,7 +48,8 @@ $itemVerticalSpacing: 0.5rem;
 
     .skillset--show & {
       opacity: 1;
-      transition-delay: 2500ms;
+      // transition-delay: 2500ms;
+      transition-delay: 500ms;
     }
   }
 
@@ -105,6 +64,92 @@ $itemVerticalSpacing: 0.5rem;
     font-size: 1.2rem;
     margin: 0;
   }
+  span {
+    position: absolute;
+    top: -0.3rem;
+    svg {
+      opacity: 0;
+      .skillset--show & {
+        opacity: 1;
+        transition: all ease-in 1s;
+        transition-delay: 1500ms;
+      }
+    }
+  }
+
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 15;
+    stroke-miterlimit: 10;
+    stroke: $color-secondary-dark-2;
+    fill: none;
+    // animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    animation: goround 5s cubic-bezier(0.65, 0, 0.45, 1) infinite;
+
+    // animation-delay: 1000ms;
+  }
+
+  .checkmark {
+    z-index: 2;
+    position: absolute;
+    top: -2rem;
+    width: 4.5rem;
+    height: 4.5rem;
+
+    border-radius: 50%;
+    display: block;
+    stroke-width: 7;
+    stroke: $color-white;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px $color-secondary;
+    animation: fill 0.4s ease-in-out 0.4s forwards,
+      scale 0.3s ease-in-out 0.9s both;
+
+    // animation-delay: 1000ms;
+  }
+
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+
+    // animation-delay: 1000ms;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $itemVerticalSpacing;
+  }
+
+  &:nth-child(odd) {
+    align-self: flex-end;
+    padding-left: $itemGutterWidth;
+    text-align: left;
+
+    .checkmark {
+      left: -3rem;
+    }
+
+    span {
+      left: 16.5rem;
+    }
+  }
+
+  &:nth-child(even) {
+    align-self: flex-start;
+    padding-right: $itemGutterWidth;
+    text-align: right;
+
+    .checkmark {
+      left: 20rem;
+    }
+
+    span {
+      left: -1rem;
+    }
+  }
 }
 
 @keyframes nodeSize {
@@ -116,5 +161,35 @@ $itemVerticalSpacing: 0.5rem;
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $color-secondary;
+  }
+}
+
+@keyframes goround {
+  75% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 166;
   }
 }

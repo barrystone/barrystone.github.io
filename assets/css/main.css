@@ -563,7 +563,7 @@ body {
 .skillset {
   background-color: #fff;
   margin: 0 auto;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.3rem 0 0.3rem 0;
   max-width: 600px;
   width: 90%;
   display: -webkit-box;
@@ -588,7 +588,7 @@ body {
   transition: transform 1000ms;
   transition: transform 1000ms, -webkit-transform 1000ms;
   z-index: 0;
-  background-color: #000;
+  background-color: #ffc4a4;
   width: 0.8rem;
 }
 
@@ -603,51 +603,6 @@ body {
   position: relative;
 }
 
-.item::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 1.5rem;
-  z-index: 2;
-  width: 2.4rem;
-  height: 2.4rem;
-  background: #f89761;
-  border-radius: 50%;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.skillset--show .item::before {
-  -webkit-animation: nodeSize 500ms 1500ms forwards;
-          animation: nodeSize 500ms 1500ms forwards;
-}
-
-.item:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.item:nth-child(odd) {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding-left: 3.5rem;
-  text-align: left;
-}
-
-.item:nth-child(odd)::before {
-  left: -1.6rem;
-}
-
-.item:nth-child(even) {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-right: 3.5rem;
-  text-align: right;
-}
-
-.item:nth-child(even)::before {
-  right: -1.6rem;
-}
-
 .item h4,
 .item p {
   opacity: 0;
@@ -658,8 +613,8 @@ body {
 .skillset--show .item h4, .skillset--show
 .item p {
   opacity: 1;
-  -webkit-transition-delay: 2500ms;
-          transition-delay: 2500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
 .item h4 {
@@ -672,6 +627,95 @@ body {
 .item p {
   font-size: 1.2rem;
   margin: 0;
+}
+
+.item span {
+  position: absolute;
+  top: -0.3rem;
+}
+
+.item span svg {
+  opacity: 0;
+}
+
+.skillset--show .item span svg {
+  opacity: 1;
+  -webkit-transition: all ease-in 1s;
+  transition: all ease-in 1s;
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
+}
+
+.item .checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+  stroke: #f7671a;
+  fill: none;
+  -webkit-animation: goround 5s cubic-bezier(0.65, 0, 0.45, 1) infinite;
+          animation: goround 5s cubic-bezier(0.65, 0, 0.45, 1) infinite;
+}
+
+.item .checkmark {
+  z-index: 2;
+  position: absolute;
+  top: -2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 7;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  -webkit-box-shadow: inset 0px 0px 0px #f89761;
+          box-shadow: inset 0px 0px 0px #f89761;
+  -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+          animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.item .checkmark__check {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+.item:nth-child(odd) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-left: 4.5rem;
+  text-align: left;
+}
+
+.item:nth-child(odd) .checkmark {
+  left: -3rem;
+}
+
+.item:nth-child(odd) span {
+  left: 16.5rem;
+}
+
+.item:nth-child(even) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-right: 4.5rem;
+  text-align: right;
+}
+
+.item:nth-child(even) .checkmark {
+  left: 20rem;
+}
+
+.item:nth-child(even) span {
+  left: -1rem;
 }
 
 @-webkit-keyframes nodeSize {
@@ -701,6 +745,74 @@ body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes scale {
+  0%,
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+            transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+            transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@-webkit-keyframes fill {
+  100% {
+    -webkit-box-shadow: inset 0px 0px 0px 30px #f89761;
+            box-shadow: inset 0px 0px 0px 30px #f89761;
+  }
+}
+
+@keyframes fill {
+  100% {
+    -webkit-box-shadow: inset 0px 0px 0px 30px #f89761;
+            box-shadow: inset 0px 0px 0px 30px #f89761;
+  }
+}
+
+@-webkit-keyframes goround {
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 166;
+  }
+}
+
+@keyframes goround {
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 166;
   }
 }
 
