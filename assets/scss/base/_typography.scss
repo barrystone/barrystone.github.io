@@ -110,10 +110,7 @@ body {
 .heading-tertiary {
   z-index: 3;
   display: inline-block;
-  // height: 100%;
-  padding: 1.5rem 2rem;
-  // background: none;
-  // border: none;
+  padding: 1.8rem 2.5rem;
   position: relative;
   letter-spacing: 0.3rem;
   // cursor: pointer;
@@ -126,19 +123,21 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    border: 3px solid $color-grey;
-    transition: transform 0.2s;
+    border: 0.25rem outset $color-grey;
+    transition: transform 0.5s;
   }
   &:after {
-    transform: translate(3px, 3px);
+    transform: translate(0.5rem, 0.5rem);
   }
   &:before {
-    transform: translate(-3px, -3px);
+    transform: translate(-0.5px, -0.5px);
   }
   &:hover {
-    &:after,
+    &:after {
+      transform: translate(-0.5rem, -0.5rem);
+    }
     &:before {
-      transform: translate(0);
+      transform: translate(0.5px, 0.5px);
     }
   }
 }

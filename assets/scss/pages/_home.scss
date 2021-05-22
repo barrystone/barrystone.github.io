@@ -9,9 +9,9 @@
       a {
         position: absolute;
         top: 50%;
-        left: 43%;
-        transform: rotateZ(-30deg);
-        transition: all linear 0.2s;
+        left: 43.5%;
+        // transform: rotateZ(-30deg);
+        transition: all linear 0.3s;
         p {
           &::after {
             content: '作品';
@@ -19,8 +19,8 @@
         }
 
         &:hover {
-          top: 49.1%;
-          left: 43.3%;
+          // top: 49.1%;
+          left: 44%;
           background-color: $color-black;
 
           p {
