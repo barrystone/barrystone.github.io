@@ -493,6 +493,19 @@ body {
   word-wrap: break-word;
 }
 
+.brick-font--small {
+  display: inline-block;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  padding-top: 1rem;
+}
+
+.brick-font--big {
+  display: inline-block;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
 .brick > ul {
   font-size: 3rem;
   list-style: none;
@@ -519,6 +532,13 @@ body {
   text-decoration: none;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  max-width: 18rem;
+}
+
+.brick > ul > li > a:hover {
+  padding-bottom: 0.7rem;
 }
 
 .brick > ul > li:nth-child(odd) {
@@ -533,17 +553,17 @@ body {
 .brick > ul > li:nth-child(odd):hover {
   -webkit-transform: perspective(600px) rotateY(30deg);
           transform: perspective(600px) rotateY(30deg);
-  padding-left: 5%;
+  padding-left: 7%;
   background: #fff;
 }
 
 .brick > ul > li:nth-child(odd) > a {
-  border-bottom: #fff 5px solid;
+  border-bottom: #fff 4px solid;
 }
 
 .brick > ul > li:nth-child(odd) > a:hover {
   color: #f89761;
-  border-bottom: #f89761 5px solid;
+  border-bottom: #f89761 6px solid;
 }
 
 .brick > ul > li:nth-child(even) {
@@ -556,18 +576,18 @@ body {
 .brick > ul > li:nth-child(even):hover {
   -webkit-transform: perspective(600px) rotateY(-30deg);
           transform: perspective(600px) rotateY(-30deg);
-  padding-right: 5%;
+  padding-right: 7%;
   background: -webkit-gradient(linear, right top, left top, from(#f89761), to(#f8874a));
   background: linear-gradient(to left, #f89761, #f8874a);
 }
 
 .brick > ul > li:nth-child(even) > a {
-  border-bottom: #f89761 5px solid;
+  border-bottom: #f89761 4px solid;
 }
 
 .brick > ul > li:nth-child(even) > a:hover {
   color: #fff;
-  border-bottom: #fff 5px solid;
+  border-bottom: #fff 6px solid;
 }
 
 .brick > ul li:hover li a {

@@ -8,19 +8,19 @@ const projectContent = () => {
   const updatingData = [
     {
       name: 'online-store',
-      class: 'project__item--big'
+      class: 'brick-font--big'
     },
     {
       name: 'dev-social-network-community',
-      class: 'project__item--small'
+      class: 'brick-font--small'
     },
     {
       name: 'natours',
-      class: 'project__item--big'
+      class: 'brick-font--big'
     },
     {
       name: 'chatApp_react',
-      class: 'project__item--big'
+      class: 'brick-font--big'
     }
   ];
 

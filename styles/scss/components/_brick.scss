@@ -1,4 +1,18 @@
 .brick {
+  &-font {
+    &--small {
+      display: inline-block;
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+      padding-top: 1rem;
+    }
+
+    &--big {
+      display: inline-block;
+      font-size: 3rem;
+      padding-top: 1rem;
+    }
+  }
   > ul {
     font-size: 3rem;
     list-style: none;
@@ -20,6 +34,14 @@
         color: $color-black;
         text-decoration: none;
         transition: all linear 0.2s;
+        // background-color: aquamarine;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        max-width: 18rem;
+
+        &:hover {
+          padding-bottom: 0.7rem;
+        }
       }
 
       &:nth-child(odd) {
@@ -33,15 +55,15 @@
         transform: perspective(1000px) rotateY(30deg);
         &:hover {
           transform: perspective(600px) rotateY(30deg);
-          padding-left: 5%;
+          padding-left: 7%;
           background: $color-white;
         }
 
         > a {
-          border-bottom: $color-white 5px solid;
+          border-bottom: $color-white 4px solid;
           &:hover {
             color: $color-secondary;
-            border-bottom: $color-secondary 5px solid;
+            border-bottom: $color-secondary 6px solid;
           }
         }
       }
@@ -52,7 +74,7 @@
 
         &:hover {
           transform: perspective(600px) rotateY(-30deg);
-          padding-right: 5%;
+          padding-right: 7%;
 
           background: linear-gradient(
             to left,
@@ -62,12 +84,11 @@
         }
 
         > a {
-          border-bottom: $color-secondary 5px solid;
+          border-bottom: $color-secondary 4px solid;
 
           &:hover {
             color: $color-white;
-
-            border-bottom: $color-white 5px solid;
+            border-bottom: $color-white 6px solid;
           }
         }
       }
@@ -76,8 +97,5 @@
     li:hover li a {
       border: none !important;
     }
-    // li:hover ! li a {
-    // border: none !important;
-    // }
   }
 }
