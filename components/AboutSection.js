@@ -36,14 +36,14 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="section-about__circlebox-2">
+      {/* <div className="section-about__circlebox-2">
         <div className="circle-spinner">
           <img src="./img/myicon_mobile.png" alt="myicon" />
           <div className="circle-spinner__view">
             <span />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="section-about__project-box">
         {/* <div className="project__title">

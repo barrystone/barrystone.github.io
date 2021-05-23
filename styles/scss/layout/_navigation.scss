@@ -1,3 +1,9 @@
+// FOR easy setting, auto calc distance
+$navigation_button-size: 7rem;
+$navigation_background-size: 6rem;
+$navigation_button-positionTop: 4%;
+$navigation_button-positionRight: 2.5%;
+
 .navigation {
   //   position: relative;
   &__checkbox {
@@ -7,11 +13,11 @@
   &__button {
     cursor: pointer;
     background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
+    height: $navigation_button-size;
+    width: $navigation_button-size;
     position: fixed;
-    top: 4rem;
-    right: 6rem;
+    top: $navigation_button-positionTop;
+    right: $navigation_button-positionRight;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
@@ -36,12 +42,17 @@
     //   $color-primary-dark
     // );
     background-image: radial-gradient($color-secondary-dark, $color-secondary);
-    height: 6rem;
-    width: 6rem;
+    height: $navigation_background-size;
+    width: $navigation_background-size;
     border-radius: 50%;
     position: fixed;
-    top: 4.5rem;
-    right: 6.5rem;
+    top: calc(
+      (#{$navigation_button-size} - #{$navigation_background-size}) / 2 + #{$navigation_button-positionTop}
+    );
+    right: calc(
+      (#{$navigation_button-size} - #{$navigation_background-size}) / 2 + #{$navigation_button-positionRight}
+    );
+    // right: 6.5rem;
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     // transform: scale(80);
