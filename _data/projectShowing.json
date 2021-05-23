@@ -4,15 +4,18 @@
     "class": "brick-font--big"
   },
   {
-    "name": "dev-social-network-community",
-    "class": "brick-font--small"
+    "name": "chatApp_react",
+    "class": "brick-font--big",
+    "image": "reactjs"
   },
   {
     "name": "natours",
-    "class": "brick-font--big"
+    "class": "brick-font--big",
+    "image": "sass"
   },
+
   {
-    "name": "chatApp_react",
-    "class": "brick-font--big"
+    "name": "dev-social-network-community",
+    "class": "brick-font--small"
   }
 ]

@@ -2,11 +2,11 @@ import React from 'react';
 import Itemscircle from './Itemscircle';
 
 import ProjectShowingData from '../../_data/projectShowing.json';
-import testData from '../../_data/testing.json';
+// import testData from '../../_data/testing.json';
 
 const projectContent = () => {
-  // const updatingData = ProjectShowingData;
-  const updatingData = testData;
+  const updatingData = ProjectShowingData;
+  // const updatingData = testData;
 
   return (
     <div className="brick">

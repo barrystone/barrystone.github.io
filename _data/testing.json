@@ -10,7 +10,8 @@
   },
   {
     "name": "natours",
-    "class": "brick-font--big"
+    "class": "brick-font--big",
+    "image": "sass"
   },
 
   {
