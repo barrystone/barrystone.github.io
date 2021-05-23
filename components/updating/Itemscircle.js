@@ -43,33 +43,45 @@ const Itemscircle = ({ name, index }) => {
         return 'sass-icon';
       case 'typescript':
         return 'ts-icon';
+      case 'vue':
+        return 'vuejs-icon';
+      case 'c#':
+        return 'cSharp-icon';
+      case 'python':
+        return 'python-icon';
+      case 'java':
+        return 'java-icon';
+      case 'php':
+        return 'php-icon';
+      // case 'shell':
+      //   return 'shell-icon';
 
       default:
-        return 'none';
+        return 'coding-icon';
     }
   };
 
-  // $circle-radius: 3rem;  in _itermscircle.scss
-  const circleRadius = 3;
+  // !!circleRadius SHOULD BE SAME AS $circle-radius: variable  in _itermscircle.scss
+  const circleRadius = 4.2;
+  const LauguagesPercentage = (x) =>
+    x / Object.values(repoLanguages).reduce((acc, cur) => acc + cur);
 
-  const LauguagesPercentage = (x) => {
-    return (
-      // Reversing value, because we just can pass keyfrom 0%(start),
-      //i want pass keyframe 100%(end) for our stroke direction but can't ,
-      //so iam decide reverse it(1 -percentage)
-      (
-        (1 - x / Object.values(repoLanguages).reduce((acc, cur) => acc + cur)) *
-        circleRadius *
-        6.28
-      ).toString() + 'rem'
-    );
-  };
+  // Reversing value, because we just can pass keyfrom 0%(start),
+  // i want pass keyframe 100%(end) for our stroke direction but can't ,
+  // so iam decide reverse it(1 -percentage)
+  const LauguagesPercentageStroke = (x) =>
+    ((1 - LauguagesPercentage(x)) * circleRadius * 6.28).toString() + 'rem';
 
   return (
     <div className={`itemscircle itemscircle-${index}`}>
       <ul className="itemscircle-wrapper">
         <div className="itemscircle__root itemscircle__root-close">
-          <p>Most used programming language</p>
+          {/* <p>Most used programming language</p> */}
+          <p>
+            程式語言
+            <br />
+            比例
+          </p>
         </div>
         <div className="itemscircle__root itemscircle__root-open ">
           <img
@@ -83,22 +95,30 @@ const Itemscircle = ({ name, index }) => {
           .slice(0, 3)
           .map((x, index) => (
             <li className={`itemscircle__item itemscircle__item--${index}`}>
-              <svg>
-                <circle
-                  fill="none"
-                  style={{
-                    strokeDashoffset: LauguagesPercentage(
-                      Object.values(repoLanguages)[index]
-                    )
-                  }}
-                />
-              </svg>
-              <span>
+              <div className="itemscircle__item-stroke">
+                <svg>
+                  <circle
+                    style={{
+                      strokeDashoffset: LauguagesPercentageStroke(
+                        Object.values(repoLanguages)[index]
+                      )
+                    }}
+                  />
+                </svg>
+              </div>
+              <div className="itemscircle__item-icon">
                 <img
                   src={`img/tech/${languageImg(x.toLowerCase())}.svg`}
                   alt={x + '-icon'}
                 />
-              </span>
+                <div className="itemscircle__item-icon-percentage">
+                  {(
+                    LauguagesPercentage(Object.values(repoLanguages)[index]) *
+                    100
+                  ).toFixed(1)}
+                  <span>%</span>
+                </div>
+              </div>
             </li>
           ))}
       </ul>
