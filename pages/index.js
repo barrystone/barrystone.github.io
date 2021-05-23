@@ -32,7 +32,7 @@ export default function Home({ reposData }) {
       </header>
       <main>
         <AboutSection />
-        <RepoSection reposData={reposData} />
+        {/* <RepoSection reposData={reposData} /> */}
         <NoteSection />
       </main>
       <footer>

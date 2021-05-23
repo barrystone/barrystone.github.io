@@ -1,2 +1,174 @@
+//if change this, should update Iitemscircle.js circleRadius variable;
+$circle-radius: 3rem;
+
 .itemscircle {
+  &-wrapper {
+    width: 10rem;
+    height: 8.5rem;
+    list-style: none;
+    // background-color: aqua;
+  }
+
+  &__root {
+    z-index: -1;
+    transition: 0.1s;
+    // opacity: 0;
+    // overflow: hidden;
+
+    &-open {
+      //   background-color: aquamarine;
+      height: 100%;
+      width: 100%;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        padding: 1rem;
+        border-radius: 50%;
+      }
+    }
+
+    &-close {
+      z-index: 5;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 20rem;
+      //   background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        text-align: center;
+        line-height: 2rem;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__item {
+    // opacity: 0;
+    display: none;
+    position: absolute;
+    &--0 {
+      top: 50%;
+    }
+    &--1 {
+      top: -10%;
+    }
+    &--2 {
+      top: 110%;
+    }
+    span {
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+    svg {
+      z-index: -2;
+      //   background-color: greenyellow;
+      height: 7rem;
+      width: 7rem;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+    circle {
+      cx: 3.5rem;
+      cy: 3.5rem;
+      r: $circle-radius;
+      stroke-dasharray: calc(#{$circle-radius} * 6.28);
+      stroke-dashoffset: calc(#{$circle-radius} * 6.28);
+      stroke-width: 8;
+      //   stroke-miterlimit: 10;
+      stroke: $color-secondary-dark-2;
+      fill: none;
+      animation: stroke 1s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+  }
+
+  &__root-close:hover ~ &__root-open {
+    img {
+      visibility: hidden;
+    }
+  }
+  &__root-close:hover ~ &__item {
+    display: block;
+  }
+
+  &-0,
+  &-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    .itemscircle__root-open {
+      img {
+        background-color: $color-white;
+      }
+    }
+
+    .itemscircle__root-close {
+      transform: translateY(-50%) translateX(-80%);
+      p {
+        color: $color-secondary;
+      }
+    }
+
+    .itemscircle__item {
+      position: absolute;
+      &--0 {
+        left: 140%;
+      }
+      &--1,
+      &--2 {
+        left: 230%;
+      }
+    }
+  }
+
+  &-1,
+  &-3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    .itemscircle__root-open {
+      img {
+        background-color: $color-secondary;
+      }
+    }
+    .itemscircle__root-close {
+      transform: translateY(-50%) translateX(-20%);
+      p {
+        color: $color-white;
+      }
+    }
+    .itemscircle__item {
+      position: absolute;
+      &--0 {
+        right: 150%;
+      }
+      &--1,
+      &--2 {
+        right: 230%;
+      }
+    }
+  }
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: calc(#{$circle-radius} * 6.28);
+  }
 }
