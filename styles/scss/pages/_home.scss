@@ -10,7 +10,6 @@
         position: absolute;
         top: 50%;
         left: 44%;
-        // transform: rotateZ(-30deg);
         opacity: 0;
         animation: arrowmove forwards 1s ease-out;
         transition: all linear 0.3s;
@@ -63,23 +62,12 @@
       position: absolute;
       bottom: 6%;
       right: 9%;
-
-      // background-color: lightskyblue;
     }
 
     &__circlebox {
-      &-1 {
-        position: absolute;
-        top: 4%;
-        right: 2.1%;
-      }
-
-      &-2 {
-        position: absolute;
-        top: 68%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+      position: absolute;
+      top: 4%;
+      right: 2.1%;
     }
   }
 
@@ -89,16 +77,11 @@
     &__heading {
       width: 100%;
       float: left;
-
-      // background-color: mediumslateblue;
     }
 
     &__repos {
       width: 100%;
       float: left;
-      // height: 45rem;
-
-      // background-color: mediumturquoise;
     }
   }
 

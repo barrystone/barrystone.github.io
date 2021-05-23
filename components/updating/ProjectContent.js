@@ -5,24 +5,7 @@ import ProjectShowingData from '../../_data/projectShowing.json';
 
 const projectContent = () => {
   const updatingData = ProjectShowingData;
-  // const updatingData = [
-  //   {
-  //     name: 'fish-game_unity-2D',
-  //     class: 'brick-font--mid'
-  //   },
-  //   {
-  //     name: 'imgur-photobook',
-  //     class: 'brick-font--mid'
-  //   },
-  //   {
-  //     name: 'youtube-browser',
-  //     class: 'brick-font--mid'
-  //   },
-  //   {
-  //     name: 'my_diary-php',
-  //     class: 'brick-font--big'
-  //   }
-  // ];
+
   return (
     <div className="brick">
       <ul>

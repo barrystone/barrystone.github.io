@@ -1,13 +1,12 @@
 //if change this, should update Iitemscircle.js circleRadius variable;
-$circle-radius: 4rem;
-$circle-strokeWidth: 0.8rem;
+$itemscircle__item-circle-radius: 4rem;
+$itemscircle__item-circle-strokeWidth: 0.8rem;
 .itemscircle {
   height: 100%;
   &-wrapper {
     height: 100%;
     width: 10rem;
     list-style: none;
-    // background-color: aqua;
   }
 
   &__root {
@@ -17,7 +16,6 @@ $circle-strokeWidth: 0.8rem;
     // overflow: hidden;
 
     &-open {
-      // background-color: aquamarine;
       height: 100%;
       width: 100%;
       img {
@@ -49,7 +47,6 @@ $circle-strokeWidth: 0.8rem;
         line-height: 2.5rem;
         font-size: 2.2rem;
         letter-spacing: 0.15rem;
-        // text-shadow: 0.01em 0.01em 0 $color-black;
       }
 
       &:hover {
@@ -75,8 +72,14 @@ $circle-strokeWidth: 0.8rem;
     &-stroke {
       svg {
         z-index: -2;
-        height: calc(#{$circle-radius} * 2 + #{$circle-strokeWidth}* 2);
-        width: calc(#{$circle-radius} * 2 + #{$circle-strokeWidth}* 2);
+        height: calc(
+          #{$itemscircle__item-circle-radius} * 2 + #{$itemscircle__item-circle-strokeWidth}*
+            2
+        );
+        width: calc(
+          #{$itemscircle__item-circle-radius} * 2 + #{$itemscircle__item-circle-strokeWidth}*
+            2
+        );
 
         position: absolute;
         top: 50%;
@@ -84,12 +87,22 @@ $circle-strokeWidth: 0.8rem;
         transform: translateY(-50%) translateX(-50%);
       }
       circle {
-        cx: calc((#{$circle-radius} * 2 + #{$circle-strokeWidth}* 2) / 2);
-        cy: calc((#{$circle-radius} * 2 + #{$circle-strokeWidth}* 2) / 2);
-        r: $circle-radius;
-        stroke-dasharray: calc(#{$circle-radius} * 6.28);
-        stroke-dashoffset: calc(#{$circle-radius} * 6.28);
-        stroke-width: $circle-strokeWidth;
+        cx: calc(
+          (
+              #{$itemscircle__item-circle-radius} * 2 + #{$itemscircle__item-circle-strokeWidth}*
+                2
+            ) / 2
+        );
+        cy: calc(
+          (
+              #{$itemscircle__item-circle-radius} * 2 + #{$itemscircle__item-circle-strokeWidth}*
+                2
+            ) / 2
+        );
+        r: $itemscircle__item-circle-radius;
+        stroke-dasharray: calc(#{$itemscircle__item-circle-radius} * 6.28);
+        stroke-dashoffset: calc(#{$itemscircle__item-circle-radius} * 6.28);
+        stroke-width: $itemscircle__item-circle-strokeWidth;
         stroke: $color-secondary-dark-2;
         fill: none;
         //   stroke-miterlimit: 10;
@@ -114,7 +127,6 @@ $circle-strokeWidth: 0.8rem;
         display: block;
         text-align: center;
         font-size: 2rem;
-        // background-color: aqua;
         transform: translateY(-70%) translateX(-43%);
 
         span {
@@ -171,7 +183,6 @@ $circle-strokeWidth: 0.8rem;
     top: 0;
     .itemscircle__root-open {
       img {
-        // background-color: $color-secondary;
         border: 1px solid $color-black;
       }
     }
@@ -196,6 +207,6 @@ $circle-strokeWidth: 0.8rem;
 
 @keyframes stroke {
   0% {
-    stroke-dashoffset: calc(#{$circle-radius} * 6.28);
+    stroke-dashoffset: calc(#{$itemscircle__item-circle-radius} * 6.28);
   }
 }

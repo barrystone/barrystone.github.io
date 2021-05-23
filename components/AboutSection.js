@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import ProjectContent from '../components/updating/ProjectContent';
 import Skillset from './updating/Skillset';
@@ -28,7 +27,7 @@ const AboutSection = () => {
           <p></p>
         </a>
       </div>
-      <div className="section-about__circlebox-1">
+      <div className="section-about__circlebox">
         <div className="circle-spinner">
           <img src="./img/myicon_mobile.png" alt="myicon" />
           <div className="circle-spinner__view">
@@ -36,19 +35,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      {/* <div className="section-about__circlebox-2">
-        <div className="circle-spinner">
-          <img src="./img/myicon_mobile.png" alt="myicon" />
-          <div className="circle-spinner__view">
-            <span />
-          </div>
-        </div>
-      </div> */}
 
       <div className="section-about__project-box">
-        {/* <div className="project__title">
-          <p>作品</p>
-        </div> */}
         <ProjectContent />
       </div>
     </div>

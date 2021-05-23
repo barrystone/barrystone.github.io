@@ -53,9 +53,8 @@ const Itemscircle = ({ name, index }) => {
         return 'java-icon';
       case 'php':
         return 'php-icon';
-      // case 'shell':
-      //   return 'shell-icon';
-
+      case 'c++':
+        return 'c++-icon';
       default:
         return 'coding-icon';
     }

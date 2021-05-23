@@ -39,8 +39,6 @@
       > a {
         color: $color-black;
         text-decoration: none;
-        // transition: all linear 0.2s;
-        // background-color: aquamarine;
         text-align: center;
         padding-bottom: 0.5rem;
         max-width: 22rem;
@@ -71,7 +69,6 @@
           border-bottom: $color-white 4px solid;
           &:hover {
             color: $color-secondary;
-            // border-bottom: $color-secondary 6px solid;
             border: none;
           }
         }
@@ -99,7 +96,6 @@
 
           &:hover {
             color: $color-white;
-            // border-bottom: $color-white 6px solid;
             border: none;
           }
         }

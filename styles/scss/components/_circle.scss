@@ -1,9 +1,10 @@
-$spinner-height: 8rem;
-$spinner-width: 8rem;
+$circle-spinner-height: 8rem;
+$circle-spinner-width: 8rem;
+$circle-circle-spinner-animation: 35s;
 
 .circle-spinner {
-  width: calc(#{$spinner-width});
-  height: calc(#{$spinner-height});
+  width: calc(#{$circle-spinner-width});
+  height: calc(#{$circle-spinner-height});
   position: relative;
   img {
     height: 85%;
@@ -12,22 +13,20 @@ $spinner-width: 8rem;
     position: absolute;
     top: 7.5%;
     left: 7.5%;
-
-    // background: $color-black;
     background-size: cover;
 
     border-radius: 50%;
   }
   &__view {
-    height: $spinner-height;
-    width: $spinner-width;
+    height: $circle-spinner-height;
+    width: $circle-spinner-width;
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
     span {
-      height: $spinner-height;
-      width: $spinner-width;
+      height: $circle-spinner-height;
+      width: $circle-spinner-width;
       padding: 5px;
       display: flex;
       justify-content: center;
@@ -40,7 +39,7 @@ $spinner-width: 8rem;
         rgba($color-secondary-dark-2, 1) 66%,
         rgba($color-secondary, 1) 100%
       );
-      animation: spinning 50s linear 0s infinite;
+      animation: spinning $circle-circle-spinner-animation linear 0s infinite;
     }
   }
 
@@ -49,7 +48,6 @@ $spinner-width: 8rem;
       width: 100%;
       z-index: 100;
       height: 100%;
-      // background: $color-black;
       background-size: cover;
 
       border-radius: 50%;

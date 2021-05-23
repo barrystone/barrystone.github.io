@@ -11,7 +11,6 @@
     url(../../public/img/me-bg.jpg);
   background-size: cover;
   background-position: right;
-  // background-size: contain;
   // background-position: 180% 0%;
 
   &__left {
@@ -45,8 +44,6 @@
   &__button-box {
     display: inline-block;
     position: absolute;
-    // top: 5rem;
-    // left: 8rem;
     width: 65%;
     height: 15rem;
 
@@ -59,8 +56,6 @@
     position: absolute;
     top: 27%;
     left: 5%;
-
-    // background-color: lightcoral;
   }
 
   &__link-box {
@@ -68,7 +63,5 @@
     position: absolute;
     bottom: 7%;
     left: 5%;
-
-    // background-color: lightgreen;
   }
 }

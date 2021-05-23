@@ -935,8 +935,8 @@ body {
   background: #f89761;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, black), color-stop(66%, #f7671a), to(#f89761));
   background: linear-gradient(0deg, black 33%, #f7671a 66%, #f89761 100%);
-  -webkit-animation: spinning 50s linear 0s infinite;
-          animation: spinning 50s linear 0s infinite;
+  -webkit-animation: spinning 35s linear 0s infinite;
+          animation: spinning 35s linear 0s infinite;
 }
 
 .circle-spinner__mid span {
@@ -1052,8 +1052,8 @@ body {
 
 .itemscircle__item-stroke svg {
   z-index: -2;
-  height: calc(4rem * 2 + 0.8rem* 2);
-  width: calc(4rem * 2 + 0.8rem* 2);
+  height: calc( 4rem * 2 + 0.8rem* 2);
+  width: calc( 4rem * 2 + 0.8rem* 2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1062,8 +1062,8 @@ body {
 }
 
 .itemscircle__item-stroke circle {
-  cx: calc((4rem * 2 + 0.8rem* 2) / 2);
-  cy: calc((4rem * 2 + 0.8rem* 2) / 2);
+  cx: calc( ( 4rem * 2 + 0.8rem* 2 ) / 2);
+  cy: calc( ( 4rem * 2 + 0.8rem* 2 ) / 2);
   r: 4rem;
   stroke-dasharray: calc(4rem * 6.28);
   stroke-dashoffset: calc(4rem * 6.28);
@@ -1453,18 +1453,10 @@ body {
   right: 9%;
 }
 
-.section-about__circlebox-1 {
+.section-about__circlebox {
   position: absolute;
   top: 4%;
   right: 2.1%;
-}
-
-.section-about__circlebox-2 {
-  position: absolute;
-  top: 68%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .section-repo {
