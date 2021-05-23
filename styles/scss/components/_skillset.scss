@@ -1,5 +1,5 @@
 $linearLineWidth: 0.8rem;
-$itemGutterWidth: 4.5rem;
+$itemGutterWidth: 4rem;
 $itemVerticalSpacing: 0.3rem;
 
 .skillset {
@@ -7,7 +7,7 @@ $itemVerticalSpacing: 0.3rem;
   margin: 0 auto;
   padding: $itemVerticalSpacing 0 $itemVerticalSpacing 0;
 
-  max-width: 600px;
+  max-width: 60rem;
   width: 90%;
 
   display: flex;
@@ -51,14 +51,15 @@ $itemVerticalSpacing: 0.3rem;
   }
 
   h4 {
-    font-size: 2.7rem;
-    line-height: 3.2rem;
-    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    line-height: 0.8rem;
+    margin: 0 0 1.5rem 0;
     letter-spacing: 0.15rem;
   }
 
   p {
     font-size: 1.2rem;
+    line-height: 1.4rem;
     margin: 0;
 
     .skillset--show & {
@@ -67,9 +68,13 @@ $itemVerticalSpacing: 0.3rem;
     }
   }
   span {
+    display: flex;
     position: absolute;
-    top: -1rem;
+    height: 100%;
+    width: 4.8rem;
+
     img {
+      width: 100%;
       opacity: 0;
       animation: forwards 0.5s ease-in techimg;
       animation-delay: 1500ms;
@@ -96,8 +101,8 @@ $itemVerticalSpacing: 0.3rem;
     z-index: 2;
     position: absolute;
     top: -2rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
 
     border-radius: 50%;
     display: block;
@@ -135,11 +140,13 @@ $itemVerticalSpacing: 0.3rem;
     text-align: left;
 
     .checkmark {
-      left: -3rem;
+      left: -2rem;
     }
 
     span {
-      left: 17.5rem;
+      top: 50%;
+      right: 0;
+      transform: translateX(20%) translateY(-70%);
     }
   }
 
@@ -149,12 +156,13 @@ $itemVerticalSpacing: 0.3rem;
     text-align: right;
 
     .checkmark {
-      left: 20rem;
+      left: 19rem;
     }
 
     span {
-      left: 0rem;
-      transform: translateY(5%);
+      top: 50%;
+      left: 0;
+      transform: translateX(-20%) translateY(-70%);
     }
   }
 }

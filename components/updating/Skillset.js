@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const CharkmarkIcon = () => (
+const CharkmarkIcon = ({ border }) => (
   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
     <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
     <path
@@ -31,9 +31,9 @@ const Skillset = () => {
         <CharkmarkIcon />
         <h4>HTML</h4>
         <p>
-          Hypertext Markup Language
+          Hypertext Markup
           <br />
-          &nbsp;
+          Language
         </p>
         <span>
           <img src="img/tech/html-icon.svg" alt="html-icon" />
@@ -64,11 +64,11 @@ const Skillset = () => {
       </li>
       <li class="item">
         <CharkmarkIcon />
-        <h4>JS</h4>
+        <h4>🏆 &nbsp;JS </h4>
         <p>
-          Javascript.
+          Javascript
           <br />
-          King of the web dev
+          king of the web dev
         </p>
         <span>
           <img src="img/tech/js-icon.svg" alt="js-icon" />
@@ -77,7 +77,10 @@ const Skillset = () => {
       <li class="item">
         <CharkmarkIcon />
         <h4>Reactjs</h4>
-        <p>A JavaScript library for building user interfaces</p>
+        <p>
+          JavaScript library for
+          <br /> building user interfaces
+        </p>
         <span>
           <img src="img/tech/react-icon.svg" alt="react-icon" />
         </span>
@@ -86,8 +89,8 @@ const Skillset = () => {
         <CharkmarkIcon />
         <h4>Reduxjs</h4>
         <p>
-          A predictable state <br />
-          container for JavaScript
+          State container
+          <br /> for JavaScript
         </p>
         <span>
           <img src="img/tech/redux-icon.svg" alt="redux-icon" />
@@ -95,21 +98,69 @@ const Skillset = () => {
       </li>
       <li class="item">
         <CharkmarkIcon />
-        <h4>Graphql</h4>
+        <h4>Vuejs</h4>
         <p>
-          A query language for API <br />
-          &nbsp;
+          Progressive
+          <br /> JavaScript Framework
         </p>
         <span>
-          <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
+          <img src="img/tech/vuejs-icon.svg" alt="graphql-icon" />
+        </span>
+      </li>
+      <li class="item">
+        <CharkmarkIcon />
+        <h4>Express</h4>
+        <p>
+          Back-end framework <br />
+          for Node.js
+        </p>
+        <span>
+          <img
+            src="img/tech/express-icon.svg"
+            alt="nodejs-icon"
+            style={{
+              border: '1px solid #A4A4A4',
+              borderRadius: '50%',
+              width: '5.5rem',
+              height: '5.5rem',
+              padding: '0 .5rem',
+              marginLeft: '-.5rem'
+            }}
+          />
+        </span>
+      </li>
+      <li class="item">
+        <CharkmarkIcon />
+        <h4>PHP</h4>
+        <p>
+          General-purpose <br />
+          Scripting language
+          <br />
+        </p>
+        <span>
+          <img src="img/tech/php2-icon.svg" alt="graphql-icon" />
         </span>
       </li>
       <li class="item">
         <CharkmarkIcon />
         <h4>Nodejs</h4>
-        <p>Back-end JavaScript runtime environment</p>
+        <p>
+          Back-end JavaScript
+          <br /> runtime environment
+        </p>
         <span>
           <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li class="item">
+        <CharkmarkIcon />
+        <h4>Graphql</h4>
+        <p>
+          Query language for API <br />
+          &nbsp;
+        </p>
+        <span>
+          <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
         </span>
       </li>
     </ul>
