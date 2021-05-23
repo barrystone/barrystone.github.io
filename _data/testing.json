@@ -1,18 +1,20 @@
 [
   {
-    "name": "fish-game_unity-2D",
-    "class": "brick-font--mid"
-  },
-  {
-    "name": "imgur-photobook",
-    "class": "brick-font--mid"
-  },
-  {
-    "name": "youtube-browser",
-    "class": "brick-font--mid"
-  },
-  {
-    "name": "my_diary-php",
+    "name": "online-store",
     "class": "brick-font--big"
+  },
+  {
+    "name": "chatApp_react",
+    "class": "brick-font--big",
+    "image": "reactjs"
+  },
+  {
+    "name": "natours",
+    "class": "brick-font--big"
+  },
+
+  {
+    "name": "dev-social-network-community",
+    "class": "brick-font--small"
   }
 ]

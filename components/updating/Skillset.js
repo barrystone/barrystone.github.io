@@ -82,7 +82,7 @@ const Skillset = () => {
           <br /> building user interfaces
         </p>
         <span>
-          <img src="img/tech/react-icon.svg" alt="react-icon" />
+          <img src="img/tech/reactjs-icon.svg" alt="react-icon" />
         </span>
       </li>
       <li class="item">
@@ -93,7 +93,7 @@ const Skillset = () => {
           <br /> for JavaScript
         </p>
         <span>
-          <img src="img/tech/redux-icon.svg" alt="redux-icon" />
+          <img src="img/tech/reduxjs-icon.svg" alt="redux-icon" />
         </span>
       </li>
       <li class="item">

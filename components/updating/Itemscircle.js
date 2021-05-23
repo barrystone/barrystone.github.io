@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Itemscircle = ({ name, index }) => {
+const Itemscircle = ({ name, index, image }) => {
   const initialRepoLanguagesData = {
     unfetched: 100,
     null: 100,
@@ -71,6 +71,8 @@ const Itemscircle = ({ name, index }) => {
   const LauguagesPercentageStroke = (x) =>
     ((1 - LauguagesPercentage(x)) * circleRadius * 6.28).toString() + 'rem';
 
+  console.log('image', image);
+
   return (
     <div className={`itemscircle itemscircle-${index}`}>
       <ul className="itemscircle-wrapper">
@@ -84,10 +86,12 @@ const Itemscircle = ({ name, index }) => {
         </div>
         <div className="itemscircle__root itemscircle__root-open ">
           <img
-            src={`img/tech/${languageImg(
-              Object.keys(repoLanguages)[0].toLowerCase()
-            )}.svg`}
-            alt={Object.keys(repoLanguages)[0] + '-icon'}
+            src={`img/tech/${
+              image
+                ? image + '-icon'
+                : languageImg(Object.keys(repoLanguages)[0].toLowerCase())
+            }.svg`}
+            alt={(image ? image : Object.keys(repoLanguages)[0]) + '-icon'}
           />
         </div>
         {Object.keys(repoLanguages)

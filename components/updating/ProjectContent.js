@@ -2,9 +2,11 @@ import React from 'react';
 import Itemscircle from './Itemscircle';
 
 import ProjectShowingData from '../../_data/projectShowing.json';
+import testData from '../../_data/testing.json';
 
 const projectContent = () => {
-  const updatingData = ProjectShowingData;
+  // const updatingData = ProjectShowingData;
+  const updatingData = testData;
 
   return (
     <div className="brick">
@@ -19,7 +21,11 @@ const projectContent = () => {
               {e.name}
             </a>
 
-            <Itemscircle name={e.name} index={index} />
+            <Itemscircle
+              name={e.name}
+              image={e.image ? e.image : null}
+              index={index}
+            />
           </li>
         ))}
       </ul>
