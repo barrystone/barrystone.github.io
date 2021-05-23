@@ -144,9 +144,13 @@ body {
 .heading-tertiary {
   z-index: 3;
   display: inline-block;
-  padding: 1.5rem 2.2rem;
+  padding: 1.5rem 2.2rem 1.5rem 2.4rem;
   position: relative;
   letter-spacing: 0.3rem;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .heading-tertiary:after, .heading-tertiary:before {
@@ -171,6 +175,10 @@ body {
 .heading-tertiary:before {
   -webkit-transform: translate(-0.5px, -0.5px);
           transform: translate(-0.5px, -0.5px);
+}
+
+.heading-tertiary:hover {
+  padding: 1.3rem 2.4rem 1.5rem 2.2rem;
 }
 
 .heading-tertiary:hover:after {
@@ -690,10 +698,10 @@ body {
 
 .item .checkmark__check {
   opacity: 0;
+  visibility: hidden;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   stroke-dasharray: 48;
-  stroke-dashoffset: 48;
   -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
           animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
   -webkit-transition: all 1s;
@@ -702,6 +710,7 @@ body {
 
 .skillset--show .item .checkmark__check {
   opacity: 1;
+  visibility: visible;
 }
 
 .item:not(:last-child) {
@@ -1370,14 +1379,14 @@ body {
 
 .section-about__textbox-2 {
   position: absolute;
-  top: 3%;
-  left: 3%;
+  top: 3.5%;
+  left: 5%;
 }
 
 .section-about__skillsetbox {
   position: absolute;
   top: 8%;
-  left: 6%;
+  left: 7%;
   width: 50rem;
 }
 

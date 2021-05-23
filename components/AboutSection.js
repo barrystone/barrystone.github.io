@@ -12,7 +12,7 @@ const AboutSection = () => {
       </div>
       <div className="section-about__textbox-2">
         <h3 className="heading-tertiary paragraph-big--4" id="skill">
-          <span>我的技能</span>
+          <span>技能</span>
         </h3>
       </div>
       <section className="section-about__skillsetbox">
