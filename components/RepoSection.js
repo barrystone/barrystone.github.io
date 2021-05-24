@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 // import ReposDataTesting from '../_data/reposData_210524.json';
 import languageImg from '../utils/languageImg';
 
-const RepoSection = ({ reposData }) => {
+const RepoSection = ({ reposData: staticReposData }) => {
   // const reposData = ReposDataTesting;
-  // console.log('reposData', reposData);
   const sliderSettings = {
-    // dots: true,
     dots: false,
     infinite: true,
     speed: 2000,
@@ -17,27 +15,23 @@ const RepoSection = ({ reposData }) => {
     autoplay: true,
     autoplaySpeed: 4000
   };
-  // useEffect(() => {
-  //   repoSectionEffect();
-  // }, []);
 
-  // const repoSectionEffect = () => {
-  //   document
-  //     .getElementById('repoSection-heading')
-  //     .addEventListener('mouseover', () => {
-  //       document
-  //         .querySelector('.heading-secondary')
-  //         .classList.add('heading-secondary--repoSectionEffect');
-  //     });
+  const [reposData, setReposData] = useState([]);
 
-  //   document
-  //     .getElementById('repoSection-heading')
-  //     .addEventListener('mouseleave', () => {
-  //       document
-  //         .querySelector('.heading-secondary')
-  //         .classList.remove('heading-secondary--repoSectionEffect');
-  //     });
-  // };
+  const requestReposData = async () => {
+    try {
+      const res = await fetch('https://api.github.com/users/barrystone/repos');
+      const data = await res.json();
+
+      setReposData(data);
+    } catch (err) {
+      console.log(err.messages);
+    }
+  };
+  useEffect(() => {
+    setReposData(staticReposData);
+    requestReposData();
+  }, []);
 
   return (
     <section className="section section-repo">
