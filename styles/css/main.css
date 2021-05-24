@@ -1304,11 +1304,11 @@ body {
 
 .footer {
   background-color: #000;
-  height: 10rem;
+  height: 8rem;
 }
 
 .footer p {
-  font-size: 6rem;
+  font-size: 3rem;
   text-align: center;
   color: #fff;
 }

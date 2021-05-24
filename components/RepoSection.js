@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import Slider from 'react-slick';
-import ReposDataTesting from '../_data/reposData_210524.json';
+// import ReposDataTesting from '../_data/reposData_210524.json';
 import languageImg from '../utils/languageImg';
 
-const RepoSection = ({ reposData: testing }) => {
-  const reposData = ReposDataTesting;
+const RepoSection = ({ reposData }) => {
+  // const reposData = ReposDataTesting;
   // console.log('reposData', reposData);
   const sliderSettings = {
     // dots: true,
