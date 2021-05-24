@@ -1,7 +1,5 @@
 .arrow-big {
   display: inline-block;
-  height: 6rem;
-  width: 10rem;
   background-color: $color-secondary;
   color: $color-white;
   text-align: center;
@@ -18,7 +16,6 @@
   position: relative;
 
   p {
-    font-size: 2.5rem;
     font-weight: bold;
     font-family: $font-style-cartOne;
     display: inline-block;

@@ -26,7 +26,7 @@
     font-family: $font-style-anton;
 
     > li {
-      width: 45rem;
+      width: 48rem;
       height: 8.5rem;
       border-radius: 5rem;
       margin: 2rem 0;
@@ -35,6 +35,8 @@
       line-height: 4.5rem;
       transition: 0.3s;
       position: relative;
+      animation-delay: 0.5s;
+      animation: brickborder ease-out 5s infinite;
 
       > a {
         color: $color-black;
@@ -105,5 +107,17 @@
     li:hover li a {
       border: none !important;
     }
+  }
+}
+
+@keyframes brickborder {
+  0% {
+    border: 1.5px solid $color-grey;
+  }
+  50% {
+    border: 0 solid rgba($color-grey, 0.3);
+  }
+  100% {
+    border: 1.5px solid $color-grey;
   }
 }

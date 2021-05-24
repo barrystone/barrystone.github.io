@@ -217,8 +217,6 @@ body {
 
 .arrow-big {
   display: inline-block;
-  height: 6rem;
-  width: 10rem;
   background-color: #f89761;
   color: #fff;
   text-align: center;
@@ -228,7 +226,6 @@ body {
 }
 
 .arrow-big p {
-  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Carter One";
   display: inline-block;
@@ -521,7 +518,7 @@ body {
 }
 
 .brick > ul > li {
-  width: 45rem;
+  width: 48rem;
   height: 8.5rem;
   border-radius: 5rem;
   margin: 2rem 0;
@@ -532,6 +529,10 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: brickborder ease-out 5s infinite;
+          animation: brickborder ease-out 5s infinite;
 }
 
 .brick > ul > li > a {
@@ -599,6 +600,30 @@ body {
 
 .brick > ul li:hover li a {
   border: none !important;
+}
+
+@-webkit-keyframes brickborder {
+  0% {
+    border: 1.5px solid #7a7a7a;
+  }
+  50% {
+    border: 0 solid rgba(122, 122, 122, 0.3);
+  }
+  100% {
+    border: 1.5px solid #7a7a7a;
+  }
+}
+
+@keyframes brickborder {
+  0% {
+    border: 1.5px solid #7a7a7a;
+  }
+  50% {
+    border: 0 solid rgba(122, 122, 122, 0.3);
+  }
+  100% {
+    border: 1.5px solid #7a7a7a;
+  }
 }
 
 .skillset {
@@ -1418,6 +1443,8 @@ body {
 
 .section-about__screwbox {
   position: absolute;
+  -webkit-animation: screwsrotate2 forwards 0.5s ease-in;
+          animation: screwsrotate2 forwards 0.5s ease-in;
 }
 
 .section-about__screwbox--rotate {
@@ -1453,6 +1480,8 @@ body {
   position: absolute;
   top: 50%;
   left: 45%;
+  height: 6rem;
+  width: 10rem;
   opacity: 0;
   -webkit-animation: arrowmove forwards 1s ease-out;
           animation: arrowmove forwards 1s ease-out;
@@ -1463,6 +1492,7 @@ body {
 }
 
 .section-about__arrow-box a p::after {
+  font-size: 2.2rem;
   content: '作品';
 }
 
@@ -1473,7 +1503,7 @@ body {
 }
 
 .section-about__arrow-box a:hover p::after {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 300;
   content: 'Github';
 }
@@ -1481,7 +1511,7 @@ body {
 .section-about__textbox-1 {
   position: absolute;
   top: 8%;
-  right: 11%;
+  right: 10%;
   font-weight: bold;
   padding: 1.5rem 3rem;
   background-color: #e6e6e6;
@@ -1503,7 +1533,7 @@ body {
 .section-about__project-box {
   position: absolute;
   bottom: 4%;
-  right: 10%;
+  right: 9.5%;
 }
 
 .section-about__circlebox {
@@ -1577,6 +1607,20 @@ body {
   100% {
     -webkit-transform: rotateZ(90deg);
             transform: rotateZ(90deg);
+  }
+}
+
+@-webkit-keyframes screwsrotate2 {
+  100% {
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+  }
+}
+
+@keyframes screwsrotate2 {
+  100% {
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
   }
 }
 /*# sourceMappingURL=main.css.map */

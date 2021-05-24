@@ -16,6 +16,7 @@
 
     &__screwbox {
       position: absolute;
+      animation: screwsrotate2 forwards 0.5s ease-in;
 
       &--rotate {
         animation: screwsrotate forwards 0.5s ease-in;
@@ -46,12 +47,15 @@
         position: absolute;
         top: 50%;
         left: 45%;
+        height: 6rem;
+        width: 10rem;
         opacity: 0;
         animation: arrowmove forwards 1s ease-out;
         transition: all linear 0.3s;
         animation-delay: 2500ms;
         p {
           &::after {
+            font-size: 2.2rem;
             content: '作品';
           }
         }
@@ -61,7 +65,7 @@
           transform: translateX(5%);
           p {
             &::after {
-              font-size: 2.2rem;
+              font-size: 2rem;
               font-weight: 300;
               content: 'Github';
             }
@@ -74,7 +78,7 @@
       &-1 {
         position: absolute;
         top: 8%;
-        right: 11%;
+        right: 10%;
         font-weight: bold;
         padding: 1.5rem 3rem;
         background-color: $color-white-dark;
@@ -97,7 +101,7 @@
     &__project-box {
       position: absolute;
       bottom: 4%;
-      right: 10%;
+      right: 9.5%;
     }
 
     &__circlebox {
@@ -149,5 +153,11 @@
 @keyframes screwsrotate {
   100% {
     transform: rotateZ(90deg);
+  }
+}
+
+@keyframes screwsrotate2 {
+  100% {
+    transform: rotateZ(-90deg);
   }
 }
