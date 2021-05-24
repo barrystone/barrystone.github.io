@@ -62,7 +62,7 @@ const RepoSection = ({ reposData }) => {
                   <div className="repo-language">
                     <img
                       src={`img/tech/${languageImg(
-                        repo.language.toLowerCase()
+                        repo.language ? repo.language.toLowerCase() : 'coding'
                       )}.svg`}
                       alt={`${repo.language}`}
                     />
