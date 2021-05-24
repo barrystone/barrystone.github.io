@@ -42,11 +42,9 @@ export default function Home({ reposData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const repoApi = 'https://api.github.com/users/barrystone/repos';
-
   const reposData = await fetch(repoApi).then((res) => res.json());
-  // const reposData = null;
 
   return {
     props: {
