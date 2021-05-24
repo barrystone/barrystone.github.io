@@ -21,17 +21,27 @@ const NoteSection = () => {
 
   return (
     <section className="section section-note">
-      <div className="section-about__container">
-        {Object.keys(notes).map((e, idx) => (
-          <ul key={idx}>
-            <h3>{e}</h3>
-            {notes[e].map((f, index) => (
-              <li key={index}>
-                <a href={Object.values(f)}>{Object.keys(f)}</a>
-              </li>
-            ))}
-          </ul>
-        ))}
+      <div className="section-note__container">
+        {Object.keys(notes)
+          .splice(0, 8)
+          .map((e, idx) => (
+            <section className="section-note__topicbox">
+              <div className="notetree">
+                <div className="notetree__title">
+                  <p>{e}</p>
+                </div>
+                <ul key={idx}>
+                  {notes[e].map((f, index) => (
+                    <li key={index}>
+                      <a href={Object.values(f)} target="_blank">
+                        {Object.keys(f)}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          ))}
       </div>
     </section>
   );

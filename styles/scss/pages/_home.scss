@@ -127,6 +127,25 @@
 
   &-note {
     background-color: $color-white;
+
+    &__container {
+      position: relative;
+      top: 5%;
+      left: 2.5%;
+      width: 95%;
+      height: 90%;
+      border: 3px solid $color-secondary;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__topicbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // border: 1px solid black;
+    }
   }
 }
 
