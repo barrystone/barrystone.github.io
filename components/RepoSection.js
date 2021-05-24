@@ -25,7 +25,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
 
       setReposData(data);
     } catch (err) {
-      console.log(err.messages);
+      console.log('error: ', err);
     }
   };
   useEffect(() => {

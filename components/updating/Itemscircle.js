@@ -29,7 +29,6 @@ const Itemscircle = ({ name, index, image }) => {
     };
     fetchRepoLanguages();
     // console.log('repoLanguages', repoLanguages);
-    // console.log('most languages', Object.keys(repoLanguages)[0]);
   }, []);
 
   // !!circleRadius SHOULD BE SAME AS $circle-radius: variable  in _itermscircle.scss
@@ -42,8 +41,6 @@ const Itemscircle = ({ name, index, image }) => {
   // so iam decide reverse it(1 -percentage)
   const LauguagesPercentageStroke = (x) =>
     ((1 - LauguagesPercentage(x)) * circleRadius * 6.28).toString() + 'rem';
-
-  console.log('image', image);
 
   return (
     <div className={`itemscircle itemscircle-${index}`}>
