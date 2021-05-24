@@ -1,7 +1,7 @@
 .repo {
   &-wrapper {
-    height: 100%;
-    height: 35rem;
+    // height: 100%;
+    height: 38rem;
   }
   height: 100%;
   width: 80%;
@@ -31,6 +31,8 @@
       &:hover {
         transform: scale(1.05);
         text-shadow: none;
+        color: $color-white;
+        text-shadow: 0.05em 0.05em 0 $color-black;
       }
     }
   }
@@ -40,20 +42,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 5px solid $color-grey;
+    position: relative;
+
+    border: 2px solid rgba($color-grey, 0.2);
     .repo {
+      &-language {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        img {
+          border-radius: 50%;
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+
       &-description {
-        // background-image: linear-gradient(
-        //   to bottom right,
-        //   rgba($color-primary, 0.8),
-        //   rgba($color-white-dark, 1)
-        // );
-        // background-color: rgba($color-grey, 0.85);
         background-color: $color-primary;
         border-radius: 50%;
         height: 70%;
         width: 80%;
-        // box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
 
         box-shadow: rgba($color-white, 0.25) 0px 0.0625em 0.0625em,
           rgba($color-white-dark, 0.55) 0px 0.125em 0.5em,
@@ -75,33 +83,60 @@
 
         &--text {
           position: relative;
-          top: 5%;
+          top: 10%;
           p {
-            // color: $color-white;
             color: $color-black;
             font-size: 1.7rem;
-            // font-weight: 100;
             padding: 2rem 5rem;
-            // text-shadow: 0.1em 0.1em 0 $color-black;
-            // text-shadow: 0.1em 0.1em 0 $color-white;
             word-wrap: break-word;
           }
         }
       }
 
       &-star {
+        position: absolute;
+        left: 1.6rem;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         &--icon {
+          img {
+            height: 3.5rem;
+          }
         }
 
         &--number {
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          span {
+            font-size: 2rem;
+            margin-left: 0.1rem;
+          }
         }
       }
 
       &-fork {
+        position: absolute;
+        right: 1.2rem;
+        bottom: 1.3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         &--icon {
+          img {
+            height: 2.5rem;
+          }
         }
-
         &--number {
+          margin-left: 0.3rem;
+          font-size: 1.2rem;
+          span {
+            margin-left: -0.1rem;
+            font-size: 2rem;
+          }
         }
       }
     }

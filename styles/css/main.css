@@ -122,18 +122,26 @@ body {
 
 .heading-secondary {
   display: block;
-  height: 11rem;
+  height: 10rem;
   width: 40%;
-  margin: 6rem auto;
+  margin: 4.5rem auto 6rem;
   background-color: #f89761;
-  border: #7a7a7a 5px solid;
-  border-radius: 30px;
+  background-color: #fff;
+  text-shadow: 0.1em 0.1em 0 #f89761;
+  border-radius: 50px;
+  border: 5px solid #f89761;
   position: relative;
+}
+
+.heading-secondary section {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  border: 8px solid #f8874a;
 }
 
 .heading-secondary span {
   font-size: 4rem;
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -408,8 +416,7 @@ body {
 }
 
 .repo-wrapper {
-  height: 100%;
-  height: 35rem;
+  height: 38rem;
 }
 
 .repo__title {
@@ -437,6 +444,8 @@ body {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   text-shadow: none;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0 #000;
 }
 
 .repo__content {
@@ -452,6 +461,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  border: 2px solid rgba(122, 122, 122, 0.2);
+}
+
+.repo__content .repo-language {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.repo__content .repo-language img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
 }
 
 .repo__content .repo-description {
@@ -480,7 +503,7 @@ body {
 
 .repo__content .repo-description--text {
   position: relative;
-  top: 5%;
+  top: 10%;
 }
 
 .repo__content .repo-description--text p {
@@ -488,6 +511,72 @@ body {
   font-size: 1.7rem;
   padding: 2rem 5rem;
   word-wrap: break-word;
+}
+
+.repo__content .repo-star {
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repo__content .repo-star--icon img {
+  height: 3.5rem;
+}
+
+.repo__content .repo-star--number {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.repo__content .repo-star--number span {
+  font-size: 2rem;
+  margin-left: 0.1rem;
+}
+
+.repo__content .repo-fork {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.repo__content .repo-fork--icon img {
+  height: 2.5rem;
+}
+
+.repo__content .repo-fork--number {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.repo__content .repo-fork--number span {
+  margin-left: -0.1rem;
+  font-size: 2rem;
 }
 
 .brick-font--small {
@@ -561,7 +650,6 @@ body {
           transform: perspective(600px) rotateY(30deg);
   padding-left: 7%;
   background: #fff;
-  border: 5px solid #f89761;
 }
 
 .brick > ul > li:nth-child(odd) > a {
@@ -586,7 +674,6 @@ body {
   padding-right: 7%;
   background: -webkit-gradient(linear, right top, left top, from(#f89761), to(#f8874a));
   background: linear-gradient(to left, #f89761, #f8874a);
-  border: 5px solid #fff;
 }
 
 .brick > ul > li:nth-child(even) > a {

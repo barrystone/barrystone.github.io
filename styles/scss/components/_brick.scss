@@ -36,6 +36,7 @@
       transition: 0.3s;
       position: relative;
       animation-delay: 0.5s;
+
       animation: brickborder ease-out 5s infinite;
 
       > a {
@@ -64,7 +65,7 @@
           padding-left: 7%;
           background: $color-white;
 
-          border: 5px solid $color-secondary;
+          // border: 5px solid $color-secondary !important;
         }
 
         > a {
@@ -90,7 +91,7 @@
             $color-secondary-dark
           );
 
-          border: 5px solid $color-white;
+          // border: 5px solid $color-white !important;
         }
 
         > a {

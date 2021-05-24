@@ -86,19 +86,37 @@ body {
 
 .heading-secondary {
   display: block;
-  height: 11rem;
+  height: 10rem;
   width: 40%;
-  margin: 6rem auto;
+  margin: 4.5rem auto 6rem;
   background-color: $color-secondary;
-  border: $color-grey 5px solid;
-  // text-shadow: 0.1em 0.1em 0 $color-black;
-  border-radius: 30px;
+  background-color: $color-white;
+  text-shadow: 0.1em 0.1em 0 $color-secondary;
+  border-radius: 50px;
+  border: 5px solid $color-secondary;
+
+  section {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 8px solid $color-secondary-dark;
+    // transition: background 0.1s ease-in;
+    // &:hover {
+    //   background-color: $color-black;
+    //   color: $color-white;
+    //   text-shadow: none;
+    //   border: 5px solid $color-primary;
+    //   transform: scale(1.1);
+    // }
+  }
+  &--repoSectionEffect {
+  }
 
   position: relative;
 
   span {
     font-size: $font-size-big-3;
-    color: $color-white;
+    // color: $color-white;
 
     position: absolute;
     top: 50%;
