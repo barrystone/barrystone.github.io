@@ -44,6 +44,13 @@ const Header = () => {
           </div>
           {/* <div className='menu'> </div> */}
         </div>
+        <div className="header__info">
+          <div className="header__info-textbox-1">#</div>
+          <div className="header__info-textbox-2">
+            <p>網站還在開發中...</p>
+            <p>更多功能敬請期待！</p>
+          </div>
+        </div>
       </div>
     </div>
   );

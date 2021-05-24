@@ -13,6 +13,8 @@
   background-position: right;
   // background-position: 180% 0%;
 
+  position: relative;
+
   &__left {
     height: 100vh;
     background-color: $color-primary;
@@ -63,5 +65,31 @@
     position: absolute;
     bottom: 7%;
     left: 5%;
+  }
+
+  &__info {
+    // position: absolute;
+    // z-index: 10;
+
+    color: $color-white;
+    &-textbox {
+      &-1 {
+        position: absolute;
+        right: 15rem;
+        top: 0.5rem;
+        font-size: 22rem;
+      }
+
+      &-2 {
+        background-color: rgba($color-primary, 0.6);
+        position: absolute;
+        border-radius: 30px;
+        right: 3rem;
+        bottom: 5rem;
+        font-size: 4rem;
+        padding: 2rem 2rem;
+      }
+    }
+    // background-color: aqua;
   }
 }
