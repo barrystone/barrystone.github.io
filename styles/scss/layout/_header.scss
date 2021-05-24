@@ -81,13 +81,17 @@
       }
 
       &-2 {
-        background-color: rgba($color-primary, 0.6);
+        background-color: rgba($color-primary, 0.3);
         position: absolute;
         border-radius: 30px;
         right: 3rem;
         bottom: 5rem;
         font-size: 4rem;
         padding: 2rem 2rem;
+        transition: all 0.5s linear;
+        &:hover {
+          background-color: rgba($color-primary, 0.2);
+        }
       }
     }
     // background-color: aqua;
