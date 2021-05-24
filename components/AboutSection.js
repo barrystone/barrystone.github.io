@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import ProjectContent from '../components/updating/ProjectContent';
 import Skillset from './updating/Skillset';
 
 const AboutSection = () => {
+  useEffect(() => {
+    screwsRotate();
+  }, []);
+
+  const screwsRotate = () => {
+    const screws = document.querySelectorAll('.section-about__screwbox');
+    document.getElementById('work-arrow').addEventListener('mouseover', () => {
+      for (let screw of screws) {
+        screw.classList.add('section-about__screwbox--rotate');
+      }
+    });
+    document.getElementById('work-arrow').addEventListener('mouseleave', () => {
+      for (let screw of screws) {
+        screw.classList.remove('section-about__screwbox--rotate');
+      }
+    });
+  };
   return (
     <section className="section section-about">
       <div className="section-about__container">
@@ -28,10 +45,7 @@ const AboutSection = () => {
             <span>我的技能樹</span>
           </h3>
         </div>
-        <section className="section-about__skillsetbox">
-          <Skillset />
-        </section>
-        <div className="section-about__arrow-box">
+        <div className="section-about__arrow-box" id="work-arrow">
           <a
             href="https://github.com/barrystone?tab=repositories"
             target="_blank"
@@ -41,6 +55,9 @@ const AboutSection = () => {
             <p></p>
           </a>
         </div>
+        <section className="section-about__skillsetbox">
+          <Skillset />
+        </section>
         <div className="section-about__circlebox">
           <div className="circle-spinner">
             <img src="./img/myicon_mobile.png" alt="myicon" />

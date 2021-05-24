@@ -1420,6 +1420,11 @@ body {
   position: absolute;
 }
 
+.section-about__screwbox--rotate {
+  -webkit-animation: screwsrotate forwards 0.5s ease-in;
+          animation: screwsrotate forwards 0.5s ease-in;
+}
+
 .section-about__screwbox img {
   height: 3rem;
 }
@@ -1558,6 +1563,20 @@ body {
   100% {
     opacity: 1;
     left: 45%;
+  }
+}
+
+@-webkit-keyframes screwsrotate {
+  100% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+}
+
+@keyframes screwsrotate {
+  100% {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,6 +16,10 @@
 
     &__screwbox {
       position: absolute;
+
+      &--rotate {
+        animation: screwsrotate forwards 0.5s ease-in;
+      }
       img {
         height: 3rem;
       }
@@ -139,5 +143,11 @@
   100% {
     opacity: 1;
     left: 45%;
+  }
+}
+
+@keyframes screwsrotate {
+  100% {
+    transform: rotateZ(90deg);
   }
 }
