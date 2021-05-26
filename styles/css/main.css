@@ -837,6 +837,9 @@ body {
   margin: 10% auto;
   -webkit-box-shadow: inset 0px 0px 0px #f89761;
           box-shadow: inset 0px 0px 0px #f89761;
+}
+
+.skillset--show .item .checkmark {
   -webkit-animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
           animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 }
@@ -847,15 +850,15 @@ body {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   stroke-dasharray: 48;
-  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .skillset--show .item .checkmark__check {
   opacity: 1;
   visibility: visible;
+  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .item:not(:last-child) {

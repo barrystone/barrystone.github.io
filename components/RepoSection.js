@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-// import ReposDataTesting from '../_data/reposData_210524.json';
 import languageImg from '../utils/languageImg';
 
+// import ReposDataTesting from '../_data/reposData_210524.json';
+
 const RepoSection = ({ reposData: staticReposData }) => {
-  // const reposData = ReposDataTesting;
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -22,14 +22,20 @@ const RepoSection = ({ reposData: staticReposData }) => {
     try {
       const res = await fetch('https://api.github.com/users/barrystone/repos');
       const data = await res.json();
-
-      setReposData(data);
+      if (res.status == 200) {
+        setReposData(data);
+      } else {
+        res.status == 403
+          ? console.log('API limit !')
+          : console.log('API problem not 403');
+      }
     } catch (err) {
       console.log('error: ', err);
     }
   };
   useEffect(() => {
     setReposData(staticReposData);
+    // setReposData(ReposDataTesting);
     requestReposData();
   }, []);
 

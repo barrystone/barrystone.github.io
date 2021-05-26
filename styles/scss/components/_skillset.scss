@@ -111,8 +111,11 @@ $itemVerticalSpacing: 0.3rem;
     stroke-miterlimit: 10;
     margin: 10% auto;
     box-shadow: inset 0px 0px 0px $color-secondary;
-    animation: fill 0.4s ease-in-out 0.4s forwards,
-      scale 0.3s ease-in-out 0.9s both;
+
+    .skillset--show & {
+      animation: fill 0.4s ease-in-out 0.4s forwards,
+        scale 0.3s ease-in-out 0.9s both;
+    }
   }
 
   .checkmark__check {
@@ -121,12 +124,12 @@ $itemVerticalSpacing: 0.3rem;
     transform-origin: 50% 50%;
     stroke-dasharray: 48;
     // stroke-dashoffset: 48;
-    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
-    transition: all 1s;
 
     .skillset--show & {
       opacity: 1;
       visibility: visible;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+      transition: all 1s;
     }
   }
 

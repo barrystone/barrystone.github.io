@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const CharkmarkIcon = ({ border }) => (
   <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
@@ -12,19 +12,6 @@ const CharkmarkIcon = ({ border }) => (
 );
 
 const Skillset = () => {
-  useEffect(() => {
-    console.clear();
-
-    window.requestAnimationFrame(function () {
-      document.querySelector('.skillset').classList.add('skillset--show');
-    });
-    document.getElementById('skill').addEventListener('mouseover', () => {
-      document.querySelector('.skillset').classList.remove('skillset--show');
-    });
-    document.getElementById('skill').addEventListener('mouseleave', () => {
-      document.querySelector('.skillset').classList.add('skillset--show');
-    });
-  }, []);
   return (
     <ul class="skillset">
       <li class="item">

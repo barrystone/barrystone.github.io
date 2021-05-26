@@ -1,12 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import ProjectContent from '../components/updating/ProjectContent';
 import Skillset from './updating/Skillset';
 
 const AboutSection = () => {
   useEffect(() => {
+    aboutAnimation();
     screwsRotate();
   }, []);
+
+  const aboutAnimation = () => {
+    const skillsetClasslist = document.querySelector('.skillset').classList;
+
+    const enterAnimation = () => {
+      const aboutElement = document
+        .getElementById('aboutme')
+        .getBoundingClientRect();
+      if (
+        aboutElement.top >= 0 &&
+        aboutElement.top <= window.innerHeight - aboutElement.height
+      ) {
+        window.requestAnimationFrame(() => {
+          skillsetClasslist.add('skillset--show');
+        });
+
+        window.removeEventListener('scroll', enterAnimation);
+      }
+    };
+    window.addEventListener('scroll', enterAnimation);
+
+    document.getElementById('skill').addEventListener('mouseleave', () => {
+      window.requestAnimationFrame(() => {
+        skillsetClasslist.add('skillset--show');
+      });
+    });
+    document.getElementById('skill').addEventListener('mouseover', () => {
+      skillsetClasslist.remove('skillset--show');
+    });
+  };
 
   const screwsRotate = () => {
     const screws = document.querySelectorAll('.section-about__screwbox');
@@ -21,8 +52,9 @@ const AboutSection = () => {
       }
     });
   };
+
   return (
-    <section className="section section-about">
+    <section className="section section-about" id="aboutme">
       <div className="section-about__container">
         <div className="section-about__screwbox section-about__screwbox-1">
           <img src="/img/design/screw-icon.svg" alt="screw-icon" />
