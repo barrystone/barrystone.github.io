@@ -10,7 +10,9 @@ const NoteSection = () => {
 
   const fetchMd = async () => {
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_GITHUB_HACKMDREADME_API);
+      const res = await fetch(
+        'https://raw.githubusercontent.com/barrystone/hackmd_public-notes/master/README.md'
+      );
       const tdata = await res.text();
 
       setNotes(analyzeReadme(tdata));
