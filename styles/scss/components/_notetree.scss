@@ -1,35 +1,65 @@
 .notetree {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  //   height: 95%;
+  height: 28rem;
+  //   height: 25rem;
   //   background-color: lightblue;
+  //   border: 1px solid $color-black;
+
   &__title {
-    background-color: $color-primary;
+    height: 5.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color-primary, 1);
+    background-color: rgba($color-black, 0.8);
+
     border: 8px solid $color-secondary;
+    margin-top: 3rem;
     p {
+      color: $color-white;
+      //   text-shadow: 0.1em 0.1em 0 $color-;
+      font-size: 2.2rem;
       text-align: center;
-      padding: 0.2rem 0;
-      font-size: 2.5rem;
+      padding: 0.2rem 0.5rem;
+    }
+    &-font {
+      &--small {
+        p {
+          font-size: 1.8rem;
+          line-height: 1.5rem;
+        }
+      }
     }
   }
-  > ul {
-    &::before {
-      content: '';
-      position: relative;
+
+  &__li {
+    &-font--small {
+      a {
+        font-size: 1.5rem !important;
+      }
     }
-    list-style: none;
-    // background-color: lightgreen;
-    margin-top: 1rem;
+  }
+
+  ul {
+    margin-top: 1.5rem;
+
+    list-style-image: url(../../public/img/design/note-icon.png);
+    // list-style: square inside url(../../public/img/design/note-icon.svg);
     > li {
       float: right;
       width: 80%;
+      margin-bottom: 1.2rem;
       a {
-        line-height: 3rem;
-        font-size: 1.8rem;
+        line-height: 2rem;
+        font-size: 1.7rem;
         text-decoration: none;
         color: $color-black;
+        text-decoration: underline $color-white 3px;
+        transition: text-decoration 0.2s;
+
         &:hover {
-          font-size: 1.9rem;
-          text-decoration: underline $color-secondary 3px;
+          text-decoration: underline $color-secondary-light 3px;
         }
       }
     }

@@ -1306,47 +1306,70 @@ body {
 }
 
 .notetree {
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 28rem;
 }
 
 .notetree__title {
+  height: 5.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #c4c4c4;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 8px solid #f89761;
+  margin-top: 3rem;
 }
 
 .notetree__title p {
+  color: #fff;
+  font-size: 2.2rem;
   text-align: center;
-  padding: 0.2rem 0;
-  font-size: 2.5rem;
+  padding: 0.2rem 0.5rem;
 }
 
-.notetree > ul {
-  list-style: none;
-  margin-top: 1rem;
+.notetree__title-font--small p {
+  font-size: 1.8rem;
+  line-height: 1.5rem;
 }
 
-.notetree > ul::before {
-  content: '';
-  position: relative;
+.notetree__li-font--small a {
+  font-size: 1.5rem !important;
 }
 
-.notetree > ul > li {
+.notetree ul {
+  margin-top: 1.5rem;
+  list-style-image: url(../../public/img/design/note-icon.png);
+}
+
+.notetree ul > li {
   float: right;
   width: 80%;
+  margin-bottom: 1.2rem;
 }
 
-.notetree > ul > li a {
-  line-height: 3rem;
-  font-size: 1.8rem;
+.notetree ul > li a {
+  line-height: 2rem;
+  font-size: 1.7rem;
   text-decoration: none;
   color: #000;
+  -webkit-text-decoration: underline #fff 3px;
+          text-decoration: underline #fff 3px;
+  -webkit-transition: -webkit-text-decoration 0.2s;
+  transition: -webkit-text-decoration 0.2s;
+  transition: text-decoration 0.2s;
+  transition: text-decoration 0.2s, -webkit-text-decoration 0.2s;
 }
 
-.notetree > ul > li a:hover {
-  font-size: 1.9rem;
-  -webkit-text-decoration: underline #f89761 3px;
-          text-decoration: underline #f89761 3px;
+.notetree ul > li a:hover {
+  -webkit-text-decoration: underline #ffc4a4 3px;
+          text-decoration: underline #ffc4a4 3px;
 }
 
 .footer {
@@ -1731,8 +1754,8 @@ body {
   border: 3px solid #f89761;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
 }
