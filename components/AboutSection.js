@@ -14,11 +14,12 @@ const AboutSection = () => {
 
     const enterAnimation = () => {
       const aboutElement = document
-        .getElementById('aboutme')
+        .getElementById('aboutSection')
         .getBoundingClientRect();
       if (
-        aboutElement.top >= 0 &&
-        aboutElement.top <= window.innerHeight - aboutElement.height
+        aboutElement.top >= 0 - aboutElement.height / 4 &&
+        aboutElement.top <=
+          window.innerHeight - aboutElement.height + aboutElement.height / 4
       ) {
         window.requestAnimationFrame(() => {
           skillsetClasslist.add('skillset--show');
@@ -54,7 +55,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="section section-about" id="aboutme">
+    <section className="section section-about" id="aboutSection">
       <div className="section-about__container">
         <div className="section-about__screwbox section-about__screwbox-1">
           <img src="/img/design/screw-icon.svg" alt="screw-icon" />
