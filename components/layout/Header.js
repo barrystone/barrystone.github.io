@@ -5,6 +5,12 @@ const Header = () => {
   return (
     <div>
       <div className="header">
+        <div className="header-animation header-animation--1"></div>
+        <div className="header-animation header-animation--2 "></div>
+        <div className="header-animation header-animation--3"></div>
+        <div className="header-animation header-animation--4"></div>
+        <div className="header-animation header-animation--5"></div>
+        <div className="header-animation header-animation--6"></div>
         <h1 className="heading-primary--main " text-shadow="barrystone">
           barrystone
         </h1>

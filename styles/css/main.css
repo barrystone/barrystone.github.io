@@ -1393,6 +1393,50 @@ body {
   position: relative;
 }
 
+.header-animation {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.02)), to(rgba(255, 255, 255, 0.04)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+  background-size: cover;
+  background-position: right;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.header-animation--1 {
+  -webkit-animation: headerani1 5s linear infinite;
+          animation: headerani1 5s linear infinite;
+}
+
+.header-animation--2 {
+  -webkit-animation: headerani2 10s linear infinite;
+          animation: headerani2 10s linear infinite;
+}
+
+.header-animation--3 {
+  -webkit-animation: headerani3 5s linear infinite;
+          animation: headerani3 5s linear infinite;
+}
+
+.header-animation--4 {
+  -webkit-animation: headerani4 10s linear infinite;
+          animation: headerani4 10s linear infinite;
+}
+
+.header-animation--5 {
+  -webkit-animation: headerani5 5s linear infinite;
+          animation: headerani5 5s linear infinite;
+}
+
+.header-animation--6 {
+  -webkit-animation: headerani6 10s linear infinite;
+          animation: headerani6 10s linear infinite;
+}
+
 .header__left {
   height: 100vh;
   background-color: #c4c4c4;
@@ -1438,7 +1482,7 @@ body {
   position: absolute;
   right: 13rem;
   top: 0;
-  font-size: 16rem;
+  font-size: 13rem;
 }
 
 .header__info-textbox-2 {
@@ -1455,6 +1499,138 @@ body {
 
 .header__info-textbox-2:hover {
   background-color: rgba(196, 196, 196, 0.2);
+}
+
+@-webkit-keyframes headerani1 {
+  0% {
+    -webkit-clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50%);
+            clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@keyframes headerani1 {
+  0% {
+    -webkit-clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50%);
+            clip-path: polygon(0% -50%, 50% -50%, -50% 50%, -100% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@-webkit-keyframes headerani2 {
+  0% {
+    -webkit-clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55%);
+            clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@keyframes headerani2 {
+  0% {
+    -webkit-clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55%);
+            clip-path: polygon(-5% -55%, 55% -45%, -45% 55%, -95% 55%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@-webkit-keyframes headerani3 {
+  0% {
+    -webkit-clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);
+            clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
+}
+
+@keyframes headerani3 {
+  0% {
+    -webkit-clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);
+            clip-path: polygon(50% -50%, 100% -50%, 200% 50%, 150% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
+}
+
+@-webkit-keyframes headerani4 {
+  0% {
+    -webkit-clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);
+            clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
+}
+
+@keyframes headerani4 {
+  0% {
+    -webkit-clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);
+            clip-path: polygon(40% -60%, 100% -50%, 190% 40%, 150% 50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
+}
+
+@-webkit-keyframes headerani5 {
+  0% {
+    -webkit-clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);
+            clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@keyframes headerani5 {
+  0% {
+    -webkit-clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);
+            clip-path: polygon(-100% -150%, -50% -150%, -150% -50%, -200% -50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+            clip-path: polygon(150% 50%, 200% 50%, 100% 150%, 50% 150%);
+  }
+}
+
+@-webkit-keyframes headerani6 {
+  0% {
+    -webkit-clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);
+            clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
+}
+
+@keyframes headerani6 {
+  0% {
+    -webkit-clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);
+            clip-path: polygon(150% -150%, 200% -150%, 300% -50%, 250% -50%);
+  }
+  100% {
+    -webkit-clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+            clip-path: polygon(-100% 50%, -50% 50%, 50% 150%, 0% 150%);
+  }
 }
 
 .navigation__checkbox {
