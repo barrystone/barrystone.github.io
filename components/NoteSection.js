@@ -25,7 +25,7 @@ const NoteSection = () => {
         {Object.keys(notes)
           .splice(0, 8)
           .map((e, idx) => (
-            <section className="section-note__topicbox">
+            <section className="section-note__topicbox" key={idx}>
               <div className="notetree">
                 <div className="notetree__title">
                   <p>{e}</p>

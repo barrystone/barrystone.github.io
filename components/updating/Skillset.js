@@ -1,10 +1,14 @@
 import React from 'react';
 
 const CharkmarkIcon = ({ border }) => (
-  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+  <svg
+    className="checkmark"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 52 52"
+  >
+    <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
     <path
-      class="checkmark__check"
+      className="checkmark__check"
       fill="none"
       d="M14.1 27.2l7.1 7.2 16.7-16.8"
     />
@@ -13,8 +17,8 @@ const CharkmarkIcon = ({ border }) => (
 
 const Skillset = () => {
   return (
-    <ul class="skillset">
-      <li class="item">
+    <ul className="skillset">
+      <li className="item">
         <CharkmarkIcon />
         <h4>HTML</h4>
         <p>
@@ -26,7 +30,7 @@ const Skillset = () => {
           <img src="img/tech/html-icon.svg" alt="html-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>CSS</h4>
         <p>
@@ -38,7 +42,7 @@ const Skillset = () => {
           <img src="img/tech/css-icon.svg" alt="css-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>SCSS</h4>
         <p>
@@ -49,7 +53,7 @@ const Skillset = () => {
           <img src="img/tech/sass-icon.svg" alt="sass-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>🏆 &nbsp;JS </h4>
         <p>
@@ -61,7 +65,7 @@ const Skillset = () => {
           <img src="img/tech/js-icon.svg" alt="js-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Reactjs</h4>
         <p>
@@ -72,7 +76,7 @@ const Skillset = () => {
           <img src="img/tech/reactjs-icon.svg" alt="react-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Reduxjs</h4>
         <p>
@@ -83,7 +87,7 @@ const Skillset = () => {
           <img src="img/tech/reduxjs-icon.svg" alt="redux-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Vuejs</h4>
         <p>
@@ -94,7 +98,7 @@ const Skillset = () => {
           <img src="img/tech/vuejs-icon.svg" alt="graphql-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Express</h4>
         <p>
@@ -116,7 +120,7 @@ const Skillset = () => {
           />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>PHP</h4>
         <p>
@@ -128,7 +132,7 @@ const Skillset = () => {
           <img src="img/tech/php2-icon.svg" alt="graphql-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Nodejs</h4>
         <p>
@@ -139,7 +143,7 @@ const Skillset = () => {
           <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
         </span>
       </li>
-      <li class="item">
+      <li className="item">
         <CharkmarkIcon />
         <h4>Graphql</h4>
         <p>

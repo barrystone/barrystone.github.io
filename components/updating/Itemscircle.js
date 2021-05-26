@@ -66,7 +66,10 @@ const Itemscircle = ({ name, index, image }) => {
         {Object.keys(repoLanguages)
           .slice(0, 3)
           .map((x, index) => (
-            <li className={`itemscircle__item itemscircle__item--${index}`}>
+            <li
+              className={`itemscircle__item itemscircle__item--${index}`}
+              key={index}
+            >
               <div className="itemscircle__item-stroke">
                 <svg>
                   <circle

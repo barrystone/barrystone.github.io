@@ -12,7 +12,7 @@ const projectContent = () => {
     <div className="brick">
       <ul>
         {updatingData.map((e, index) => (
-          <li>
+          <li key={index}>
             <a
               href={`https://github.com/barrystone/` + e.name}
               className={e.class}
