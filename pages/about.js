@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const about = () => {
   return (
@@ -6,9 +7,11 @@ const about = () => {
       <div className="about">
         <header className="about__top">
           <div className="about__top-buttonsbox">
-            <a className="btn-tertiary" href="">
-              首頁
-            </a>
+            <Link href="/" as={process.env.BACKEND_URL + '/'}>
+              <a className="btn-tertiary" href="">
+                首頁
+              </a>
+            </Link>
             <div className="about__top-pagename">
               <span>自我介紹</span>
             </div>
@@ -16,18 +19,23 @@ const about = () => {
         </header>
         <main className="about__mid">
           <div className="about__mid_left">
-            <div className="about__mid_left-textbox1">
-              <p>I am Web Developer</p>
+            <div className="about__mid_left-textbox--1">
+              <p>I am a Web Developer</p>
             </div>
             <div className="about__mid_left-buttonbox">
-              <a href="" className="btn-show">
-                我的技能
-              </a>
+              <Link
+                href="/#aboutSection"
+                as={process.env.BACKEND_URL + '/#aboutSection'}
+              >
+                <a href="" className="btn-show">
+                  我的技能
+                </a>
+              </Link>
             </div>
-            <div className="about__mid_left-textbox2">
+            <div className="about__mid_left-textbox--2">
               <p>Loving coding</p>
             </div>
-            <div className="about__mid_left-textbox3">
+            <div className="about__mid_left-textbox--3">
               <p>and enjoy in the process</p>
             </div>
             <figure className="about__mid_left-codetime">
@@ -48,9 +56,28 @@ const about = () => {
                   and <br />
                   Making
                 </p>
-                <div className="infocard__top-icons">
-                  <img src="/img/social/github-icon.svg" alt="github-icon" />
-                  <img src="/img/social/slack-icon.svg" alt="slack-icon" />
+                <div className="infocard__top-iconsbox">
+                  <a href="https://hackmd.io/@barrystone" target="_black">
+                    <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
+                      <img src="/img/design/note-icon.svg" alt="note-icon" />
+                      <figcaption>HackMD</figcaption>
+                    </figure>
+                  </a>
+                  <a href="https://github.com/barrystone" target="_black">
+                    <figure className="infocard__top-iconsbox-icon">
+                      <img
+                        src="/img/social/github-icon.svg"
+                        alt="github-icon"
+                      />
+                      <figcaption>Github</figcaption>
+                    </figure>
+                  </a>
+                  <a href="http://frontendmentor.slack.com/" target="_black">
+                    <figure className="infocard__top-iconsbox-icon">
+                      <img src="/img/social/slack-icon.svg" alt="slack-icon" />
+                      <figcaption>Slack</figcaption>
+                    </figure>
+                  </a>
                 </div>
               </div>
               <div className="infocard__mid">
