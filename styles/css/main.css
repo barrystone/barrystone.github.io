@@ -1372,6 +1372,122 @@ body {
           text-decoration: underline #ffc4a4 3px;
 }
 
+.infocard {
+  border: 20px #fff solid;
+  border-radius: 20px;
+  width: 45rem;
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.infocard-avatar {
+  position: absolute;
+  top: 6rem;
+  right: 4rem;
+}
+
+.infocard-avatar img {
+  width: 13rem;
+  border: #c4c4c4 8px solid;
+  border-radius: 20px;
+}
+
+.infocard__top {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 0 0 5rem;
+}
+
+.infocard__top p {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 1.8rem;
+}
+
+.infocard__top-icons {
+  width: 10rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.infocard__top-icons img {
+  width: 2.8rem;
+}
+
+.infocard__mid {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border-top: 5px #c4c4c4 solid;
+  border-bottom: 5px #c4c4c4 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infocard__mid > ul {
+  list-style: none;
+}
+
+.infocard__mid > ul li {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
+.infocard__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infocard__bottom-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.infocard__bottom-icons img {
+  width: 3rem;
+}
+
 .footer {
   background-color: #000;
   height: 8rem;
@@ -2010,5 +2126,72 @@ body {
     -webkit-transform: rotateZ(-90deg);
             transform: rotateZ(-90deg);
   }
+}
+
+#aboutpage .about {
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#aboutpage .about__top {
+  -webkit-box-flex: 1.4;
+      -ms-flex: 1.4;
+          flex: 1.4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #c4c4c4), color-stop(50%, #fff));
+  background: linear-gradient(to bottom, #c4c4c4 50%, #fff 50%);
+}
+
+#aboutpage .about__mid {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #000;
+}
+
+#aboutpage .about__mid_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#aboutpage .about__mid_left-codetime img {
+  width: 50rem;
+}
+
+#aboutpage .about__mid_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aboutpage .about__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f89761;
 }
 /*# sourceMappingURL=main.css.map */
