@@ -326,6 +326,41 @@ body {
           transform: translateX(2%);
 }
 
+.btn-tertiary {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border-top: 5px solid #f89761;
+  border-left: 5px solid #f89761;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 10px 5px 10px -3px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 10px 5px 10px -3px;
+}
+
+.btn-show {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  border: 5px solid #f89761;
+  -webkit-box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.2) 4px 8px 0px;
+          box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.2) 4px 8px 0px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-show:hover {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #000;
+  -webkit-box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.8) 0px 0px 0px;
+          box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.8) 0px 0px 0px;
+}
+
 .project__title {
   background-color: #f89761;
   height: 8rem;
@@ -1375,7 +1410,7 @@ body {
 .infocard {
   border: 20px #fff solid;
   border-radius: 20px;
-  width: 45rem;
+  width: 50rem;
   height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1390,11 +1425,11 @@ body {
 .infocard-avatar {
   position: absolute;
   top: 6rem;
-  right: 4rem;
+  right: 3rem;
 }
 
 .infocard-avatar img {
-  width: 13rem;
+  width: 15rem;
   border: #c4c4c4 8px solid;
   border-radius: 20px;
 }
@@ -1486,6 +1521,11 @@ body {
 .infocard__mid > ul li {
   font-size: 2.5rem;
   line-height: 4rem;
+}
+
+.infocard__mid > ul li span {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .infocard__bottom {
@@ -2169,11 +2209,55 @@ body {
 }
 
 #aboutpage .about__top {
-  -webkit-box-flex: 1.4;
-      -ms-flex: 1.4;
-          flex: 1.4;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #c4c4c4), color-stop(50%, #fff));
   background: linear-gradient(to bottom, #c4c4c4 50%, #fff 50%);
+}
+
+#aboutpage .about__top-buttonsbox {
+  position: absolute;
+  left: 4rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#aboutpage .about__top-buttonsbox:hover {
+  -webkit-transform: translateX(-2%);
+          transform: translateX(-2%);
+}
+
+#aboutpage .about__top-pagename {
+  color: #fff;
+  background-color: #f89761;
+  width: 25rem;
+  height: 65%;
+  position: absolute;
+  right: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.3rem;
+  font-weight: bold;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  text-shadow: 0.02em 0.02em 0 #000;
 }
 
 #aboutpage .about__mid {
@@ -2208,20 +2292,38 @@ body {
 }
 
 #aboutpage .about__mid_left-textbox--1 {
-  font-size: 3.54rem;
+  font-size: 3.6rem;
   position: absolute;
-  left: 3rem;
+  left: 4rem;
   top: 5rem;
 }
 
-#aboutpage .about__mid_left-buttonbox a {
-  color: #f89761;
+#aboutpage .about__mid_left-textbox--2 {
+  font-size: 2.3rem;
+  position: absolute;
+  left: 10rem;
+  top: 16rem;
+}
+
+#aboutpage .about__mid_left-textbox--3 {
+  font-size: 2.3rem;
+  position: absolute;
+  left: 30rem;
+  top: 18rem;
+}
+
+#aboutpage .about__mid_left-buttonbox {
+  position: absolute;
+  left: 50rem;
+  top: 10rem;
 }
 
 #aboutpage .about__mid_left-codetime {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: absolute;
+  bottom: 5rem;
 }
 
 #aboutpage .about__mid_left-codetime img {
@@ -2229,7 +2331,7 @@ body {
 }
 
 #aboutpage .about__mid_left-codetime figcaption {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 4rem;
   text-align: center;
 }

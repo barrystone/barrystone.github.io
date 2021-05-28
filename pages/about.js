@@ -12,9 +12,9 @@ const about = () => {
                 首頁
               </a>
             </Link>
-            <div className="about__top-pagename">
-              <span>自我介紹</span>
-            </div>
+          </div>
+          <div className="about__top-pagename">
+            <span>自我介紹</span>
           </div>
         </header>
         <main className="about__mid">
@@ -33,10 +33,10 @@ const about = () => {
               </Link>
             </div>
             <div className="about__mid_left-textbox--2">
-              <p>Loving coding</p>
+              <p>Loving coding ...</p>
             </div>
             <div className="about__mid_left-textbox--3">
-              <p>and enjoy in the process</p>
+              <p>And enjoy the process</p>
             </div>
             <figure className="about__mid_left-codetime">
               <img src="/img/data/wakatime210525.png" alt="me-avatar" />
@@ -84,7 +84,7 @@ const about = () => {
                 <ul>
                   <li>
                     <p>
-                      名字： <b>石在元</b>
+                      名字： <span>石在元</span>
                     </p>
                   </li>
                   <li>
