@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const about = () => {
   return (
     <div id="aboutpage">
+      <Head>
+        <title>barrystone-關於</title>
+      </Head>
       <div className="about">
         <header className="about__top">
           <div className="about__top-buttonsbox">
