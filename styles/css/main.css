@@ -2327,29 +2327,29 @@ body {
 }
 
 #aboutpage .about__mid_left-textbox--1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   position: absolute;
   left: 4rem;
   top: 5rem;
 }
 
 #aboutpage .about__mid_left-textbox--2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   position: absolute;
   left: 10rem;
   top: 16rem;
 }
 
 #aboutpage .about__mid_left-textbox--3 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   position: absolute;
-  left: 30rem;
-  top: 18rem;
+  left: 40rem;
+  top: 19rem;
 }
 
 #aboutpage .about__mid_left-buttonbox {
   position: absolute;
-  left: 50rem;
+  left: 52rem;
   top: 10rem;
 }
 
@@ -2366,8 +2366,8 @@ body {
 }
 
 #aboutpage .about__mid_left-codetime figcaption {
-  font-size: 1.2rem;
-  line-height: 4rem;
+  font-size: 1.1rem;
+  line-height: 3rem;
   text-align: center;
 }
 

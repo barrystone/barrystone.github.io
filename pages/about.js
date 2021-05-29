@@ -24,7 +24,7 @@ const about = () => {
         <main className="about__mid">
           <div className="about__mid_left">
             <div className="about__mid_left-textbox--1">
-              <p>I am a Web Developer</p>
+              <p>I am a Full-stack Web Developer</p>
             </div>
             <div className="about__mid_left-buttonbox">
               <Link
@@ -37,10 +37,10 @@ const about = () => {
               </Link>
             </div>
             <div className="about__mid_left-textbox--2">
-              <p>Loving coding ...</p>
+              <p>Loving coding and development</p>
             </div>
             <div className="about__mid_left-textbox--3">
-              <p>And enjoy the process</p>
+              <p>and enjoy the process</p>
             </div>
             <figure className="about__mid_left-codetime">
               <img src="/img/data/wakatime210525.png" alt="me-avatar" />
@@ -138,10 +138,10 @@ const about = () => {
                     <p>暱稱： barrystone</p>
                   </li>
                   <li>
-                    <p>職稱： Web Developer</p>
+                    <p>職稱： web developer</p>
                   </li>
                   <li>
-                    <p>學歷： NPTU</p>
+                    <p>在學： NPTU</p>
                   </li>
                   <li>
                     <p>主修： Computer Science</p>
