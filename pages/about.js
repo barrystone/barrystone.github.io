@@ -55,35 +55,78 @@ const about = () => {
                 <img src="/img/data/meavatar.png" alt="me-avatar" />
               </div>
               <div className="infocard__top">
-                <p>
-                  Learning <br />
-                  and <br />
-                  Making
-                </p>
+                <div className="infocard__top-textbox">
+                  <div className="infocard__top-textbox--1">
+                    <p>
+                      Learning <br />
+                      and <br />
+                      Making
+                    </p>
+                  </div>
+                  <div className="infocard__top-textbox--2">
+                    <p>
+                      Learning <br />
+                      and <br />
+                      Making
+                    </p>
+                  </div>
+                </div>
                 <div className="infocard__top-iconsbox">
-                  <a href="https://hackmd.io/@barrystone" target="_black">
-                    <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
-                      <img src="/img/design/note-icon.svg" alt="note-icon" />
-                      <figcaption>HackMD</figcaption>
-                    </figure>
-                  </a>
-                  <a href="https://github.com/barrystone" target="_black">
-                    <figure className="infocard__top-iconsbox-icon">
-                      <img
-                        src="/img/social/github-icon.svg"
-                        alt="github-icon"
-                      />
-                      <figcaption>Github</figcaption>
-                    </figure>
-                  </a>
-                  <a href="http://frontendmentor.slack.com/" target="_black">
-                    <figure className="infocard__top-iconsbox-icon">
-                      <img src="/img/social/slack-icon.svg" alt="slack-icon" />
-                      <figcaption>Slack</figcaption>
-                    </figure>
-                  </a>
+                  <div className="infocard__top-iconsbox--1">
+                    <a href="https://hackmd.io/@barrystone" target="_black">
+                      <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
+                        <img src="/img/design/note-icon.svg" alt="note-icon" />
+                        <figcaption>HackMD</figcaption>
+                      </figure>
+                    </a>
+                    <a href="https://github.com/barrystone" target="_black">
+                      <figure className="infocard__top-iconsbox-icon">
+                        <img
+                          src="/img/social/github-icon.svg"
+                          alt="github-icon"
+                        />
+                        <figcaption>Github</figcaption>
+                      </figure>
+                    </a>
+                    <a href="http://frontendmentor.slack.com/" target="_black">
+                      <figure className="infocard__top-iconsbox-icon">
+                        <img
+                          src="/img/social/slack-icon.svg"
+                          alt="slack-icon"
+                        />
+                        <figcaption>Slack</figcaption>
+                      </figure>
+                    </a>
+                  </div>
+                  <div className="infocard__top-iconsbox--2">
+                    <a href="https://hackmd.io/@barrystone" target="_black">
+                      <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
+                        <img src="/img/design/note-icon.svg" alt="note-icon" />
+                        <figcaption>HackMD</figcaption>
+                      </figure>
+                    </a>
+                    <a href="https://github.com/barrystone" target="_black">
+                      <figure className="infocard__top-iconsbox-icon">
+                        <img
+                          src="/img/social/github-icon.svg"
+                          alt="github-icon"
+                        />
+                        <figcaption>Github</figcaption>
+                      </figure>
+                    </a>
+                    <a href="http://frontendmentor.slack.com/" target="_black">
+                      <figure className="infocard__top-iconsbox-icon">
+                        <img
+                          src="/img/social/slack-icon.svg"
+                          alt="slack-icon"
+                        />
+                        <figcaption>Slack</figcaption>
+                      </figure>
+                    </a>
+                  </div>
                 </div>
               </div>
+
               <div className="infocard__mid">
                 <ul>
                   <li>

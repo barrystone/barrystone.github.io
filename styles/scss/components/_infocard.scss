@@ -1,5 +1,10 @@
 .infocard {
-  border: 20px $color-white solid;
+  border: 3px $color-secondary solid;
+  border-top: 7px $color-secondary solid;
+  border-left: 7px $color-secondary solid;
+  box-shadow: rgba($color-secondary, 0.6) 20px 18px 50px 0px,
+    rgba($color-white, 1) -8px -6px 0px 10px;
+  //   transform: translateX(4px) translateY(5px);
   border-radius: 20px;
   width: 50rem;
   height: 50rem;
@@ -9,30 +14,64 @@
   &-avatar {
     position: absolute;
     top: 6rem;
-    right: 3rem;
+    // right: 8rem;
+    // top: 2rem;
+    // right: 18rem;
+    align-self: center;
     img {
-      width: 15rem;
-      border: $color-primary 8px solid;
-      border-radius: 20px;
+      width: 12rem;
+      border: $color-primary 4px solid;
+      //   border-radius: 20px;
     }
   }
 
   &__top {
-    flex: 2;
+    flex: 2.5;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem 0 0 5rem;
-    p {
+    margin: 1.5rem 5rem 0 5rem;
+    &-textbox {
       flex: 1.7;
       line-height: 2.3rem;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      position: relative;
+      //   background-color: #fff;
+      &--1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &--2 {
+        position: absolute;
+        text-align: end;
+        right: 0;
+        top: 0;
+      }
+    }
+    p {
     }
     &-iconsbox {
-      width: 12rem;
+      position: relative;
       flex: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 1rem;
+      //   background-color: #fff;
+      &--1,
+      &--2 {
+        width: 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 0.5rem;
+      }
+      &--1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &--2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
 
       &-icon {
         text-align: center;
@@ -65,8 +104,8 @@
 
   &__mid {
     flex: 4;
-    border-top: 5px $color-primary solid;
-    border-bottom: 5px $color-primary solid;
+    border-top: 2px $color-primary solid;
+    border-bottom: 2px $color-primary solid;
     display: flex;
     align-items: center;
     justify-content: center;

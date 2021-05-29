@@ -26,6 +26,7 @@
       }
 
       &-pagename {
+        font-size: 3rem;
         color: $color-white;
         background-color: $color-secondary;
         width: 25rem;
@@ -35,7 +36,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3.3rem;
         font-weight: bold;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
@@ -111,7 +111,7 @@
     }
 
     &__bottom {
-      flex: 1;
+      flex: 0.8;
       background-color: $color-secondary;
     }
   }
