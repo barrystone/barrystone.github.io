@@ -6,7 +6,7 @@ const about = () => {
   return (
     <div id="aboutpage">
       <Head>
-        <title>barrystone-關於</title>
+        <title>barrystone 關於</title>
       </Head>
       <div className="about">
         <header className="about__top">

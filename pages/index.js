@@ -11,7 +11,7 @@ import Navigation from '../components/layout/Navigation';
 const CustomHead = () => {
   return (
     <Head>
-      <title>barrystone-首頁</title>
+      <title>barrystone 首頁</title>
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"

@@ -17,7 +17,7 @@ const note = () => {
       }}
     >
       <Head>
-        <title>barrystone-筆記</title>
+        <title>barrystone 筆記</title>
       </Head>
       <div style={{}}>開發中...</div>
       <p />
