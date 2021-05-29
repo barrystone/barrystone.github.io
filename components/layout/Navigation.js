@@ -21,7 +21,7 @@ const Navigation = () => {
           <li className="navigation__item">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a href="#" className="navigation__link">
-                自我介紹
+                關於個人
               </a>
             </Link>
           </li>
