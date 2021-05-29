@@ -1411,8 +1411,10 @@ body {
   border: 3px #f89761 solid;
   border-top: 7px #f89761 solid;
   border-left: 7px #f89761 solid;
-  -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -8px -6px 0px 10px;
-          box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -8px -6px 0px 10px;
+  -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+          box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
   border-radius: 20px;
   width: 50rem;
   height: 50rem;
@@ -2271,7 +2273,7 @@ body {
 }
 
 #aboutpage .about__top-pagename {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #fff;
   background-color: #f89761;
   width: 25rem;

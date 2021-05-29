@@ -18,7 +18,7 @@ const about = () => {
             </Link>
           </div>
           <div className="about__top-pagename">
-            <span>自我介紹</span>
+            <span>關於 about</span>
           </div>
         </header>
         <main className="about__mid">
