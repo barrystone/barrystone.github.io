@@ -2,7 +2,6 @@
   border: 3px $color-secondary solid;
   border-top: 7px $color-secondary solid;
   border-left: 7px $color-secondary solid;
-  transform: translateY(8px);
   border-radius: 20px;
   width: 50rem;
   height: 50rem;
@@ -10,13 +9,16 @@
   flex-direction: column;
   position: relative;
   animation: infinite 5s infocardshadow ease-in-out;
+  transform: translateY(12px);
+
   &-avatar {
     position: absolute;
     top: 6rem;
     align-self: center;
     img {
       width: 12rem;
-      border: $color-primary 4px solid;
+      border-radius: 20px;
+      // border: $color-primary 4px solid;
     }
   }
 
@@ -136,14 +138,14 @@
 @keyframes infocardshadow {
   0% {
     box-shadow: rgba($color-secondary, 0.6) 20px 18px 50px 0px,
-      rgba($color-white, 1) -10px -12px 0px 12px;
+      rgba($color-white, 1) -10px -12px 0px 15px;
   }
   50% {
     box-shadow: rgba($color-secondary, 0.8) 10px 9px 50px 0px,
-      rgba($color-white, 1) -10px -12px 0px 12px;
+      rgba($color-white, 1) -10px -12px 0px 15px;
   }
   100% {
     box-shadow: rgba($color-secondary, 0.6) 20px 18px 50px 0px,
-      rgba($color-white, 1) -10px -12px 0px 12px;
+      rgba($color-white, 1) -10px -12px 0px 15px;
   }
 }

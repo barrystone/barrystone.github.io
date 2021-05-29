@@ -1411,8 +1411,6 @@ body {
   border: 3px #f89761 solid;
   border-top: 7px #f89761 solid;
   border-left: 7px #f89761 solid;
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
   border-radius: 20px;
   width: 50rem;
   height: 50rem;
@@ -1426,6 +1424,8 @@ body {
   position: relative;
   -webkit-animation: infinite 5s infocardshadow ease-in-out;
           animation: infinite 5s infocardshadow ease-in-out;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 .infocard-avatar {
@@ -1438,7 +1438,7 @@ body {
 
 .infocard-avatar img {
   width: 12rem;
-  border: #c4c4c4 4px solid;
+  border-radius: 20px;
 }
 
 .infocard__top {
@@ -1594,31 +1594,31 @@ body {
 
 @-webkit-keyframes infocardshadow {
   0% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
   }
   50% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
   }
   100% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
   }
 }
 
 @keyframes infocardshadow {
   0% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
   }
   50% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
   }
   100% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 12px;
+    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
   }
 }
 
@@ -2320,11 +2320,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  text-shadow: 0.02em 0.02em 0 #000;
+  border: 5px #e6e6e6 solid;
+  text-shadow: 0.03em 0.03em 0 #000;
+  -webkit-animation: 0.1s forwards enteronleft ease;
+          animation: 0.1s forwards enteronleft ease;
 }
 
 #aboutpage .about__mid {
@@ -2423,5 +2424,27 @@ body {
       -ms-flex: 0.8;
           flex: 0.8;
   background-color: #f89761;
+}
+
+@-webkit-keyframes enteronleft {
+  0% {
+    font-size: 2rem;
+    width: 10rem;
+  }
+  100% {
+    font-size: 2.5rem;
+    width: 20rem;
+  }
+}
+
+@keyframes enteronleft {
+  0% {
+    font-size: 2rem;
+    width: 10rem;
+  }
+  100% {
+    font-size: 2.5rem;
+    width: 20rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
