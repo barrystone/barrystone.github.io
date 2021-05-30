@@ -47,7 +47,8 @@ body {
 }
 
 .heading-primary--main {
-  font-size: 7.5rem;
+  font-size: 8rem;
+  font-weight: bold;
   z-index: 2;
   position: absolute;
   top: 50%;
@@ -55,11 +56,11 @@ body {
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   display: block;
-  padding: 2.5rem 5rem;
+  padding: 2.5rem 7.5rem;
   text-align: center;
   border-radius: 30%;
   background-color: #f89761;
-  font-family: "Rye";
+  font-family: "Kelly Slab";
   text-shadow: 0.01em 0.01em 0 #fff;
 }
 
@@ -2447,7 +2448,7 @@ body {
   -webkit-box-flex: 0.8;
       -ms-flex: 0.8;
           flex: 0.8;
-  background-color: #f89761;
+  background-color: #c4c4c4;
 }
 
 @-webkit-keyframes enteronleft {
