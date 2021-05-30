@@ -76,7 +76,7 @@ const about = () => {
                     <a href="https://hackmd.io/@barrystone" target="_black">
                       <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
                         <img src="/img/design/note-icon.svg" alt="note-icon" />
-                        <figcaption>HackMD</figcaption>
+                        <figcaption>Hackmd</figcaption>
                       </figure>
                     </a>
                     <a href="https://github.com/barrystone" target="_black">
@@ -102,7 +102,7 @@ const about = () => {
                     <a href="https://hackmd.io/@barrystone" target="_black">
                       <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
                         <img src="/img/design/note-icon.svg" alt="note-icon" />
-                        <figcaption>HackMD</figcaption>
+                        <figcaption>Hackmd</figcaption>
                       </figure>
                     </a>
                     <a href="https://github.com/barrystone" target="_black">

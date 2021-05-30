@@ -339,13 +339,13 @@ body {
 }
 
 .btn-show {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #000;
   background-color: #fff;
   text-decoration: none;
-  padding: 1rem 3rem;
-  border-radius: 30px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
   border: 5px solid #f89761;
   -webkit-box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.2) 4px 8px 0px;
           box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.2) 4px 8px 0px;
@@ -354,7 +354,7 @@ body {
 }
 
 .btn-show:hover {
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: #fff;
   background-color: #000;
   -webkit-box-shadow: rgba(248, 151, 97, 0.25) 0px 20px 50px, rgba(248, 151, 97, 0.8) 0px 0px 0px;
@@ -1408,11 +1408,11 @@ body {
 }
 
 .infocard {
-  border: 3px #f89761 solid;
-  border-top: 7px #f89761 solid;
-  border-left: 7px #f89761 solid;
+  border: 1px #000 solid;
+  border-top: 2px #000 solid;
+  border-left: 2px #000 solid;
   border-radius: 20px;
-  width: 50rem;
+  width: 45rem;
   height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1426,19 +1426,29 @@ body {
           animation: infinite 5s infocardshadow ease-in-out;
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.infocard:hover {
+  -webkit-transform: translateX(0.3%) translateY(12px);
+          transform: translateX(0.3%) translateY(12px);
 }
 
 .infocard-avatar {
   position: absolute;
-  top: 6rem;
+  top: 7rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  z-index: 5;
 }
 
 .infocard-avatar img {
   width: 12rem;
-  border-radius: 20px;
+  border: #000 2px solid;
 }
 
 .infocard__top {
@@ -1452,7 +1462,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1.5rem 5rem 0 5rem;
+  margin: 1.5rem 2.5rem 0 2.5rem;
 }
 
 .infocard__top-textbox {
@@ -1460,8 +1470,16 @@ body {
       -ms-flex: 1.7;
           flex: 1.7;
   line-height: 2.3rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   position: relative;
+}
+
+.infocard__top-textbox--1, .infocard__top-textbox--2 {
+  padding: 1rem;
+}
+
+.infocard__top-textbox--1 p, .infocard__top-textbox--2 p {
+  text-shadow: 0.03em 0.03em 0 #000;
 }
 
 .infocard__top-textbox--1 {
@@ -1484,13 +1502,20 @@ body {
           flex: 1;
 }
 
+.infocard__top-iconsbox a {
+  text-decoration: none;
+}
+
 .infocard__top-iconsbox--1, .infocard__top-iconsbox--2 {
-  width: 10rem;
+  border: 2px #7a7a7a solid;
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 13rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 0.5rem;
+  grid-column-gap: 1rem;
 }
 
 .infocard__top-iconsbox--1 {
@@ -1508,6 +1533,7 @@ body {
 .infocard__top-iconsbox-icon {
   text-align: center;
   width: 3.2rem;
+  color: #000;
 }
 
 .infocard__top-iconsbox-icon img {
@@ -1517,7 +1543,6 @@ body {
 }
 
 .infocard__top-iconsbox-icon figcaption {
-  color: #fff;
   line-height: 0.2rem;
   font-size: 0.8rem;
 }
@@ -1526,20 +1551,19 @@ body {
   margin-top: 0.3rem;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: #fff;
 }
 
 .infocard__top-iconsbox-icon--hackmd figcaption {
-  font-size: 0.6rem;
-  line-height: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 0.6rem;
 }
 
 .infocard__mid {
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
-  border-top: 2px #c4c4c4 solid;
-  border-bottom: 2px #c4c4c4 solid;
+  border-top: 2px #000 solid;
+  border-bottom: 2px #000 solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1561,7 +1585,7 @@ body {
 }
 
 .infocard__mid > ul li span {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
@@ -1594,31 +1618,31 @@ body {
 
 @-webkit-keyframes infocardshadow {
   0% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
   50% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.8) 5px 4.5px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.8) 5px 4.5px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
   100% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
 }
 
 @keyframes infocardshadow {
   0% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
   50% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.8) 10px 9px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.8) 5px 4.5px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.8) 5px 4.5px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
   100% {
-    -webkit-box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
-            box-shadow: rgba(248, 151, 97, 0.6) 20px 18px 50px 0px, white -10px -12px 0px 15px;
+    -webkit-box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
+            box-shadow: rgba(248, 135, 74, 0.6) 10px 9px 50px 0px, #f8874a -9.5px -12px 0px 10px;
   }
 }
 
@@ -2383,7 +2407,7 @@ body {
 #aboutpage .about__mid_left-buttonbox {
   position: absolute;
   left: 52rem;
-  top: 10rem;
+  top: 11rem;
 }
 
 #aboutpage .about__mid_left-codetime {
@@ -2391,11 +2415,11 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   position: absolute;
-  bottom: 5rem;
+  top: 25rem;
 }
 
 #aboutpage .about__mid_left-codetime img {
-  width: 55rem;
+  height: 30rem;
 }
 
 #aboutpage .about__mid_left-codetime figcaption {
