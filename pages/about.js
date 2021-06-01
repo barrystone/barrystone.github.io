@@ -22,33 +22,6 @@ const about = () => {
           </div>
         </header>
         <main className="about__mid">
-          <div className="about__mid_left">
-            <div className="about__mid_left-textbox--1">
-              <p>I am a Full-stack Web Developer</p>
-            </div>
-            <div className="about__mid_left-buttonbox">
-              <Link
-                href="/#aboutSection"
-                as={process.env.BACKEND_URL + '/#aboutSection'}
-              >
-                <a href="" className="btn-show">
-                  我的技能
-                </a>
-              </Link>
-            </div>
-            <div className="about__mid_left-textbox--2">
-              <p>Loving coding and development</p>
-            </div>
-            <div className="about__mid_left-textbox--3">
-              <p>and enjoy the process</p>
-            </div>
-            <figure className="about__mid_left-codetime">
-              <img src="/img/data/wakatime210525.png" alt="me-avatar" />
-              <figcaption>
-                My coding time doing in 2021.05.11 ~ 2021.05.25
-              </figcaption>
-            </figure>
-          </div>
           <div className="about__mid_right">
             <div className="infocard">
               <div className="infocard-avatar">
@@ -166,6 +139,36 @@ const about = () => {
                   <img src="/img/social/youtube-icon.svg" alt="youtube-icon" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="about__mid_left">
+            <div className="about__mid_left-textbox">
+              <div className="about__mid_left-textbox--1">
+                <p>I am a Full-stack</p>
+                <p>Web Developer</p>
+              </div>
+              <div className="about__mid_left-buttonbox">
+                <Link
+                  href="/#aboutSection"
+                  as={process.env.BACKEND_URL + '/#aboutSection'}
+                >
+                  <a href="" className="btn-show">
+                    我的技能
+                  </a>
+                </Link>
+              </div>
+              <div className="about__mid_left-textbox--2">
+                <p>Loving coding and development</p>
+              </div>
+              <div className="about__mid_left-textbox--3">
+                <p>and enjoy the process</p>
+              </div>
+              <figure className="about__mid_left-codetime">
+                <img src="/img/data/wakatime210525.png" alt="me-avatar" />
+                <figcaption>
+                  My coding time doing in 2021.05.11 ~ 2021.05.25
+                </figcaption>
+              </figure>
             </div>
           </div>
         </main>

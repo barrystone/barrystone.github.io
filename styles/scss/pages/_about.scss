@@ -5,46 +5,59 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 1100px) {
+      display: block;
+    }
+
     &__top {
-      flex: 1.5;
+      flex: 1.2;
       position: relative;
       display: flex;
       align-items: center;
       background: linear-gradient(
         to bottom,
-        $color-primary 50%,
-        $color-white 50%
+        $color-primary 65%,
+        $color-white 40%
       );
+      // background-color: rgba($color-primary, 1);
+
+      @media only screen and (max-width: 1100px) {
+        height: 8rem;
+      }
 
       &-buttonsbox {
         position: absolute;
         left: 4rem;
-        transition: 0.3s all ease-in-out;
         &:hover {
-          transform: translateX(-2%);
+          // transform: translateX(-0.5%);
+          // transform: scale(0.99);
         }
       }
 
       &-pagename {
-        font-size: 2.8rem;
-        color: $color-white;
-        background-color: $color-secondary;
-        width: 25rem;
-        height: 65%;
+        // color: $color-primary;
+        background-color: $color-black;
+        border: 1px $color-secondary solid;
+        text-shadow: 0.03em 0.03em 0 $color-black;
+
+        height: 75%;
+        // width: 22rem;
         position: absolute;
         right: 0rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: bold;
-        // border-top-left-radius: 10px;
-        // border-top-right-radius: 10px;
-        // border-bottom-left-radius: 30px;
-        // border-bottom-right-radius: 30px;
+        span {
+          font-weight: bold;
+          font-size: 2.3rem;
+        }
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
         box-shadow: rgba($color-black, 0.19) 0px 10px 20px,
           rgba($color-black, 0.23) 0px 3px 6px;
-        border: 5px $color-white-dark solid;
-        text-shadow: 0.03em 0.03em 0 $color-black;
         animation: 0.1s forwards enteronleft ease;
       }
     }
@@ -52,53 +65,72 @@
     &__mid {
       flex: 10;
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       background-color: $color-black;
+
+      @media only screen and (max-width: 1100px) {
+        flex-direction: column;
+      }
+
       &_left {
         flex: 1;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        position: relative;
+        align-items: center;
 
         &-textbox {
+          width: 45rem;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          @media only screen and (max-width: 1100px) {
+            margin-bottom: 5rem;
+          }
+
           &--1 {
-            font-size: 3rem;
-            position: absolute;
-            left: 4rem;
-            top: 5rem;
+            height: 17rem;
+            width: 100%;
+            p {
+              font-size: 3rem;
+              line-height: 5rem;
+            }
           }
           &--2 {
-            font-size: 2rem;
-            position: absolute;
-            left: 10rem;
-            top: 16rem;
+            height: 2.5rem;
+            width: 100%;
+            p {
+              font-size: 1.8rem;
+            }
           }
           &--3 {
-            font-size: 2rem;
-            position: absolute;
-            left: 40rem;
-            top: 19rem;
+            height: 2.5rem;
+            width: 100%;
+            p {
+              font-size: 1.8rem;
+              text-align: end;
+            }
           }
         }
 
         &-buttonbox {
           position: absolute;
-          left: 52rem;
-          top: 11rem;
+          right: 0;
+          top: 3.5rem;
         }
 
         &-codetime {
-          align-self: center;
-          position: absolute;
-          top: 25rem;
+          height: 30rem;
           img {
-            height: 30rem;
+            margin-top: 3rem;
+            max-height: 25rem;
+            max-width: 40rem;
           }
 
           figcaption {
             font-size: 1.1rem;
-            line-height: 3rem;
+            line-height: 4rem;
             text-align: center;
           }
         }
@@ -114,8 +146,12 @@
     }
 
     &__bottom {
-      flex: 0.8;
+      flex: 0.5;
       background-color: $color-primary;
+
+      @media only screen and (max-width: 1100px) {
+        height: 4rem;
+      }
     }
   }
 }
@@ -128,5 +164,6 @@
   100% {
     font-size: 2.5rem;
     width: 20rem;
+    right: 1.5rem;
   }
 }

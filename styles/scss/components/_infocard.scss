@@ -14,9 +14,15 @@
   // background-color: rgba($color-white, 0.95);
   // color: $color-black;
   transition: all 0.2s ease-in-out;
+  margin: 5rem;
+
+  @media only screen and (max-width: 550px) {
+    margin: 5rem 0;
+    width: 85%;
+  }
 
   &:hover {
-    transform: translateX(-0.5%) translateY(calc(12px + 0.2%));
+    transform: translateX(-0.2%) translateY(calc(12px));
   }
 
   &-avatar {
