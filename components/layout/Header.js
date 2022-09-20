@@ -18,12 +18,18 @@ const Header = () => {
           <div className="header__button-box">
             <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
               <a className="btn-primary">
-                <p>關於</p>
+                <p>
+                  關於 <br />
+                  <span>About</span>
+                </p>
               </a>
             </Link>
             <Link href="/note" as={process.env.BACKEND_URL + '/note'}>
               <a className="btn-primary btn-primary--2">
-                <p>筆記</p>
+                <p>
+                  筆記 <br />
+                  <span>Note</span>
+                </p>
               </a>
             </Link>
           </div>
@@ -39,11 +45,11 @@ const Header = () => {
               </span>
             </h1>
           </div>
-          <div className="header__link-box">
+          <div className="header__link-box animate__animated  animate__fadeInUpBig">
             <a
               href="https://github.com/barrystone"
               target="_blank"
-              className="btn-secondary"
+              className="btn-secondary "
             >
               <p>github</p>
             </a>

@@ -9,7 +9,7 @@
     border-radius: 50%;
     cursor: pointer;
 
-    height: 65%;
+    height: 60%;
     width: 15%;
 
     position: relative;
@@ -17,7 +17,7 @@
     top: 17%;
 
     p {
-      font-size: 4.3rem;
+      font-size: 3.5rem;
       display: inline-block;
       font-weight: bold;
       color: $color-white;
@@ -25,19 +25,28 @@
       position: absolute;
       top: 50%;
       left: 20%;
-      transform: translate(0%, -47%);
+      transform: translate(10%, -40%);
+      line-height: 2.5rem;
       transition: all 0.2s;
+      span {
+        font-size: 1.8rem;
+        transition: all 0.2s;
+      }
     }
   }
 
   &:hover {
     p {
-      font-size: 4.5rem;
+      font-size: 3.8rem;
+      transform: translate(5%, -40%);
+      span {
+        color: $color-black;
+      }
     }
 
     &::after {
       height: 110%;
-      width: 110%;
+      width: 108%;
     }
   }
 
@@ -45,12 +54,12 @@
     content: '';
     background-color: $color-black;
     border-radius: 50%;
-    height: 122%;
-    width: 115%;
+    height: 110%;
+    width: 110%;
     display: inline-block;
     position: absolute;
-    top: -0.9rem;
-    left: -5.5%;
+    top: -0.5rem;
+    left: -4.5%;
 
     z-index: -1;
     transition: all 0.2s;
@@ -69,7 +78,7 @@
   text-decoration: none;
   display: inline-block;
   background-color: $color-white-dark;
-  border: solid 5px $color-secondary-dark;
+  border: solid 2px $color-secondary-dark;
   padding: 0.2rem 1.5rem;
   cursor: pointer;
 
