@@ -20,7 +20,9 @@ const RepoSection = ({ reposData: staticReposData }) => {
 
   const requestReposData = async () => {
     try {
-      const res = await fetch('https://api.github.com/users/barrystone/repos');
+      const res = await fetch(
+        'https://api.github.com/users/barrystone/repos?sort=updated'
+      );
       const data = await res.json();
       if (res.status == 200) {
         setReposData(data);
