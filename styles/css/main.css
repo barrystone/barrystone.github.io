@@ -422,48 +422,47 @@ body {
   flex: 3.5;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   border: 2px solid rgba(122, 122, 122, 0.2);
 }
-.repo__content .repo-language {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-}
-.repo__content .repo-language img {
-  border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
-}
 .repo__content .repo-description {
-  background-color: #c4c4c4;
-  border-radius: 50%;
-  height: 70%;
+  margin-bottom: 15%;
+  height: 65%;
   width: 80%;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(230, 230, 230, 0.55) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 1px 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(230, 230, 230, 0.55) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.5) 0px 0px 1px 1px inset;
 }
 .repo__content .repo-description--title {
   background-color: #fff;
-  display: inline-block;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  left: 20%;
   top: 15%;
-  border-radius: 50%;
-  border: 0.1px solid #c4c4c4;
 }
-.repo__content .repo-description--title p {
-  padding: 0.5rem;
+.repo__content .repo-description--title span {
+  margin-left: 1rem;
+}
+.repo__content .repo-description--title span p {
+  padding: 0.6rem;
+  border: 1px solid #000;
+  border-radius: 50%;
   font-size: 1.7rem;
+}
+.repo__content .repo-description--title img {
+  transform: translate(0, -15%);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 .repo__content .repo-description--text {
   position: relative;
-  top: 10%;
+  top: 2rem;
 }
 .repo__content .repo-description--text p {
   color: #000;
   font-size: 1.7rem;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
   word-wrap: break-word;
 }
 .repo__content .repo-star {

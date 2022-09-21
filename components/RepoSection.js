@@ -62,18 +62,22 @@ const RepoSection = ({ reposData: staticReposData }) => {
                   </a>
                 </div>
                 <div className="repo__content">
-                  <div className="repo-language">
-                    <img
-                      src={`img/tech/${languageImg(
-                        repo.language ? repo.language.toLowerCase() : 'coding'
-                      )}.svg`}
-                      alt={`${repo.language}`}
-                    />
-                  </div>
                   <div className="repo-description">
                     <div className="repo-description--title">
-                      <p>簡介</p>
+                      <span>
+                        <p>簡介</p>
+                      </span>
+                      {/* <div className="repo-language"> */}
+
+                      {/* </div> */}
+                      <img
+                        src={`img/tech/${languageImg(
+                          repo.language ? repo.language.toLowerCase() : 'coding'
+                        )}.svg`}
+                        alt={`${repo.language}`}
+                      />
                     </div>
+
                     <article className="repo-description--text">
                       <p>
                         {repo.description
