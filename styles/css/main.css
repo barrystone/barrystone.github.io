@@ -1799,6 +1799,11 @@ body {
     height: 130rem;
   }
 }
+@media (max-width: 37.5em) {
+  .section-note {
+    height: 162.5rem;
+  }
+}
 .section-note__container {
   position: relative;
   top: 5%;
@@ -1813,6 +1818,11 @@ body {
 @media (max-width: 56.25em) {
   .section-note__container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-note__container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 .section-note__topicbox {

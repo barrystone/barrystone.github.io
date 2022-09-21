@@ -138,6 +138,9 @@ $section-default-height: 65rem;
     @include respond(tab-port) {
       height: $section-default-height * 2;
     }
+    @include respond(phone) {
+      height: $section-default-height * 2.5;
+    }
 
     &__container {
       position: relative;
@@ -152,6 +155,9 @@ $section-default-height: 65rem;
 
       @include respond(tab-port) {
         grid-template-columns: 1fr 1fr 1fr;
+      }
+      @include respond(phone) {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
