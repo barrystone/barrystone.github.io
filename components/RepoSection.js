@@ -24,6 +24,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
       const data = await res.json();
       if (res.status == 200) {
         setReposData(data);
+        console.log('reposData', data);
       } else {
         res.status == 403
           ? console.log('API limit !')

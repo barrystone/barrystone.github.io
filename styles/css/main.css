@@ -433,8 +433,8 @@ body {
 }
 .repo__content .repo-language img {
   border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }
 .repo__content .repo-description {
   background-color: #c4c4c4;

@@ -1,5 +1,8 @@
 export default function languageImg(e) {
   switch (e) {
+    case 'jupyter notebook':
+    case 'python':
+      return 'python-icon';
     case 'javascript':
       return 'js-icon';
     case 'html':
@@ -14,14 +17,18 @@ export default function languageImg(e) {
       return 'vuejs-icon';
     case 'c#':
       return 'cSharp-icon';
-    case 'python':
-      return 'python-icon';
     case 'java':
       return 'java-icon';
     case 'php':
       return 'php-icon';
     case 'c++':
       return 'c++-icon';
+    case 'swift':
+      return 'swift-icon';
+    case 'svelte':
+      return 'svelte-icon';
+    case 'asp.net':
+      return 'aspDotNet-icon';
     default:
       return 'coding-icon';
   }
