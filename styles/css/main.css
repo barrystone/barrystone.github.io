@@ -6,6 +6,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+/*
+0 - 600px:     phone
+600 - 900px:   Tablet portrait 
+900 - 1200px:  Tablet landscape
+[1200 - 1800]: is where our normal styles apply
+1800px + :     Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+[em] is best option for media query
+*/
 @-webkit-keyframes textAni {
   0% {
     background-position: 0 0;
@@ -1667,6 +1684,11 @@ body {
   background-color: #fff;
   position: relative;
 }
+@media (max-width: 56.25em) {
+  .section-about {
+    height: 130rem;
+  }
+}
 .section-about__container {
   position: relative;
   height: 95%;
@@ -1772,6 +1794,11 @@ body {
 .section-note {
   background-color: #fff;
 }
+@media (max-width: 56.25em) {
+  .section-note {
+    height: 130rem;
+  }
+}
 .section-note__container {
   position: relative;
   top: 5%;
@@ -1782,6 +1809,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+@media (max-width: 56.25em) {
+  .section-note__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .section-note__topicbox {
   display: flex;
@@ -1851,7 +1883,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 1100px) {
+@media (max-width: 75em) {
   #aboutpage .about {
     display: block;
   }
@@ -1863,7 +1895,7 @@ body {
   align-items: center;
   background: linear-gradient(to bottom, #c4c4c4 65%, #fff 40%);
 }
-@media only screen and (max-width: 1100px) {
+@media (max-width: 75em) {
   #aboutpage .about__top {
     height: 8rem;
   }
@@ -1900,7 +1932,7 @@ body {
   flex-direction: row-reverse;
   background-color: #000;
 }
-@media only screen and (max-width: 1100px) {
+@media (max-width: 75em) {
   #aboutpage .about__mid {
     flex-direction: column;
   }
@@ -1919,7 +1951,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 1100px) {
+@media (max-width: 75em) {
   #aboutpage .about__mid_left-textbox {
     margin-bottom: 5rem;
   }
@@ -1975,7 +2007,7 @@ body {
   flex: 0.5;
   background-color: #c4c4c4;
 }
-@media only screen and (max-width: 1100px) {
+@media (max-width: 75em) {
   #aboutpage .about__bottom {
     height: 4rem;
   }

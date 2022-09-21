@@ -1,9 +1,16 @@
+$section-default-height: 65rem;
+
 .section {
-  height: 65rem;
+  height: $section-default-height;
 
   &-about {
     background-color: $color-white;
     position: relative;
+
+    @include respond(tab-port) {
+      height: $section-default-height * 2;
+    }
+
     &__container {
       position: relative;
       height: 95%;
@@ -128,6 +135,10 @@
   &-note {
     background-color: $color-white;
 
+    @include respond(tab-port) {
+      height: $section-default-height * 2;
+    }
+
     &__container {
       position: relative;
       top: 5%;
@@ -138,6 +149,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
 
     &__topicbox {
