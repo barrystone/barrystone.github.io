@@ -5,7 +5,9 @@ $section-default-height: 65rem;
 
   &-about {
     background-color: $color-white;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include respond(tab-port) {
       height: $section-default-height * 2;
@@ -15,10 +17,14 @@ $section-default-height: 65rem;
       position: relative;
       height: 95%;
       width: 98%;
-      top: 2.5%;
-      left: 1%;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 6px 2px,
         rgba(60, 64, 67, 0.15) 0px 0px 6px 2px;
+      @include respond(tab-port) {
+        width: 95%;
+      }
+      @include respond(phone) {
+        width: 90%;
+      }
     }
 
     &__screwbox {

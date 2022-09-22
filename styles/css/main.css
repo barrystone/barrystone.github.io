@@ -1682,7 +1682,9 @@ body {
 }
 .section-about {
   background-color: #fff;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 56.25em) {
   .section-about {
@@ -1693,9 +1695,17 @@ body {
   position: relative;
   height: 95%;
   width: 98%;
-  top: 2.5%;
-  left: 1%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 6px 2px, rgba(60, 64, 67, 0.15) 0px 0px 6px 2px;
+}
+@media (max-width: 56.25em) {
+  .section-about__container {
+    width: 95%;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about__container {
+    width: 90%;
+  }
 }
 .section-about__screwbox {
   position: absolute;
