@@ -1,6 +1,6 @@
 .header {
   height: 100vh;
-  background-color: #c4c4c4;
+  // background-color: #c4c4c4;
   // position: relative;
   background-image: linear-gradient(
       to right bottom,
@@ -57,7 +57,15 @@
 
   &__left {
     height: 100vh;
-    background-color: $color-primary;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-primary, 1) 10%,
+      rgba($color-primary, 0.3) 30%,
+      rgba($color-primary, 1) 35%,
+      rgba($color-primary, 1) 70%,
+      rgba($color-primary, 0.6) 75%,
+      rgba($color-primary, 1) 100%
+    );
     clip-path: polygon(
       0 0,
       55% 0%,
@@ -117,7 +125,7 @@
         position: absolute;
         right: 13rem;
         top: 0;
-        font-size: 13rem;
+        font-size: 7rem;
       }
 
       &-2 {
@@ -126,7 +134,7 @@
         border-radius: 30px;
         right: 3rem;
         bottom: 5rem;
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 2rem 2rem;
         transition: all 0.5s linear;
         &:hover {
