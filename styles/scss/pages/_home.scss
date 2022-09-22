@@ -50,10 +50,14 @@ $section-default-height: 65rem;
     }
 
     &__arrow-box {
+      position: absolute;
+      top: 50%;
+      left: 43%;
+
+      h3 {
+        display: none;
+      }
       a {
-        position: absolute;
-        top: 50%;
-        left: 45%;
         height: 6rem;
         width: 10rem;
         opacity: 0;
@@ -79,6 +83,26 @@ $section-default-height: 65rem;
           }
         }
       }
+
+      @include respond(tab-land) {
+        scale: 0.8;
+      }
+      @include respond(tab-port) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 1;
+        top: 58%;
+        left: 0;
+        width: 100%;
+        // background-color: red;
+        a {
+          display: none;
+        }
+        h3 {
+          display: block;
+        }
+      }
     }
 
     &__textbox {
@@ -89,11 +113,38 @@ $section-default-height: 65rem;
         font-weight: bold;
         padding: 1.5rem 3rem;
         background-color: $color-white-dark;
+
+        @include respond(tab-land) {
+          scale: 0.8;
+          right: 5%;
+          top: 5%;
+        }
+        @include respond(tab-port) {
+          scale: 0.8;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
       &-2 {
         position: absolute;
         top: 2%;
         left: 4%;
+
+        @include respond(tab-land) {
+          scale: 0.8;
+          top: 3%;
+        }
+        @include respond(tab-port) {
+          width: 100%;
+          scale: 1;
+          left: 0;
+          top: 12%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
 
@@ -101,20 +152,52 @@ $section-default-height: 65rem;
       position: absolute;
       top: 7%;
       left: 7%;
-
       width: 50rem;
+
+      @include respond(tab-land) {
+        width: 50%;
+        scale: 0.8;
+        top: 10%;
+        left: 0;
+      }
+      @include respond(tab-port) {
+        width: 100%;
+        top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &__project-box {
       position: absolute;
       bottom: 4%;
       right: 9.5%;
+
+      @include respond(tab-land) {
+        width: 50%;
+        scale: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 6%;
+        right: 0;
+      }
+      @include respond(tab-port) {
+        width: 100%;
+        scale: 1;
+        bottom: 0%;
+      }
     }
 
     &__circlebox {
       position: absolute;
       top: 5%;
       right: 1.1%;
+
+      @include respond(tab-land) {
+        scale: 0.8;
+      }
     }
   }
 

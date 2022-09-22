@@ -87,6 +87,9 @@ const AboutSection = () => {
             {/* <p>作品</p> */}
             <p></p>
           </a>
+          <h3 className="heading-tertiary paragraph-big--4" id="works">
+            <span>我的作品</span>
+          </h3>
         </div>
         <section className="section-about__skillsetbox">
           <Skillset />

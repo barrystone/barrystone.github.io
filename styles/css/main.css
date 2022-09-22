@@ -1725,10 +1725,15 @@ body {
   bottom: 0.5rem;
   left: 0.5rem;
 }
-.section-about__arrow-box a {
+.section-about__arrow-box {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 43%;
+}
+.section-about__arrow-box h3 {
+  display: none;
+}
+.section-about__arrow-box a {
   height: 6rem;
   width: 10rem;
   opacity: 0;
@@ -1751,6 +1756,28 @@ body {
   font-weight: 300;
   content: "Github";
 }
+@media (max-width: 75em) {
+  .section-about__arrow-box {
+    scale: 0.8;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__arrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1;
+    top: 58%;
+    left: 0;
+    width: 100%;
+  }
+  .section-about__arrow-box a {
+    display: none;
+  }
+  .section-about__arrow-box h3 {
+    display: block;
+  }
+}
 .section-about__textbox-1 {
   position: absolute;
   top: 8%;
@@ -1759,10 +1786,43 @@ body {
   padding: 1.5rem 3rem;
   background-color: #e6e6e6;
 }
+@media (max-width: 75em) {
+  .section-about__textbox-1 {
+    scale: 0.8;
+    right: 5%;
+    top: 5%;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__textbox-1 {
+    scale: 0.8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .section-about__textbox-2 {
   position: absolute;
   top: 2%;
   left: 4%;
+}
+@media (max-width: 75em) {
+  .section-about__textbox-2 {
+    scale: 0.8;
+    top: 3%;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__textbox-2 {
+    width: 100%;
+    scale: 1;
+    left: 0;
+    top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .section-about__skillsetbox {
   position: absolute;
@@ -1770,15 +1830,55 @@ body {
   left: 7%;
   width: 50rem;
 }
+@media (max-width: 75em) {
+  .section-about__skillsetbox {
+    width: 50%;
+    scale: 0.8;
+    top: 10%;
+    left: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__skillsetbox {
+    width: 100%;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .section-about__project-box {
   position: absolute;
   bottom: 4%;
   right: 9.5%;
 }
+@media (max-width: 75em) {
+  .section-about__project-box {
+    width: 50%;
+    scale: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6%;
+    right: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__project-box {
+    width: 100%;
+    scale: 1;
+    bottom: 0%;
+  }
+}
 .section-about__circlebox {
   position: absolute;
   top: 5%;
   right: 1.1%;
+}
+@media (max-width: 75em) {
+  .section-about__circlebox {
+    scale: 0.8;
+  }
 }
 .section-repo {
   background-color: #c4c4c4;
