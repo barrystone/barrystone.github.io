@@ -30,6 +30,7 @@ const AboutSection = () => {
     };
     window.addEventListener('scroll', enterAnimation);
 
+    // skillSet title hover animation
     document.getElementById('skill').addEventListener('mouseleave', () => {
       window.requestAnimationFrame(() => {
         skillsetClasslist.add('skillset--show');
@@ -37,6 +38,19 @@ const AboutSection = () => {
     });
     document.getElementById('skill').addEventListener('mouseover', () => {
       skillsetClasslist.remove('skillset--show');
+    });
+
+    // projectContent title
+    const projectContentTitle = document.getElementById('collects');
+    projectContentTitle.addEventListener('click', () => {
+      window.open('https://github.com/barrystone', '_blank');
+    });
+    projectContentTitle.addEventListener('mouseover', () => {
+      projectContentTitle.innerHTML = 'Github';
+    });
+    projectContentTitle.addEventListener('mouseleave', () => {
+      projectContentTitle.innerHTML = '我的作品';
+      projectContentTitle.style.cursor = 'pointer';
     });
   };
 
@@ -87,7 +101,7 @@ const AboutSection = () => {
             {/* <p>作品</p> */}
             <p></p>
           </a>
-          <h3 className="heading-tertiary paragraph-big--4" id="works">
+          <h3 className="heading-tertiary paragraph-big--4" id="collects">
             <span>我的作品</span>
           </h3>
         </div>

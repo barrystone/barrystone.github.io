@@ -1725,6 +1725,109 @@ body {
   bottom: 0.5rem;
   left: 0.5rem;
 }
+.section-about__textbox-1 {
+  position: absolute;
+  top: 8%;
+  right: 10%;
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+  background-color: #e6e6e6;
+}
+@media (max-width: 75em) {
+  .section-about__textbox-1 {
+    transform: scale(0.8);
+    right: 5%;
+    top: 4%;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__textbox-1 {
+    transform: scale(0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about__textbox-1 {
+    transform: scale(0.5);
+    top: 3%;
+  }
+}
+.section-about__textbox-2 {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+}
+@media (max-width: 75em) {
+  .section-about__textbox-2 {
+    transform: scale(0.8);
+    top: 3%;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__textbox-2 {
+    width: 100%;
+    transform: scale(1);
+    left: 0;
+    top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about__textbox-2 {
+    top: 15%;
+    transform: scale(0.8);
+  }
+}
+.section-about__circlebox {
+  position: absolute;
+  top: 4%;
+  right: 1.1%;
+}
+@media (max-width: 75em) {
+  .section-about__circlebox {
+    transform: scale(0.8);
+    right: 5%;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about__circlebox {
+    top: 5%;
+    right: 10%;
+  }
+}
+.section-about__skillsetbox {
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 50rem;
+}
+@media (max-width: 75em) {
+  .section-about__skillsetbox {
+    width: 50%;
+    transform: scale(0.8);
+    top: 10%;
+    left: 0;
+  }
+}
+@media (max-width: 56.25em) {
+  .section-about__skillsetbox {
+    width: 100%;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about__skillsetbox {
+    top: 18%;
+  }
+}
 .section-about__arrow-box {
   position: absolute;
   top: 50%;
@@ -1758,7 +1861,7 @@ body {
 }
 @media (max-width: 75em) {
   .section-about__arrow-box {
-    scale: 0.8;
+    transform: scale(0.8);
   }
 }
 @media (max-width: 56.25em) {
@@ -1766,7 +1869,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    scale: 1;
+    transform: scale(1);
     top: 58%;
     left: 0;
     width: 100%;
@@ -1778,73 +1881,10 @@ body {
     display: block;
   }
 }
-.section-about__textbox-1 {
-  position: absolute;
-  top: 8%;
-  right: 10%;
-  font-weight: bold;
-  padding: 1.5rem 3rem;
-  background-color: #e6e6e6;
-}
-@media (max-width: 75em) {
-  .section-about__textbox-1 {
-    scale: 0.8;
-    right: 5%;
-    top: 5%;
-  }
-}
-@media (max-width: 56.25em) {
-  .section-about__textbox-1 {
-    scale: 0.8;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.section-about__textbox-2 {
-  position: absolute;
-  top: 2%;
-  left: 4%;
-}
-@media (max-width: 75em) {
-  .section-about__textbox-2 {
-    scale: 0.8;
-    top: 3%;
-  }
-}
-@media (max-width: 56.25em) {
-  .section-about__textbox-2 {
-    width: 100%;
-    scale: 1;
-    left: 0;
-    top: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.section-about__skillsetbox {
-  position: absolute;
-  top: 7%;
-  left: 7%;
-  width: 50rem;
-}
-@media (max-width: 75em) {
-  .section-about__skillsetbox {
-    width: 50%;
-    scale: 0.8;
-    top: 10%;
-    left: 0;
-  }
-}
-@media (max-width: 56.25em) {
-  .section-about__skillsetbox {
-    width: 100%;
-    top: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 37.5em) {
+  .section-about__arrow-box {
+    top: 63%;
+    transform: scale(0.8);
   }
 }
 .section-about__project-box {
@@ -1855,7 +1895,7 @@ body {
 @media (max-width: 75em) {
   .section-about__project-box {
     width: 50%;
-    scale: 0.8;
+    transform: scale(0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1866,18 +1906,14 @@ body {
 @media (max-width: 56.25em) {
   .section-about__project-box {
     width: 100%;
-    scale: 1;
-    bottom: 0%;
+    transform: scale(1);
+    bottom: 1%;
   }
 }
-.section-about__circlebox {
-  position: absolute;
-  top: 5%;
-  right: 1.1%;
-}
-@media (max-width: 75em) {
-  .section-about__circlebox {
-    scale: 0.8;
+@media (max-width: 37.5em) {
+  .section-about__project-box {
+    width: 100%;
+    transform: scale(0.7);
   }
 }
 .section-repo {
