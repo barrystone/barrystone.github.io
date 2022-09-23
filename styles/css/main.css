@@ -1104,6 +1104,16 @@ body {
   width: 18rem;
   height: 28rem;
 }
+@media (max-width: 56.25em) {
+  .notetree {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 37.5em) {
+  .notetree {
+    transform: scale(0.8);
+  }
+}
 .notetree__title {
   height: 5.3rem;
   display: flex;
@@ -1112,7 +1122,7 @@ body {
   background-color: #c4c4c4;
   background-color: rgba(0, 0, 0, 0.8);
   border: 8px solid #f89761;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .notetree__title p {
   color: #fff;
@@ -1938,6 +1948,14 @@ body {
 }
 .section-note {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 75em) {
+  .section-note {
+    height: 97.5rem;
+  }
 }
 @media (max-width: 56.25em) {
   .section-note {
@@ -1951,14 +1969,19 @@ body {
 }
 .section-note__container {
   position: relative;
-  top: 5%;
-  left: 2.5%;
   width: 95%;
   height: 90%;
+  padding: 1% 2.5%;
   border: 3px solid #f89761;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+@media (max-width: 75em) {
+  .section-note__container {
+    padding: 1% 2.5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 56.25em) {
   .section-note__container {
