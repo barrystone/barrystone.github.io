@@ -55,17 +55,22 @@ const AboutSection = () => {
   };
 
   const screwsRotate = () => {
-    const screws = document.querySelectorAll('.section-about__screwbox');
-    document.getElementById('work-arrow').addEventListener('mouseover', () => {
-      for (let screw of screws) {
-        screw.classList.add('section-about__screwbox--rotate');
-      }
-    });
-    document.getElementById('work-arrow').addEventListener('mouseleave', () => {
-      for (let screw of screws) {
-        screw.classList.remove('section-about__screwbox--rotate');
-      }
-    });
+    const rotete = (id) => {
+      const screws = document.querySelectorAll('.section-about__screwbox');
+      document.getElementById(id).addEventListener('mouseover', () => {
+        for (let screw of screws) {
+          screw.classList.add('section-about__screwbox--rotate');
+        }
+      });
+      document.getElementById(id).addEventListener('mouseleave', () => {
+        for (let screw of screws) {
+          screw.classList.remove('section-about__screwbox--rotate');
+        }
+      });
+    };
+
+    rotete('skill');
+    rotete('work-arrow');
   };
 
   return (
