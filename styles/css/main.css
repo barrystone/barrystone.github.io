@@ -2020,10 +2020,10 @@ body {
 }
 @media (max-width: 37.5em) {
   .section-note__topicbox:nth-child(2n-1) {
-    transform: translateX(2%);
+    transform: translateX(3.5%);
   }
   .section-note__topicbox:nth-child(2n) {
-    transform: translateX(-2%);
+    transform: translateX(-3.5%);
   }
 }
 

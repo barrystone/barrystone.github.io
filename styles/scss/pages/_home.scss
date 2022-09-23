@@ -302,10 +302,10 @@ $section-default-height: 65rem;
 
       @include respond(phone) {
         &:nth-child(2n-1) {
-          transform: translateX(2%);
+          transform: translateX(3.5%);
         }
         &:nth-child(2n) {
-          transform: translateX(-2%);
+          transform: translateX(-3.5%);
         }
       }
     }
