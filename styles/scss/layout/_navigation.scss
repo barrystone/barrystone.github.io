@@ -97,7 +97,7 @@ $navigation_button-positionRight: 2.5%;
   &__link {
     &:link,
     &:visited {
-      display: inline-block;
+      display: none;
       font-size: 8rem;
       font-weight: 700;
       padding: 1rem 2rem;
@@ -135,6 +135,10 @@ $navigation_button-positionRight: 2.5%;
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  &__checkbox:checked ~ &__nav &__list &__item &__link {
+    display: inline-block;
   }
 
   //ICON
