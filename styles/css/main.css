@@ -1101,8 +1101,13 @@ body {
   }
 }
 .notetree {
-  width: 18rem;
+  width: 17rem;
   height: 28rem;
+}
+@media (max-width: 75em) {
+  .notetree {
+    transform: scale(0.95);
+  }
 }
 @media (max-width: 56.25em) {
   .notetree {
@@ -1111,7 +1116,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .notetree {
-    transform: scale(0.8);
+    transform: scale(0.85);
   }
 }
 .notetree__title {
@@ -1123,6 +1128,11 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   border: 8px solid #f89761;
   margin-top: 2rem;
+}
+@media (max-width: 37.5em) {
+  .notetree__title {
+    margin-top: 1rem;
+  }
 }
 .notetree__title p {
   color: #fff;
@@ -1148,7 +1158,7 @@ body {
 }
 .notetree ul > li a {
   line-height: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #000;
   -webkit-text-decoration: underline #fff 3px;
@@ -1837,6 +1847,7 @@ body {
   .section-about__skillsetbox {
     width: 100%;
     top: 15%;
+    transform: scale(0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1925,7 +1936,6 @@ body {
 @media (max-width: 56.25em) {
   .section-about__project-box {
     width: 100%;
-    transform: scale(1);
     bottom: 1%;
   }
 }
@@ -1965,7 +1975,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .section-note {
-    height: 162.5rem;
+    height: 143rem;
   }
 }
 .section-note__container {
@@ -1992,12 +2002,23 @@ body {
 @media (max-width: 37.5em) {
   .section-note__container {
     grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: 95%;
+    padding: 1% 0;
   }
 }
 .section-note__topicbox {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .section-note__topicbox:nth-child(2n-1) {
+    transform: translateX(2%);
+  }
+  .section-note__topicbox:nth-child(2n) {
+    transform: translateX(-2%);
+  }
 }
 
 @-webkit-keyframes arrowmove {

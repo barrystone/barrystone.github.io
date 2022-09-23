@@ -1,20 +1,17 @@
 .notetree {
-  width: 18rem;
+  width: 17rem;
   //   height: 95%;
   height: 28rem;
 
   @include respond(tab-land) {
-    // transform: scale(0.9);
+    transform: scale(0.95);
   }
   @include respond(tab-port) {
     transform: scale(0.9);
   }
   @include respond(phone) {
-    transform: scale(0.8);
+    transform: scale(0.85);
   }
-  //   height: 25rem;
-  //   background-color: lightblue;
-  //   border: 1px solid $color-black;
 
   &__title {
     height: 5.3rem;
@@ -25,6 +22,10 @@
     background-color: rgba($color-black, 0.8);
     border: 8px solid $color-secondary;
     margin-top: 2rem;
+
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
     p {
       color: $color-white;
       //   text-shadow: 0.1em 0.1em 0 $color-;
@@ -60,7 +61,7 @@
       margin-bottom: 1.2rem;
       a {
         line-height: 2rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         text-decoration: none;
         color: $color-black;
         text-decoration: underline $color-white 3px;
