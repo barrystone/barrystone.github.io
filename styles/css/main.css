@@ -1972,6 +1972,9 @@ body {
     transform: scale(0.7);
   }
 }
+.section-repo {
+  background-image: linear-gradient(to bottom right, rgba(196, 196, 196, 0.7) 0%, #c4c4c4 100%);
+}
 .section-repo__heading {
   width: 100%;
   float: left;
