@@ -1715,6 +1715,12 @@ body {
   height: 95%;
   width: 98%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 6px 2px, rgba(60, 64, 67, 0.15) 0px 0px 6px 2px;
+  transform: scale(0.92);
+}
+@media (max-width: 75em) {
+  .section-about__container {
+    transform: scale(1);
+  }
 }
 @media (max-width: 56.25em) {
   .section-about__container {

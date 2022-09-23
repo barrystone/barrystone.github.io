@@ -19,6 +19,13 @@ $section-default-height: 65rem;
       width: 98%;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 6px 2px,
         rgba(60, 64, 67, 0.15) 0px 0px 6px 2px;
+
+      // Tired for zoom out all of size so just scale it.
+      transform: scale(0.92);
+
+      @include respond(tab-land) {
+        transform: scale(1);
+      }
       @include respond(tab-port) {
         width: 95%;
       }
