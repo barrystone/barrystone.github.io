@@ -47,6 +47,8 @@ const RepoSection = ({ reposData: staticReposData }) => {
       <div className="section-repo__heading">
         <h2 className="heading-secondary">
           <section id="repoSection-heading">
+            <img src="./img/design/bolt-icon.svg" alt="" />
+            <img src="./img/design/bolt-icon.svg" alt="" />
             <span>Github 專案</span>
           </section>
         </h2>

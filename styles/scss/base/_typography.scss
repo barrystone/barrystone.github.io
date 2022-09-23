@@ -89,20 +89,37 @@ body {
 
 .heading-secondary {
   display: block;
-  height: 10rem;
-  width: 40%;
+  height: 8rem;
+  width: 90%;
   margin: 4.5rem auto 6rem;
   background-color: $color-secondary;
   background-color: $color-white;
-  text-shadow: 0.1em 0.1em 0 $color-secondary;
-  border-radius: 50px;
-  border: 5px solid $color-secondary;
+  // text-shadow: 0.1em 0.1em 0 $color-secondary;
+  // border-radius: 20px;
+  // border-top: 2px solid $color-white;
+  border-top: 8px solid $color-secondary;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
   section {
     height: 100%;
     width: 100%;
     border-radius: 50px;
-    border: 8px solid $color-secondary-dark;
+    position: relative;
+
+    img {
+      position: absolute;
+      height: 4rem;
+      width: 4rem;
+      top: 1.3rem;
+    }
+    img:nth-child(1) {
+      left: 2rem;
+    }
+    img:nth-child(2) {
+      right: 2rem;
+    }
+    // border: 8px solid $color-secondary-dark;
     // transition: background 0.1s ease-in;
     // &:hover {
     //   background-color: $color-black;

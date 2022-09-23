@@ -127,21 +127,33 @@ body {
 
 .heading-secondary {
   display: block;
-  height: 10rem;
-  width: 40%;
+  height: 8rem;
+  width: 90%;
   margin: 4.5rem auto 6rem;
   background-color: #f89761;
   background-color: #fff;
-  text-shadow: 0.1em 0.1em 0 #f89761;
-  border-radius: 50px;
-  border: 5px solid #f89761;
+  border-top: 8px solid #f89761;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   position: relative;
 }
 .heading-secondary section {
   height: 100%;
   width: 100%;
   border-radius: 50px;
-  border: 8px solid #f8874a;
+  position: relative;
+}
+.heading-secondary section img {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  top: 1.3rem;
+}
+.heading-secondary section img:nth-child(1) {
+  left: 2rem;
+}
+.heading-secondary section img:nth-child(2) {
+  right: 2rem;
 }
 .heading-secondary span {
   font-size: 4rem;
@@ -409,6 +421,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px #000 solid;
+  border-radius: 20px;
 }
 .repo-wrapper {
   height: 38rem;
@@ -417,6 +430,8 @@ body {
   flex: 1;
   background-color: #f89761;
   border: 5px #ffc4a4 solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .repo__title a {
   display: block;
@@ -444,14 +459,15 @@ body {
   border: 2px solid rgba(122, 122, 122, 0.2);
 }
 .repo__content .repo-description {
+  background-color: rgba(196, 196, 196, 0.5);
+  border-radius: 50%;
   margin-bottom: 15%;
   height: 65%;
   width: 80%;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(230, 230, 230, 0.55) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.5) 0px 0px 1px 1px inset;
 }
 .repo__content .repo-description--title {
-  background-color: #fff;
-  margin: 0 1rem;
+  margin: 0 5rem;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -461,6 +477,7 @@ body {
   margin-left: 1rem;
 }
 .repo__content .repo-description--title span p {
+  background-color: #fff;
   padding: 0.6rem;
   border: 1px solid #000;
   border-radius: 50%;
@@ -1954,9 +1971,6 @@ body {
     width: 100%;
     transform: scale(0.7);
   }
-}
-.section-repo {
-  background-color: #c4c4c4;
 }
 .section-repo__heading {
   width: 100%;
