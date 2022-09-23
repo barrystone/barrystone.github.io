@@ -77,8 +77,9 @@ $section-default-height: 65rem;
           align-items: center;
         }
         @include respond(phone) {
+          margin-right: 1rem;
           transform: scale(0.5);
-          top: 3%;
+          top: 2%;
         }
       }
       &-2 {
@@ -100,7 +101,7 @@ $section-default-height: 65rem;
           align-items: center;
         }
         @include respond(phone) {
-          top: 15%;
+          top: 13%;
           transform: scale(0.8);
         }
       }
@@ -116,7 +117,6 @@ $section-default-height: 65rem;
         right: 5%;
       }
       @include respond(phone) {
-        top: 5%;
         right: 10%;
       }
     }
@@ -141,7 +141,7 @@ $section-default-height: 65rem;
         align-items: center;
       }
       @include respond(phone) {
-        top: 18%;
+        top: 16.5%;
       }
     }
 
@@ -199,7 +199,7 @@ $section-default-height: 65rem;
         }
       }
       @include respond(phone) {
-        top: 63%;
+        top: 61%;
         transform: scale(0.8);
       }
     }
@@ -224,6 +224,7 @@ $section-default-height: 65rem;
         bottom: 1%;
       }
       @include respond(phone) {
+        bottom: 2%;
         width: 100%;
         transform: scale(0.7);
 
