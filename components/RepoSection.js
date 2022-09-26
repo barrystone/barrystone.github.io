@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import languageImg from '../utils/languageImg';
 
-import ReposDataTesting from '../_data/reposData_210524.json';
+// import ReposDataTesting from '../_data/reposData_210524.json';
 
 const RepoSection = ({ reposData: staticReposData }) => {
   const sliderSettings = {
@@ -59,7 +59,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
       const data = await res.json();
       if (res.status == 200) {
         setReposData(data);
-        console.log('reposData', data);
+        // console.log('reposData', data);
       } else {
         res.status == 403
           ? console.log('API limit !')
@@ -70,9 +70,9 @@ const RepoSection = ({ reposData: staticReposData }) => {
     }
   };
   useEffect(() => {
-    // setReposData(staticReposData);
-    // For testing , if API limmit.
-    setReposData(ReposDataTesting);
+    setReposData(staticReposData);
+    // // For testing , if API limmit.
+    // setReposData(ReposDataTesting);
 
     onRwdSlideSettings();
     window.addEventListener('resize', onRwdSlideSettings);
