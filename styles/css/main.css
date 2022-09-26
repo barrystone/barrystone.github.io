@@ -594,8 +594,9 @@ body {
     font-size: 2.5rem;
   }
   .repo__content .repo-description--title {
-    margin: 1rem 5.5rem;
-    top: 8%;
+    margin: 1.5rem 4rem;
+    margin-bottom: 0rem;
+    top: 5%;
   }
   .repo__content .repo-description--title span p {
     font-size: 1.7rem;
@@ -605,7 +606,7 @@ body {
     height: 4rem;
   }
   .repo__content .repo-description--text {
-    top: 0.7rem;
+    top: 0rem;
   }
   .repo__content .repo-description--text p {
     font-size: 1.5rem;
