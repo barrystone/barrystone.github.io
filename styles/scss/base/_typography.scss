@@ -143,6 +143,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @include respond(phone) {
+    section {
+      span {
+        font-size: $font-size-big-4;
+      }
+
+      img {
+        position: absolute;
+        height: 3rem;
+        width: 3rem;
+        top: 1.5rem;
+      }
+      img:nth-child(1) {
+        left: 2rem;
+      }
+      img:nth-child(2) {
+        right: 2rem;
+      }
+    }
+  }
 }
 
 .heading-tertiary {
