@@ -38,7 +38,10 @@ const RepoSection = ({ reposData: staticReposData }) => {
         });
       }
     } else {
-      return;
+      return setRwdSlideSettings({
+        ...sliderSettings,
+        slidesToShow: 3
+      });
     }
   };
 
@@ -64,6 +67,8 @@ const RepoSection = ({ reposData: staticReposData }) => {
     // setReposData(staticReposData);
     // For testing , if API limmit.
     setReposData(ReposDataTesting);
+
+    onRwdSlideSettings();
     window.addEventListener('resize', onRwdSlideSettings);
     requestReposData();
   }, []);
