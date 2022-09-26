@@ -20,15 +20,17 @@
     border: 5px $color-secondary-light solid;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
+      font-size: 2.8rem;
       display: block;
       color: $color-black;
       text-decoration: none;
-      font-size: 3rem;
       text-align: center;
       transition: all 0.3s;
-      padding: 2rem 3rem;
       text-transform: capitalize;
 
       text-shadow: 0.05em 0.05em 0 $color-primary;
@@ -45,7 +47,7 @@
     flex: 3.5;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     border: 2px solid rgba($color-grey, 0.2);
 
@@ -53,20 +55,20 @@
       &-description {
         background-color: rgba($color-primary, 0.5);
         border-radius: 50%;
-        margin-bottom: 15%;
-        height: 65%;
+        margin-bottom: 5%;
+        height: 70%;
         width: 80%;
         box-shadow: rgba($color-white, 0.25) 0px 0.0625em 0.0625em,
           rgba($color-white-dark, 0.55) 0px 0.125em 0.5em,
           rgba($color-black, 0.5) 0px 0px 1px 1px inset;
 
         &--title {
-          // background-color: $color-white;
           margin: 0 5rem;
           display: flex;
           justify-content: space-between;
           position: relative;
           top: 15%;
+
           span {
             margin-left: 1rem;
             p {
@@ -80,23 +82,19 @@
           img {
             transform: translate(0, -15%);
             border-radius: 50%;
-            width: 4.5rem;
-            height: 4.5rem;
+            width: 4rem;
+            height: 4rem;
+            margin: 0.5rem;
           }
         }
 
         &--text {
           position: relative;
           top: 2rem;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
           p {
-            // background-color: red;
             color: $color-black;
             font-size: 1.7rem;
             padding: 1rem 5rem;
-            // margin-bottom: 5rem;
             word-wrap: break-word;
           }
         }
@@ -129,7 +127,7 @@
       &-fork {
         position: absolute;
         right: 1.2rem;
-        bottom: 1.3em;
+        bottom: 1.3rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -146,6 +144,119 @@
             margin-left: -0.1rem;
             font-size: 2rem;
           }
+        }
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    &__title {
+      a {
+        font-size: 2.3rem;
+      }
+    }
+
+    &__content {
+      .repo {
+        &-description {
+          &--title {
+            margin: 1rem 4rem;
+            top: 10%;
+
+            span {
+              p {
+                font-size: 1.5rem;
+              }
+            }
+            img {
+              width: 3.5rem;
+              height: 3.5rem;
+            }
+          }
+
+          &--text {
+            top: 0.7rem;
+            p {
+              font-size: 1.4rem;
+            }
+          }
+        }
+
+        &-star {
+          bottom: 1.5rem;
+
+          &--icon {
+            img {
+              height: 3rem;
+            }
+          }
+
+          &--number {
+            font-size: 1rem;
+            span {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        &-fork {
+          right: 1.5rem;
+          bottom: 1.8rem;
+
+          &--icon {
+            img {
+              height: 2rem;
+            }
+          }
+          &--number {
+            font-size: 1rem;
+            span {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include respond(phone) {
+    &__title {
+      a {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__content {
+      .repo {
+        &-description {
+          &--title {
+            margin: 1rem 5.5rem;
+            top: 8%;
+
+            span {
+              p {
+                font-size: 1.7rem;
+              }
+            }
+            img {
+              width: 4rem;
+              height: 4rem;
+            }
+          }
+
+          &--text {
+            top: 0.7rem;
+            p {
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        &-star {
+          bottom: 2rem;
+        }
+
+        &-fork {
+          bottom: 2.3rem;
         }
       }
     }
