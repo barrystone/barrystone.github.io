@@ -10,7 +10,10 @@
     transform: scale(0.9);
   }
   @include respond(phone) {
-    transform: scale(0.85);
+    transform: scale(0.8);
+  }
+  @include respond(phone-small) {
+    width: 12rem;
   }
 
   &__title {
