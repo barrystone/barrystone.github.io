@@ -13,7 +13,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
     slidesToScroll: 3,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 3000
   };
 
   const [reposData, setReposData] = useState([]);
@@ -29,18 +29,24 @@ const RepoSection = ({ reposData: staticReposData }) => {
       if (window.matchMedia('(max-width:37.5em)').matches) {
         setRwdSlideSettings({
           ...sliderSettings,
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 1000
         });
       } else {
         setRwdSlideSettings({
           ...sliderSettings,
-          slidesToShow: 2
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          speed: 2000
         });
       }
     } else {
       return setRwdSlideSettings({
         ...sliderSettings,
-        slidesToShow: 3
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 2000
       });
     }
   };
