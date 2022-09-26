@@ -1233,7 +1233,7 @@ body {
     transform: scale(0.8);
   }
 }
-@media (max-width: 23.75em) {
+@media (max-width: 25em) {
   .notetree {
     width: 12rem;
   }
@@ -1913,6 +1913,12 @@ body {
     top: 2%;
   }
 }
+@media (max-width: 25em) {
+  .section-about__textbox-1 {
+    transform: scale(0.4);
+    top: 0%;
+  }
+}
 .section-about__textbox-2 {
   position: absolute;
   top: 2%;
@@ -1986,6 +1992,12 @@ body {
     top: 16.5%;
   }
 }
+@media (max-width: 25em) {
+  .section-about__skillsetbox {
+    transform: scale(0.7);
+    top: 13.5%;
+  }
+}
 .section-about__arrow-box {
   position: absolute;
   top: 50%;
@@ -2045,6 +2057,11 @@ body {
     transform: scale(0.8);
   }
 }
+@media (max-width: 25em) {
+  .section-about__arrow-box {
+    top: 66%;
+  }
+}
 .section-about__project-box {
   position: absolute;
   bottom: 4%;
@@ -2072,6 +2089,13 @@ body {
     bottom: 2%;
     width: 100%;
     transform: scale(0.7);
+  }
+}
+@media (max-width: 25em) {
+  .section-about__project-box {
+    bottom: 0;
+    width: 100%;
+    transform: scale(0.5);
   }
 }
 .section-repo {

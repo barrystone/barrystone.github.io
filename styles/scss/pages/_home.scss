@@ -88,6 +88,10 @@ $section-default-height: 65rem;
           transform: scale(0.5);
           top: 2%;
         }
+        @include respond(phone-small) {
+          transform: scale(0.4);
+          top: 0%;
+        }
       }
       &-2 {
         position: absolute;
@@ -151,6 +155,10 @@ $section-default-height: 65rem;
       @include respond(phone) {
         top: 16.5%;
       }
+      @include respond(phone-small) {
+        transform: scale(0.7);
+        top: 13.5%;
+      }
     }
 
     &__arrow-box {
@@ -210,6 +218,9 @@ $section-default-height: 65rem;
         top: 61%;
         transform: scale(0.8);
       }
+      @include respond(phone-small) {
+        top: 66%;
+      }
     }
 
     &__project-box {
@@ -234,8 +245,11 @@ $section-default-height: 65rem;
         bottom: 2%;
         width: 100%;
         transform: scale(0.7);
-
-        // background-color: red;
+      }
+      @include respond(phone-small) {
+        bottom: 0;
+        width: 100%;
+        transform: scale(0.5);
       }
     }
   }
