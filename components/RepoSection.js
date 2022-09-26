@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import languageImg from '../utils/languageImg';
 
-// import ReposDataTesting from '../_data/reposData_210524.json';
+import ReposDataTesting from '../_data/reposData_210524.json';
 
 const RepoSection = ({ reposData: staticReposData }) => {
   const sliderSettings = {
@@ -17,6 +17,30 @@ const RepoSection = ({ reposData: staticReposData }) => {
   };
 
   const [reposData, setReposData] = useState([]);
+  const [RwdSlideSettings, setRwdSlideSettings] = useState(sliderSettings);
+
+  const onRwdSlideSettings = () => {
+    //37.5 em 0 - 600px:     phone
+    //56.25em 600 - 900px:   Tablet portrait
+    //75em    900 - 1200px:  Tablet landscape
+    // [1200 - 1800]: is where our normal styles apply
+    //112.5em 1800px + :     Big desktop
+    if (window.matchMedia('(max-width:75em)').matches) {
+      if (window.matchMedia('(max-width:37.5em)').matches) {
+        setRwdSlideSettings({
+          ...sliderSettings,
+          slidesToShow: 1
+        });
+      } else {
+        setRwdSlideSettings({
+          ...sliderSettings,
+          slidesToShow: 2
+        });
+      }
+    } else {
+      return;
+    }
+  };
 
   const requestReposData = async () => {
     try {
@@ -37,8 +61,10 @@ const RepoSection = ({ reposData: staticReposData }) => {
     }
   };
   useEffect(() => {
-    setReposData(staticReposData);
-    // setReposData(ReposDataTesting);
+    // setReposData(staticReposData);
+    // For testing , if API limmit.
+    setReposData(ReposDataTesting);
+    window.addEventListener('resize', onRwdSlideSettings);
     requestReposData();
   }, []);
 
@@ -54,7 +80,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
         </h2>
       </div>
       <div className="section-repo__repos">
-        <Slider {...sliderSettings}>
+        <Slider {...RwdSlideSettings}>
           {reposData.map((repo, index) => (
             <div className="repo-wrapper" key={index}>
               <div className="repo">

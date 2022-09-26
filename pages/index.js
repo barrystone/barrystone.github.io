@@ -43,7 +43,7 @@ export default function Home({ reposData }) {
 }
 
 export async function getStaticProps() {
-  const repoApi = 'https://api.github.com/users/barrystone/repos';
+  const repoApi = 'https://api.github.com/users/barrystone/repos?sort=updated';
   const reposData = await fetch(repoApi).then((res) => res.json());
   // const reposData = null;
   return {
