@@ -97,7 +97,21 @@
     width: 65%;
     height: 15rem;
 
-    background-color: $color-white;
+    // background-color: $color-white;
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   rgba($coloe-white, 1) 0%,
+    //   rgba($coloe-white, 1) 50%,
+    //   rgba($color-white, 0) 100%
+    // );
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-white, 1) 10%,
+
+      rgba($color-white, 0.8) 75%,
+      rgba($color-white, 0.7) 95%,
+      rgba($color-white, 0) 100%
+    );
     z-index: -1;
   }
 

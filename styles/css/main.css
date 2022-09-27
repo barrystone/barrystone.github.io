@@ -268,14 +268,14 @@ body {
   padding: 0.5rem;
   border-radius: 50%;
   cursor: pointer;
-  height: 60%;
-  width: 15%;
+  height: 50%;
+  width: 13%;
   position: relative;
   left: 10%;
-  top: 17%;
+  top: 25%;
 }
 .btn-primary p, .btn-primary:link p, .btn-primary:visited p {
-  font-size: 3.5rem;
+  font-size: 3rem;
   display: inline-block;
   font-weight: bold;
   color: #fff;
@@ -283,7 +283,7 @@ body {
   position: absolute;
   top: 50%;
   left: 20%;
-  transform: translate(10%, -40%);
+  transform: translate(15%, -40%);
   line-height: 2.5rem;
   transition: all 0.2s;
 }
@@ -292,7 +292,7 @@ body {
   transition: all 0.2s;
 }
 .btn-primary:hover p {
-  font-size: 3.8rem;
+  font-size: 3.3rem;
   transform: translate(5%, -40%);
 }
 .btn-primary:hover p span {
@@ -316,7 +316,7 @@ body {
   transition: all 0.2s;
 }
 .btn-primary--2, .btn-primary--2:link, .btn-primary--2:visited {
-  left: 20%;
+  left: 18%;
 }
 
 .btn-secondary {
@@ -1534,7 +1534,7 @@ body {
   position: absolute;
   width: 65%;
   height: 15rem;
-  background-color: #fff;
+  background-image: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.7) 95%, rgba(255, 255, 255, 0) 100%);
   z-index: -1;
 }
 .header__text-box {
