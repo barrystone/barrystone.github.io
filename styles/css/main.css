@@ -62,7 +62,7 @@ body {
 }
 
 .heading-primary--main {
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: bold;
   z-index: 2;
   position: absolute;
@@ -70,12 +70,29 @@ body {
   left: 25%;
   transform: translateY(-50%) translateX(-50%);
   display: block;
-  padding: 2.5rem 7.5rem;
+  padding: 2.5rem 5.5rem;
   text-align: center;
   border-radius: 30%;
   background-color: #f89761;
   font-family: "Kelly Slab";
   text-shadow: 0.01em 0.01em 0 #fff;
+}
+@media (max-width: 75em) {
+  .heading-primary--main {
+    font-size: 6rem;
+    padding: 2.5rem 2.5rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-primary--main {
+    font-size: 4.3rem;
+    padding: 2.5rem 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    left: 50%;
+  }
 }
 .heading-primary--main::after {
   content: attr(text-shadow);
@@ -95,6 +112,7 @@ body {
 .heading-primary--sub {
   background-color: #e6e6e6;
   padding: 1rem 1.5rem;
+  border-radius: 20px;
 }
 .heading-primary--sub-1 {
   font-size: 3rem;
@@ -102,11 +120,36 @@ body {
   font-family: "Kelly Slab";
   transform: translateX(20%) translateY(-10%) rotateZ(10deg);
 }
+@media (max-width: 75em) {
+  .heading-primary--sub-1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-primary--sub-1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+}
 .heading-primary--sub-2 {
   font-size: 2.5rem;
   display: block;
   text-transform: uppercase;
-  margin-top: 24rem;
+  margin-top: 26rem;
+  margin-left: 2rem;
+}
+@media (max-width: 75em) {
+  .heading-primary--sub-2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-primary--sub-2 {
+    font-size: 1.8rem;
+    width: 18rem;
+    margin-left: 3rem;
+    margin-top: 22rem;
+  }
 }
 
 .paragraph-big--1 {
@@ -266,7 +309,7 @@ body {
   background-color: #f89761;
   text-decoration: none;
   padding: 0.5rem;
-  border-radius: 50%;
+  border-radius: 20px;
   cursor: pointer;
   height: 50%;
   width: 13%;
@@ -291,6 +334,21 @@ body {
   font-size: 1.8rem;
   transition: all 0.2s;
 }
+@media (max-width: 75em) {
+  .btn-primary, .btn-primary:link, .btn-primary:visited {
+    height: 50%;
+    width: 11rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .btn-primary, .btn-primary:link, .btn-primary:visited {
+    width: 9rem;
+    height: 45%;
+  }
+  .btn-primary p, .btn-primary:link p, .btn-primary:visited p {
+    font-size: 2.3rem;
+  }
+}
 .btn-primary:hover p {
   font-size: 3.3rem;
   transform: translate(5%, -40%);
@@ -302,15 +360,20 @@ body {
   height: 110%;
   width: 108%;
 }
+@media (max-width: 56.25em) {
+  .btn-primary:hover p {
+    font-size: 2.5rem;
+  }
+}
 .btn-primary::after {
   content: "";
   background-color: #000;
-  border-radius: 50%;
+  border-radius: 30px;
   height: 110%;
   width: 110%;
   display: inline-block;
   position: absolute;
-  top: -0.5rem;
+  top: -0.45rem;
   left: -4.5%;
   z-index: -1;
   transition: all 0.2s;
@@ -1483,6 +1546,11 @@ body {
   background-position: right;
   position: relative;
 }
+@media (max-width: 75em) {
+  .header {
+    background-position: 70% 0%;
+  }
+}
 .header-animation {
   position: absolute;
   height: 100vh;
@@ -1525,9 +1593,24 @@ body {
           clip-path: polygon(0 0, 55% 0%, 45% 48%, 45% 50%, 45% 52%, 57% 100%, 0 100%);
   transition: all linear 0.05s;
 }
+@media (max-width: 37.5em) {
+  .header__left {
+    z-index: -2;
+    -webkit-clip-path: none;
+            clip-path: none;
+    background-image: linear-gradient(to bottom, #c4c4c4 10%, rgba(196, 196, 196, 0.3) 30%, #c4c4c4 47.5%, #c4c4c4 52.5%, rgba(196, 196, 196, 0.3) 75%, #c4c4c4 100%);
+  }
+}
 .header:hover .header__left {
   -webkit-clip-path: polygon(0 0, 52% 0%, 43.5% 45%, 43.5% 50%, 43.5% 55%, 54% 100%, 0 100%);
           clip-path: polygon(0 0, 52% 0%, 43.5% 45%, 43.5% 50%, 43.5% 55%, 54% 100%, 0 100%);
+}
+@media (max-width: 37.5em) {
+  .header:hover .header__left {
+    z-index: -2;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 .header__button-box {
   display: inline-block;
@@ -1535,7 +1618,12 @@ body {
   width: 65%;
   height: 15rem;
   background-image: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.7) 95%, rgba(255, 255, 255, 0) 100%);
-  z-index: -1;
+  z-index: 1;
+}
+@media (max-width: 37.5em) {
+  .header__button-box {
+    width: 60%;
+  }
 }
 .header__text-box {
   display: inline-block;

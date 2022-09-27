@@ -11,9 +11,12 @@
     url(../../public/img/me-bg.jpg);
   background-size: cover;
   background-position: right;
-  // background-position: 180% 0%;
-
+  // background-position: 100% 30%;
   position: relative;
+
+  @include respond(tab-land) {
+    background-position: 70% 0%;
+  }
 
   &-animation {
     position: absolute;
@@ -75,8 +78,23 @@
       57% 100%,
       0 100%
     );
-
     transition: all linear 0.05s;
+
+    @include respond(phone) {
+      // width: 0%;
+      z-index: -2;
+      clip-path: none;
+
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-primary, 1) 10%,
+        rgba($color-primary, 0.3) 30%,
+        rgba($color-primary, 1) 47.5%,
+        rgba($color-primary, 1) 52.5%,
+        rgba($color-primary, 0.3) 75%,
+        rgba($color-primary, 1) 100%
+      );
+    }
   }
 
   &:hover &__left {
@@ -89,6 +107,12 @@
       54% 100%,
       0 100%
     );
+
+    @include respond(phone) {
+      // width: 80%;
+      z-index: -2;
+      clip-path: none;
+    }
   }
 
   &__button-box {
@@ -96,23 +120,18 @@
     position: absolute;
     width: 65%;
     height: 15rem;
-
-    // background-color: $color-white;
-    // background-image: linear-gradient(
-    //   to bottom,
-    //   rgba($coloe-white, 1) 0%,
-    //   rgba($coloe-white, 1) 50%,
-    //   rgba($color-white, 0) 100%
-    // );
     background-image: linear-gradient(
       to bottom,
       rgba($color-white, 1) 10%,
-
       rgba($color-white, 0.8) 75%,
       rgba($color-white, 0.7) 95%,
       rgba($color-white, 0) 100%
     );
-    z-index: -1;
+    z-index: 1;
+
+    @include respond(phone) {
+      width: 60%;
+    }
   }
 
   &__text-box {

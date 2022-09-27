@@ -41,7 +41,7 @@ const Header = () => {
                 </span>
               </p>
               <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft">
-                Learning and making
+                Learning & making
               </span>
             </h1>
           </div>

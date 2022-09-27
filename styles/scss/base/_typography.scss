@@ -4,23 +4,34 @@ body {
 
 .heading-primary {
   &--main {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: bold;
     z-index: 2;
     position: absolute;
     top: 50%;
     left: 25%;
-    // height: 5rem;
     transform: translateY(-50%) translateX(-50%);
     display: block;
-    padding: 2.5rem 7.5rem;
+    padding: 2.5rem 5.5rem;
     text-align: center;
     border-radius: 30%;
     background-color: $color-secondary;
     // font-family: $font-style-Rye;
     font-family: $font-style-ks;
-
     text-shadow: 0.01em 0.01em 0 $color-white;
+
+    @include respond(tab-land) {
+      font-size: 6rem;
+      padding: 2.5rem 2.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 4.3rem;
+      padding: 2.5rem 1rem;
+    }
+    @include respond(phone) {
+      left: 50%;
+    }
+
     &::after {
       content: attr(text-shadow);
       z-index: -1;
@@ -47,18 +58,38 @@ body {
   &--sub {
     background-color: $color-white-dark;
     padding: 1rem 1.5rem;
+    border-radius: 20px;
+
     &-1 {
       font-size: 3rem;
       display: inline-block;
       font-family: $font-style-ks;
       transform: translateX(20%) translateY(-10%) rotateZ(10deg);
+
+      @include respond(tab-land) {
+        font-size: 2.8rem;
+      }
+      @include respond(tab-port) {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
     }
     &-2 {
       font-size: 2.5rem;
       display: block;
       text-transform: uppercase;
-      margin-top: 24rem;
-      // transform: translateX(5%);
+      margin-top: 26rem;
+      margin-left: 2rem;
+
+      @include respond(tab-land) {
+        font-size: 2.3rem;
+      }
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+        width: 18rem;
+        margin-left: 3rem;
+        margin-top: 22rem;
+      }
     }
   }
 }
