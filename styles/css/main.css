@@ -318,7 +318,7 @@ body {
   top: 25%;
 }
 .btn-primary p, .btn-primary:link p, .btn-primary:visited p {
-  font-size: 3rem;
+  font-size: 2.8rem;
   display: inline-block;
   font-weight: bold;
   color: #fff;
@@ -326,12 +326,12 @@ body {
   position: absolute;
   top: 50%;
   left: 20%;
-  transform: translate(15%, -40%);
-  line-height: 2.5rem;
+  transform: translate(18%, -40%);
+  line-height: 2.3rem;
   transition: all 0.2s;
 }
 .btn-primary p span, .btn-primary:link p span, .btn-primary:visited p span {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   transition: all 0.2s;
 }
 @media (max-width: 75em) {
@@ -347,18 +347,23 @@ body {
   }
   .btn-primary p, .btn-primary:link p, .btn-primary:visited p {
     font-size: 2.3rem;
+    line-height: 2rem;
+  }
+  .btn-primary p span, .btn-primary:link p span, .btn-primary:visited p span {
+    font-size: 1.5rem;
   }
 }
 .btn-primary:hover p {
   font-size: 3.3rem;
-  transform: translate(5%, -40%);
+  transform: translate(10%, -40%);
 }
 .btn-primary:hover p span {
   color: #000;
 }
 .btn-primary:hover::after {
-  height: 110%;
-  width: 108%;
+  height: 108%;
+  width: 104%;
+  background-image: linear-gradient(to bottom right, black 0%, black 100%);
 }
 @media (max-width: 56.25em) {
   .btn-primary:hover p {
@@ -367,14 +372,14 @@ body {
 }
 .btn-primary::after {
   content: "";
-  background-color: #000;
-  border-radius: 30px;
-  height: 110%;
-  width: 110%;
+  background-image: linear-gradient(to bottom right, black 0%, #f8874a 100%);
+  border-radius: 20px;
+  height: 106%;
+  width: 103%;
   display: inline-block;
   position: absolute;
-  top: -0.45rem;
-  left: -4.5%;
+  top: -7%;
+  left: -3%;
   z-index: -1;
   transition: all 0.2s;
 }
@@ -1806,13 +1811,14 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 4%;
+  top: 3.5%;
   right: 2.5%;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
+  border: 1px solid #c4c4c4;
 }
 .navigation__background {
   background-image: radial-gradient(#f8874a, #f89761);
@@ -1821,7 +1827,7 @@ body {
   border-radius: 50%;
   position: fixed;
   top: calc(
-      (7rem - 6rem) / 2 + 4%
+      (7rem - 6rem) / 2 + 3.5%
     );
   right: calc(
       (7rem - 6rem) / 2 + 2.5%

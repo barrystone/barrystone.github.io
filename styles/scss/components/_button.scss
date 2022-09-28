@@ -14,7 +14,7 @@
     left: 10%;
     top: 25%;
     p {
-      font-size: 3rem;
+      font-size: 2.8rem;
       display: inline-block;
       font-weight: bold;
       color: $color-white;
@@ -22,11 +22,11 @@
       position: absolute;
       top: 50%;
       left: 20%;
-      transform: translate(15%, -40%);
-      line-height: 2.5rem;
+      transform: translate(18%, -40%);
+      line-height: 2.3rem;
       transition: all 0.2s;
       span {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         transition: all 0.2s;
       }
     }
@@ -40,6 +40,10 @@
       height: 45%;
       p {
         font-size: 2.3rem;
+        line-height: 2rem;
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -47,15 +51,20 @@
   &:hover {
     p {
       font-size: 3.3rem;
-      transform: translate(5%, -40%);
+      transform: translate(10%, -40%);
       span {
         color: $color-black;
       }
     }
 
     &::after {
-      height: 110%;
-      width: 108%;
+      height: 108%;
+      width: 104%;
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($color-black, 1) 0%,
+        rgba($color-black, 1) 100%
+      );
     }
 
     @include respond(tab-port) {
@@ -67,14 +76,18 @@
 
   &::after {
     content: '';
-    background-color: $color-black;
-    border-radius: 30px;
-    height: 110%;
-    width: 110%;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba($color-black, 1) 0%,
+      rgba($color-secondary-dark, 1) 100%
+    );
+    border-radius: 20px;
+    height: 106%;
+    width: 103%;
     display: inline-block;
     position: absolute;
-    top: -0.45rem;
-    left: -4.5%;
+    top: -7%;
+    left: -3%;
     z-index: -1;
     transition: all 0.2s;
   }

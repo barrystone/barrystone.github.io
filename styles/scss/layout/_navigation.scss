@@ -1,7 +1,7 @@
 // FOR easy setting, auto calc distance
 $navigation_button-size: 7rem;
 $navigation_background-size: 6rem;
-$navigation_button-positionTop: 4%;
+$navigation_button-positionTop: 3.5%;
 $navigation_button-positionRight: 2.5%;
 
 .navigation {
@@ -23,16 +23,7 @@ $navigation_button-positionRight: 2.5%;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
-
-    // @include respond(tab-port) {
-    //   top: 4rem;
-    //   right: 4rem;
-    // }
-
-    // @include respond(phone) {
-    //   top: 3rem;
-    //   right: 3rem;
-    // }
+    border: 1px solid $color-primary-dark;
   }
 
   &__background {
