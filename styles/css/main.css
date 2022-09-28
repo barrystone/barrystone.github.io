@@ -1601,7 +1601,7 @@ body {
 }
 .header__left {
   height: 100vh;
-  background-image: linear-gradient(to bottom, #c4c4c4 10%, rgba(196, 196, 196, 0.3) 30%, #c4c4c4 38.5%, #c4c4c4 62.5%, rgba(196, 196, 196, 0.6) 75%, #c4c4c4 100%);
+  background-image: linear-gradient(to bottom, #c4c4c4 10%, rgba(196, 196, 196, 0.3) 30%, #c4c4c4 45%, #c4c4c4 55%, rgba(196, 196, 196, 0.6) 75%, #c4c4c4 100%);
   -webkit-clip-path: polygon(0 0, 55% 0%, 48% 48%, 48% 50%, 48% 52%, 57% 100%, 0 100%);
           clip-path: polygon(0 0, 55% 0%, 48% 48%, 48% 50%, 48% 52%, 57% 100%, 0 100%);
   transition: all linear 0.05s;
