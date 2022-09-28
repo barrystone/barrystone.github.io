@@ -8,14 +8,11 @@
     padding: 0.5rem;
     border-radius: 20px;
     cursor: pointer;
-
     height: 50%;
     width: 13%;
-
     position: relative;
     left: 10%;
     top: 25%;
-
     p {
       font-size: 3rem;
       display: inline-block;
@@ -71,16 +68,13 @@
   &::after {
     content: '';
     background-color: $color-black;
-    // border-radius: 50%;
     border-radius: 30px;
-
     height: 110%;
     width: 110%;
     display: inline-block;
     position: absolute;
     top: -0.45rem;
     left: -4.5%;
-
     z-index: -1;
     transition: all 0.2s;
   }
@@ -97,21 +91,26 @@
 .btn-secondary {
   text-decoration: none;
   display: inline-block;
-  background-color: $color-white-dark;
+  background-color: rgba($color-white-dark, 0.8);
   border: solid 2px $color-secondary-dark;
   padding: 0.2rem 1.5rem;
   cursor: pointer;
-
   transition: all cubic-bezier(0, 0.76, 0.4, 1.4) 0.2s;
-
   p {
     font-family: $font-style-anton;
     font-size: 4.5rem;
-    color: $color-secondary-dark;
+    color: $color-secondary;
   }
 
   &:hover {
     transform: translateX(2%);
+  }
+
+  @include respond(phone) {
+    transform: scale(0.8);
+    &:hover {
+      transform: translateX(2%) scale(0.8);
+    }
   }
 }
 

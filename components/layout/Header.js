@@ -51,7 +51,7 @@ const Header = () => {
               target="_blank"
               className="btn-secondary "
             >
-              <p>github</p>
+              <p>Github</p>
             </a>
           </div>
           {/* <div className='menu'> </div> */}

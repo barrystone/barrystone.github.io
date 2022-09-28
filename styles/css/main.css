@@ -385,7 +385,7 @@ body {
 .btn-secondary {
   text-decoration: none;
   display: inline-block;
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.8);
   border: solid 2px #f8874a;
   padding: 0.2rem 1.5rem;
   cursor: pointer;
@@ -394,10 +394,18 @@ body {
 .btn-secondary p {
   font-family: "Anton";
   font-size: 4.5rem;
-  color: #f8874a;
+  color: #f89761;
 }
 .btn-secondary:hover {
   transform: translateX(2%);
+}
+@media (max-width: 37.5em) {
+  .btn-secondary {
+    transform: scale(0.8);
+  }
+  .btn-secondary:hover {
+    transform: translateX(2%) scale(0.8);
+  }
 }
 
 .btn-tertiary {
@@ -1589,16 +1597,17 @@ body {
 .header__left {
   height: 100vh;
   background-image: linear-gradient(to bottom, #c4c4c4 10%, rgba(196, 196, 196, 0.3) 30%, #c4c4c4 38.5%, #c4c4c4 62.5%, rgba(196, 196, 196, 0.6) 75%, #c4c4c4 100%);
-  -webkit-clip-path: polygon(0 0, 55% 0%, 45% 48%, 45% 50%, 45% 52%, 57% 100%, 0 100%);
-          clip-path: polygon(0 0, 55% 0%, 45% 48%, 45% 50%, 45% 52%, 57% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 55% 0%, 48% 48%, 48% 50%, 48% 52%, 57% 100%, 0 100%);
+          clip-path: polygon(0 0, 55% 0%, 48% 48%, 48% 50%, 48% 52%, 57% 100%, 0 100%);
   transition: all linear 0.05s;
 }
 @media (max-width: 37.5em) {
   .header__left {
+    width: 100%;
     z-index: -2;
     -webkit-clip-path: none;
             clip-path: none;
-    background-image: linear-gradient(to bottom, #c4c4c4 10%, rgba(196, 196, 196, 0.3) 30%, #c4c4c4 47.5%, #c4c4c4 52.5%, rgba(196, 196, 196, 0.3) 75%, #c4c4c4 100%);
+    background-image: linear-gradient(to bottom, #c4c4c4 15%, rgba(196, 196, 196, 0.2) 30%, #c4c4c4 48.5%, #c4c4c4 51.5%, rgba(196, 196, 196, 0.2) 75%, #c4c4c4 100%);
   }
 }
 .header:hover .header__left {
@@ -1610,19 +1619,20 @@ body {
     z-index: -2;
     -webkit-clip-path: none;
             clip-path: none;
+    background-image: linear-gradient(to bottom, #c4c4c4 15%, rgba(196, 196, 196, 0) 30%, #c4c4c4 48.5%, #c4c4c4 51.5%, rgba(196, 196, 196, 0) 75%, #c4c4c4 100%);
   }
 }
 .header__button-box {
   display: inline-block;
   position: absolute;
   width: 65%;
-  height: 15rem;
+  height: 13rem;
   background-image: linear-gradient(to bottom, white 10%, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.7) 95%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 @media (max-width: 37.5em) {
   .header__button-box {
-    width: 60%;
+    width: 100%;
   }
 }
 .header__text-box {
@@ -1658,6 +1668,12 @@ body {
 }
 .header__info-textbox-2:hover {
   background-color: rgba(196, 196, 196, 0.2);
+}
+@media (max-width: 37.5em) {
+  .header__info-textbox-2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+  }
 }
 
 @-webkit-keyframes headerani1 {

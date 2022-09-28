@@ -72,26 +72,25 @@
     clip-path: polygon(
       0 0,
       55% 0%,
-      45% 48%,
-      45% 50%,
-      45% 52%,
+      48% 48%,
+      48% 50%,
+      48% 52%,
       57% 100%,
       0 100%
     );
     transition: all linear 0.05s;
 
     @include respond(phone) {
-      // width: 0%;
+      width: 100%;
       z-index: -2;
       clip-path: none;
-
       background-image: linear-gradient(
         to bottom,
-        rgba($color-primary, 1) 10%,
-        rgba($color-primary, 0.3) 30%,
-        rgba($color-primary, 1) 47.5%,
-        rgba($color-primary, 1) 52.5%,
-        rgba($color-primary, 0.3) 75%,
+        rgba($color-primary, 1) 15%,
+        rgba($color-primary, 0.2) 30%,
+        rgba($color-primary, 1) 48.5%,
+        rgba($color-primary, 1) 51.5%,
+        rgba($color-primary, 0.2) 75%,
         rgba($color-primary, 1) 100%
       );
     }
@@ -109,9 +108,17 @@
     );
 
     @include respond(phone) {
-      // width: 80%;
       z-index: -2;
       clip-path: none;
+      background-image: linear-gradient(
+        to bottom,
+        rgba($color-primary, 1) 15%,
+        rgba($color-primary, 0) 30%,
+        rgba($color-primary, 1) 48.5%,
+        rgba($color-primary, 1) 51.5%,
+        rgba($color-primary, 0) 75%,
+        rgba($color-primary, 1) 100%
+      );
     }
   }
 
@@ -119,7 +126,7 @@
     display: inline-block;
     position: absolute;
     width: 65%;
-    height: 15rem;
+    height: 13rem;
     background-image: linear-gradient(
       to bottom,
       rgba($color-white, 1) 10%,
@@ -130,7 +137,7 @@
     z-index: 1;
 
     @include respond(phone) {
-      width: 60%;
+      width: 100%;
     }
   }
 
@@ -149,10 +156,8 @@
   }
 
   &__info {
-    // position: absolute;
-    // z-index: 10;
-
     color: $color-white;
+
     &-textbox {
       &-1 {
         position: absolute;
@@ -173,9 +178,12 @@
         &:hover {
           background-color: rgba($color-primary, 0.2);
         }
+        @include respond(phone) {
+          font-size: 1.5rem;
+          padding: 0.5rem 0.5rem;
+        }
       }
     }
-    // background-color: aqua;
   }
 }
 
