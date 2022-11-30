@@ -2419,27 +2419,35 @@ body {
   }
 }
 #aboutpage .about__mid_left-textbox--1 {
-  height: 17rem;
+  height: 15rem;
   width: 100%;
 }
 #aboutpage .about__mid_left-textbox--1 p {
-  font-size: 3rem;
+  font-size: 2.7rem;
   line-height: 5rem;
 }
+#aboutpage .about__mid_left-textbox--1 p span {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+#aboutpage .about__mid_left-textbox--1 p span span {
+  font-size: 1.5rem;
+}
 #aboutpage .about__mid_left-textbox--2 {
-  height: 2.5rem;
+  height: 3.5rem;
   width: 100%;
 }
 #aboutpage .about__mid_left-textbox--2 p {
   font-size: 1.8rem;
 }
 #aboutpage .about__mid_left-textbox--3 {
-  height: 2.5rem;
+  height: 3.5rem;
   width: 100%;
 }
 #aboutpage .about__mid_left-textbox--3 p {
   font-size: 1.8rem;
   text-align: end;
+  padding-right: 1rem;
 }
 #aboutpage .about__mid_left-buttonbox {
   position: absolute;

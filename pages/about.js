@@ -111,10 +111,10 @@ const about = () => {
                     <p>暱稱： barrystone</p>
                   </li>
                   <li>
-                    <p>職稱： web developer</p>
+                    <p>職稱： Web developer</p>
                   </li>
                   <li>
-                    <p>在學： NPTU</p>
+                    <p>畢業： NPTU</p>
                   </li>
                   <li>
                     <p>主修： Computer Science</p>
@@ -144,7 +144,12 @@ const about = () => {
           <div className="about__mid_left">
             <div className="about__mid_left-textbox">
               <div className="about__mid_left-textbox--1">
-                <p>I am a Full-stack</p>
+                <p>
+                  Full-stack{' '}
+                  <span>
+                    (Front-end <span>better</span>)
+                  </span>
+                </p>
                 <p>Web Developer</p>
               </div>
               <div className="about__mid_left-buttonbox">
@@ -158,7 +163,7 @@ const about = () => {
                 </Link>
               </div>
               <div className="about__mid_left-textbox--2">
-                <p>Loving coding and development</p>
+                <p>Love coding & development</p>
               </div>
               <div className="about__mid_left-textbox--3">
                 <p>and enjoy the process</p>
