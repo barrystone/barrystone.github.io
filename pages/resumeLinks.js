@@ -87,8 +87,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      projectsData,
-      achievementData
+      projectsData: projectsData ? projectsData : null,
+      achievementData: achievementData ? achievementData : null
     }
   };
 }
