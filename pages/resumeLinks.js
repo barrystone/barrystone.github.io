@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const resumeLinks = ({ projectsData, achievementData }) => {
   const projectFields = projectsData[0];
@@ -12,6 +13,11 @@ const resumeLinks = ({ projectsData, achievementData }) => {
         <title>石在元的專案&成果經歷</title>
       </Head>
       <div className="resumelinks">
+        <div className="switchLang">
+          <Link href="/resumeLinks_EN" as={process.env.BACKEND_URL}>
+            English
+          </Link>
+        </div>
         <div className="github">
           <span>其他專案:</span>
           <a href="https://github.com/barrystone" target="_blank">

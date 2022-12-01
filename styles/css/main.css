@@ -2512,6 +2512,14 @@ body {
   color: #000;
   flex-direction: row;
 }
+.resumelinks .switchLang {
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+}
+.resumelinks .switchLang a {
+  font-size: 2rem;
+}
 .resumelinks .github {
   position: absolute;
   right: 2rem;
