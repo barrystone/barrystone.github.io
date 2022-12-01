@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-const resumelinks = ({ projectsData, achievementData }) => {
+const resumeLinks = ({ projectsData, achievementData }) => {
   const projectFields = projectsData[0];
   const projects = projectsData.slice(1);
   const achievements = achievementData.slice(1);
@@ -69,9 +69,10 @@ const resumelinks = ({ projectsData, achievementData }) => {
   );
 };
 
-export default resumelinks;
+export default resumeLinks;
 
 export async function getStaticProps() {
+  // Because of "Error occurred prerendering page" github action deploying error, environmant variable might working in dev mode only(but why?).
   // const range = `A:E`;
   const sheetProjectApi =
     'https://sheets.googleapis.com/v4/spreadsheets/10q0h4IoGn-PY1K62Q3H4T15mMBhPshQvBc_AqIs-zL4/values/A:E?key=AIzaSyDXtHX8ByZFCQJPta9HOFZlJOcOhlf8b5Q';
