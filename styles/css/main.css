@@ -2507,9 +2507,22 @@ body {
   }
 }
 .resumelinks {
+  position: relative;
   background-color: #fff;
   color: #000;
   flex-direction: row;
+}
+.resumelinks .github {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+}
+.resumelinks .github span {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.resumelinks .github a {
+  font-size: 2rem;
 }
 .resumelinks > section {
   display: flex;
@@ -2535,7 +2548,7 @@ body {
 }
 .resumelinks > section ul li {
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   border-bottom: none;
   font-size: 2rem;
 }

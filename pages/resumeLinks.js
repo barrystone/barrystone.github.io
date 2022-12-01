@@ -1,63 +1,75 @@
 import React from 'react';
+import Head from 'next/head';
 
-const resumeLinks = ({ projectsData, achievementData }) => {
+const resumelinks = ({ projectsData, achievementData }) => {
   const projectFields = projectsData[0];
   const projects = projectsData.slice(1);
   const achievements = achievementData.slice(1);
 
   return (
-    <div className="resumelinks">
-      <section>
-        <h2>專案</h2>
-        <ul>
-          {projects.map((e) => (
-            <li>
-              {/* project name */}
-              <span>{e[0]}</span>
-              <br />
-              {/* project fields */}
-              {e.slice(1).map((field, index) =>
-                field ? (
-                  <div className="projectfield">
-                    {/* project field */}
-                    <span>{projectFields[index + 1]}</span>
-                    <br />
-                    {/* For my custom field in google sheet (pdf download field)*/}
-                    {index === 2 ? (
-                      <a href={field.split(',')[0]} target="_blank">
-                        {field.split(',')[1]}
-                      </a>
-                    ) : (
-                      <a href={field} target="_blank">
-                        {field}
-                      </a>
-                    )}
-                  </div>
-                ) : null
-              )}
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section>
-        <h2>成果經歷</h2>
-        <ul>
-          {achievements.map((e) => (
-            <li>
-              <span>{e[0]}:</span>
-              <br />
-              <a href={e[1]} target="_blank">
-                {e[1]}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+    <div id="resumelinkspage">
+      <Head>
+        <title>石在元的專案&成果經歷</title>
+      </Head>
+      <div className="resumelinks">
+        <div className="github">
+          <span>其他專案:</span>
+          <a href="https://github.com/barrystone" target="_blank">
+            Github
+          </a>
+        </div>
+        <section>
+          <h2>專案</h2>
+          <ul>
+            {projects.map((e) => (
+              <li>
+                {/* project name */}
+                <span>{e[0]}</span>
+                <br />
+                {/* project fields */}
+                {e.slice(1).map((field, index) =>
+                  field ? (
+                    <div className="projectfield">
+                      {/* project field */}
+                      <span>{projectFields[index + 1]}:</span>
+                      <br />
+                      {/* For my custom field in google sheet (pdf download field)*/}
+                      {index === 2 ? (
+                        <a href={field.split(',')[0]} target="_blank">
+                          {field.split(',')[1]}
+                        </a>
+                      ) : (
+                        <a href={field} target="_blank">
+                          {field}
+                        </a>
+                      )}
+                    </div>
+                  ) : null
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section>
+          <h2>成果經歷</h2>
+          <ul>
+            {achievements.map((e) => (
+              <li>
+                <span>{e[0]}:</span>
+                <br />
+                <a href={e[1]} target="_blank">
+                  {e[1]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </div>
   );
 };
 
-export default resumeLinks;
+export default resumelinks;
 
 export async function getStaticProps() {
   const range = `A:E`;
