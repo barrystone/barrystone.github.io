@@ -1,0 +1,55 @@
+.resumelinks {
+  background-color: $color-white;
+  color: $color-black;
+  flex-direction: row;
+
+  > section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    &:nth-child(1) {
+      border-right: 0.5px $color-black solid;
+    }
+    &:nth-child(2) {
+      border-left: 0.5px $color-black solid;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      border-bottom: solid 5px $color-black;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      list-style: none;
+
+      li {
+        text-align: center;
+        padding: 2.5rem 0;
+        // border: 1px solid $color-black;
+        border-bottom: none;
+        font-size: 2rem;
+
+        &:last-child {
+          //   border-bottom: 1px solid $color-black;
+        }
+
+        > span {
+          font-weight: bold;
+        }
+
+        a {
+          word-break: break-all;
+        }
+
+        .projectfield {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

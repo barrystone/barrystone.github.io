@@ -2505,4 +2505,46 @@ body {
     width: 20rem;
     right: 1.5rem;
   }
+}
+.resumelinks {
+  background-color: #fff;
+  color: #000;
+  flex-direction: row;
+}
+.resumelinks > section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+.resumelinks > section:nth-child(1) {
+  border-right: 0.5px #000 solid;
+}
+.resumelinks > section:nth-child(2) {
+  border-left: 0.5px #000 solid;
+}
+.resumelinks > section h2 {
+  font-size: 2.5rem;
+  border-bottom: solid 5px #000;
+}
+.resumelinks > section ul {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  list-style: none;
+}
+.resumelinks > section ul li {
+  text-align: center;
+  padding: 2.5rem 0;
+  border-bottom: none;
+  font-size: 2rem;
+}
+.resumelinks > section ul li > span {
+  font-weight: bold;
+}
+.resumelinks > section ul li a {
+  word-break: break-all;
+}
+.resumelinks > section ul li .projectfield {
+  margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */
