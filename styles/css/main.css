@@ -2532,10 +2532,14 @@ body {
 .resumelinks .github a {
   font-size: 2rem;
 }
+.resumelinks .skillprojects {
+  border: 1px solid #000;
+}
 .resumelinks .skillprojects a {
+  width: 80%;
+  text-align: center;
   font-size: 2.5rem;
-  padding-top: 4rem;
-  color: #f7671a;
+  padding-top: 3rem;
 }
 .resumelinks > section {
   display: flex;
