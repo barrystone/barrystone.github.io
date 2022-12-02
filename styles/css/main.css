@@ -2532,11 +2532,16 @@ body {
 .resumelinks .github a {
   font-size: 2rem;
 }
+.resumelinks .skillprojects a {
+  font-size: 2.5rem;
+  padding-top: 4rem;
+  color: #f7671a;
+}
 .resumelinks > section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .resumelinks > section:nth-child(1) {
   border-right: 0.5px #000 solid;
