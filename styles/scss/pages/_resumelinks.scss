@@ -26,19 +26,13 @@
     }
   }
   .skillprojects {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    border: 1px solid $color-black;
+    border: 2px solid $color-black;
 
     a {
       width: 80%;
       text-align: center;
       font-size: 2.5rem;
-      padding-top: 3rem;
-      //   color: $color-secondary-dark-2;
-
-      //   border-bottom: solid 5px $color-black;
+      margin-top: 3rem;
     }
   }
 
@@ -69,12 +63,11 @@
       li {
         text-align: center;
         padding: 3rem 0;
-        // border: 1px solid $color-black;
-        border-bottom: none;
+        border-bottom: 1px solid $color-black;
         font-size: 2rem;
+        margin: 1rem 0;
 
         &:last-child {
-          //   border-bottom: 1px solid $color-black;
         }
 
         > span {

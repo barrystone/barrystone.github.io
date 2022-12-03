@@ -2533,13 +2533,13 @@ body {
   font-size: 2rem;
 }
 .resumelinks .skillprojects {
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 .resumelinks .skillprojects a {
   width: 80%;
   text-align: center;
   font-size: 2.5rem;
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 .resumelinks > section {
   display: flex;
@@ -2566,8 +2566,9 @@ body {
 .resumelinks > section ul li {
   text-align: center;
   padding: 3rem 0;
-  border-bottom: none;
+  border-bottom: 1px solid #000;
   font-size: 2rem;
+  margin: 1rem 0;
 }
 .resumelinks > section ul li > span {
   font-weight: bold;

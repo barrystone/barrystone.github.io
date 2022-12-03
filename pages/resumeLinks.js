@@ -32,10 +32,14 @@ const resumeLinks = ({ projectsData, achievementData }) => {
         <section>
           <h2>專案</h2>
           <ul>
-            {projects.map((e) => (
+            {projects.map((e, idx) => (
               <li>
                 {/* project name */}
-                <span>{e[0]}</span>
+                <span>
+                  {idx + 1}
+                  {'. '}
+                  {e[0]}
+                </span>
                 <br />
                 {/* project fields */}
                 {e.slice(1).map((field, index) =>
