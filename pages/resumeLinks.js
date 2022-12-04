@@ -26,7 +26,7 @@ const resumeLinks = ({ projectsData, achievementData }) => {
         </div>
         <section className="skillprojects">
           <a href="https://hackmd.io/@barrystone/BJ__wbPvo" target="_blank">
-            技能與Github已公開專案連結
+            技能對應Github已公開專案連結
           </a>
         </section>
         <section>
