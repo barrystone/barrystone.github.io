@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     'https://raw.githubusercontent.com/barrystone/hackmd_public-notes/master/README.md'
   );
   const data = await resDate.text();
-  const analyzedData = await analyzeReadme(data);
+  const analyzedData = analyzeReadme(data);
 
-  res.status(200).json(analyzedData);
+  res.status(200).json({ 'Generated date': Date(), analyzedData });
 }

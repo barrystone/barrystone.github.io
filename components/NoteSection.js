@@ -5,19 +5,25 @@ const NoteSection = () => {
   const [notes, setNotes] = useState({});
 
   useEffect(() => {
-    fetchMd();
+    fetchNotes();
   }, []);
 
-  const fetchMd = async () => {
+  const fetchNotes = async () => {
     try {
       const res = await fetch(
         'https://raw.githubusercontent.com/barrystone/hackmd_public-notes/master/README.md'
       );
       const tdata = await res.text();
-
       setNotes(analyzeReadme(tdata));
+
+      // If raw.githubusercontent.com API won't work, use serverside generated data for backup. api: {<origin>/api/notes/)
+      if (res.status !== 200) {
+        const res = await fetch(`${window.location.origin}/api/notes`);
+        const serverSideData = await res.json();
+        setNotes(serverSideData.analyzedData);
+      }
     } catch (err) {
-      console.log('error: ', err);
+      console.log('error', err.message);
     }
   };
 
