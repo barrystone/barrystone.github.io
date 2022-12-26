@@ -1,5 +1,6 @@
 import analyzeReadme from '../../utils/analyzeReadme';
 
+// **Only useful in "Dev" mode (may overload), GitHub pages is a hosting provider for static pages.
 export default async function handler(req, res) {
   const resDate = await fetch(
     'https://raw.githubusercontent.com/barrystone/hackmd_public-notes/master/README.md'

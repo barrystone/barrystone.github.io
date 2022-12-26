@@ -17,6 +17,7 @@ const NoteSection = () => {
       setNotes(analyzeReadme(tdata));
 
       // If raw.githubusercontent.com API won't work, use serverside generated data for backup. api: {<origin>/api/notes/)
+      // **Only useful in "Dev" mode (may overload), GitHub pages is a hosting provider for static pages.
       if (res.status !== 200) {
         const res = await fetch(`${window.location.origin}/api/notes`);
         const serverSideData = await res.json();
