@@ -67,16 +67,18 @@ const ResumeLinkTemplate = ({
           <ul>
             {projects.map((e, idx) => (
               <li>
-                {/* 中文[0] or EN[6] startElement */}
+                <img src={e[4]} alt="" className="projectimg" />
+                <br />
                 <span>
                   {idx + 1}
                   {'. '}
+                  {/* 中文[0] or EN[6] startElement */}
                   {e[startElement]}
                 </span>
                 <br />
                 {/* project fields */}
                 {e.slice(1).map((field, index) =>
-                  field && index < 5 ? (
+                  field && index < 3 ? (
                     <div className="projectfield">
                       {/* project field */}
                       <span>{projectFields[index + 1].split(',')[1]}:</span>

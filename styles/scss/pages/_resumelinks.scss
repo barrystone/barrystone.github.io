@@ -77,6 +77,12 @@
         a {
           word-break: break-all;
         }
+        .projectimg {
+          max-width: 35%;
+          @include respond(phone) {
+            max-width: 60%;
+          }
+        }
 
         .projectfield {
           margin-top: 1rem;

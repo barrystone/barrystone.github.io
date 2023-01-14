@@ -2576,6 +2576,14 @@ body {
 .resumelinks > section ul li a {
   word-break: break-all;
 }
+.resumelinks > section ul li .projectimg {
+  max-width: 35%;
+}
+@media (max-width: 37.5em) {
+  .resumelinks > section ul li .projectimg {
+    max-width: 60%;
+  }
+}
 .resumelinks > section ul li .projectfield {
   margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */
