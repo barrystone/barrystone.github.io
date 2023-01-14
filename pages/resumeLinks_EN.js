@@ -1,90 +1,14 @@
 import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import ResumeLinkTemplate from '../components/ResumeLinkTemplate';
 
 const resumeLinks_EN = ({ projectsData, achievementData }) => {
-  const projectFields = projectsData[0];
-  const projects = projectsData.slice(1);
-  const achievements = achievementData.slice(1);
-
   return (
-    <div id="resumelinkspage">
-      <Head>
-        <title>Zai-Yuan's Projects & Achievements</title>
-      </Head>
-      <div className="resumelinks">
-        <div className="switchLang">
-          <Link href="/resumeLinks" as={process.env.BACKEND_URL}>
-            中文繁體
-          </Link>
-        </div>
-        <div className="github">
-          <span>Others :</span>
-          <a href="https://github.com/barrystone" target="_blank">
-            Github
-          </a>
-        </div>
-        <section className="skillprojects">
-          <a href="https://hackmd.io/@barrystone/BJ__wbPvo" target="_blank">
-            Skills correspond to Github public project links
-          </a>
-        </section>
-        <section>
-          <h2>Projects</h2>
-          <ul>
-            {projects.map((e, idx) => (
-              <li>
-                {/* project name  EN (0=>6) */}
-                <span>
-                  {idx + 1}
-                  {'. '}
-                  {e[6]}
-                </span>
-                <br />
-                {/* project fields */}
-                {e.slice(1).map((field, index) =>
-                  field && index < 5 ? (
-                    <div className="projectfield">
-                      {/* project field */}
-                      <span>{projectFields[index + 1].split(',')[1]}:</span>
-
-                      <br />
-                      {/* For my custom field in google sheet (pdf download field)*/}
-                      {index === 2 ? (
-                        <a href={field.split(',')[0]} target="_blank">
-                          {/*  EN (0=>6) */}
-                          {field.split(',')[2]}
-                        </a>
-                      ) : (
-                        <a href={field} target="_blank">
-                          {field}
-                        </a>
-                      )}
-                    </div>
-                  ) : null
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-        <section>
-          <h2>Achievements</h2>
-          <ul>
-            {achievements.map((e) => (
-              <li>
-                {/* EN (0=>2) */}
-                <span>{e[2]}:</span>
-                <br />
-                <br />
-                <a href={e[1]} target="_blank">
-                  {e[1]}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </div>
-    </div>
+    <ResumeLinkTemplate
+      projectsData={projectsData}
+      achievementData={achievementData}
+      language="en"
+      projectsSource={{ startElement: 6, elementField: 2 }}
+    />
   );
 };
 
