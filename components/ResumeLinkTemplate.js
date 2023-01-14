@@ -15,9 +15,9 @@ const ResumeLinkTemplate = ({
   // Language 'en' & 'ch' field content.
   const headTitle =
     language === 'en'
-      ? `Zai-Yuan's Projects & Achievements`
+      ? `Barry Shi's Projects & Achievements`
       : language === 'ch'
-      ? `石在元的專案&成果經歷`
+      ? `Barry Shi 專案與成果經歷`
       : null;
   const switchLangTitle =
     language === 'en' ? `中文繁體` : language === 'ch' ? `English` : null;
