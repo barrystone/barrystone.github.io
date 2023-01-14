@@ -12,7 +12,7 @@ const ResumeLinkTemplate = ({
   const projects = projectsData.slice(1);
   const achievements = achievementData.slice(1);
 
-  // Language 'en' & 'ch' title
+  // Language 'en' & 'ch' field content.
   const headTitle =
     language === 'en'
       ? `Zai-Yuan's Projects & Achievements`
@@ -29,6 +29,12 @@ const ResumeLinkTemplate = ({
       : language === 'ch'
       ? ` 技能對應Github已公開專案連結`
       : null;
+  const switchLangURL =
+    language === 'en'
+      ? `/resumeLinks`
+      : language === 'ch'
+      ? `/resumeLinks_EN`
+      : null;
   const projectsTitle =
     language === 'en' ? `Projects` : language === 'ch' ? `專案` : null;
   const achievementsTitle =
@@ -41,7 +47,7 @@ const ResumeLinkTemplate = ({
       </Head>
       <div className="resumelinks">
         <div className="switchLang">
-          <Link href="/resumeLinks" as={process.env.BACKEND_URL}>
+          <Link href={switchLangURL} as={process.env.BACKEND_URL}>
             {switchLangTitle}
           </Link>
         </div>
