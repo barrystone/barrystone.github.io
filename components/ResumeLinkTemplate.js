@@ -58,7 +58,7 @@ const ResumeLinkTemplate = ({
           </a>
         </div>
         <section className="skillprojects">
-          <a href="https://hackmd.io/@barrystone/BJ__wbPvo" target="_blank">
+          <a href="https://hackmd.io/@barrystone/skills" target="_blank">
             {skillprojectsTitle}
           </a>
         </section>
