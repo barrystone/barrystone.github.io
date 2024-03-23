@@ -90,11 +90,11 @@ const AboutSection = () => {
         </div>
 
         <div className="section-about__textbox-1">
-          <p className=" paragraph-big--3">NPTU computer science</p>
+          <p className=" paragraph-big--3">NPTU Computer Science</p>
         </div>
         <div className="section-about__textbox-2">
           <h3 className="heading-tertiary paragraph-big--4" id="skill">
-            <span>我的技能樹</span>
+            <span>專長技能</span>
           </h3>
         </div>
         <div className="section-about__arrow-box" id="work-arrow">

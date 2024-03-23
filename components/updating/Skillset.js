@@ -78,17 +78,17 @@ const Skillset = () => {
       <li className="item">
         <CharkmarkIcon />
         <h4>Docker</h4>
-        <p>Containerization</p>
+        <p>Containerization platform</p>
         <span>
-          <img src="img/tech/docker-icon.svg" alt="nodejs-icon" />
+          <img src="img/tech/docker-icon.svg" alt="docker-icon" />
         </span>
       </li>
       <li className="item">
         <CharkmarkIcon />
-        <h4>K8S</h4>
+        <h4>K8s</h4>
         <p>Kubernetes, Container orchestration</p>
         <span>
-          <img src="img/tech/Kubernetes-icon.svg" alt="nodejs-icon" />
+          <img src="img/tech/kubernetes-icon.svg" alt="kubernetes-icon" />
         </span>
       </li>
       <li className="item">

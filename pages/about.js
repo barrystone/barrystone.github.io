@@ -132,7 +132,7 @@ const about = () => {
                   as={process.env.BACKEND_URL + '/#aboutSection'}
                 >
                   <a href="" className="btn-show">
-                    我的技能
+                    專長技能
                   </a>
                 </Link>
               </div>
