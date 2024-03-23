@@ -5,7 +5,7 @@ body {
 .heading-primary {
   &--main {
     font-size: 7rem;
-    font-weight: bold;
+    font-weight: 100;
     z-index: 2;
     position: absolute;
     top: 50%;
@@ -14,10 +14,10 @@ body {
     display: block;
     padding: 2.5rem 5.5rem;
     text-align: center;
-    border-radius: 30%;
+    border-radius: 10%;
     background-color: $color-secondary;
-    // font-family: $font-style-Rye;
-    font-family: $font-style-ks;
+    font-family: $font-style-anton;
+    // font-family: $font-style-ks;
     text-shadow: 0.01em 0.01em 0 $color-white;
 
     @include respond(tab-land) {

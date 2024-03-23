@@ -140,12 +140,14 @@
   border-bottom: 2px solid $color-secondary;
   box-shadow: rgba($color-black, 0.5) 0px 6px 12px -2px,
     rgba($color-black, 0.3) 10px 5px 10px -3px;
+  border-radius: 20px;
   // transition: 0.5s all ease-in-out;
 
-  // &:hover {
-  //   border-bottom: 2px solid $color-grey;
-  //   border-top: 5px solid $color-secondary;
-  // }
+  &:hover {
+    border: 2px solid $color-grey;
+    // border-bottom: 2px solid $color-grey;
+    // border-top: 5px solid $color-secondary;
+  }
 }
 
 .btn-show {

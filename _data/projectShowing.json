@@ -2,7 +2,7 @@
   {
     "name": "online-store",
     "class": "brick-font--big",
-    "image": "reactjs"
+    "image": "nodejs"
   },
   {
     "name": "social_app",
@@ -14,7 +14,8 @@
     "image": "sass"
   },
   {
-    "name": "TV-episodes_nuxtjs",
-    "class": "brick-font--mid"
+    "name": "taiwan-college-app",
+    "class": "brick-font--mid",
+    "image": "reactjs"
   }
 ]

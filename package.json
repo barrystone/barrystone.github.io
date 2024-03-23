@@ -22,5 +22,8 @@
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
     "babel-plugin-transform-define": "^2.0.0"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }

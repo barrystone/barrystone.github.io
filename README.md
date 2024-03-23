@@ -1,7 +1,6 @@
 # barrystone.github.io
 
-This is my personal site.
-Still being code, not yet completed...
+Personal website of Barrystone.
 
 - Link: https://barrystone.github.io/
 

@@ -20,47 +20,16 @@ const Skillset = () => {
     <ul className="skillset">
       <li className="item">
         <CharkmarkIcon />
-        <h4>HTML</h4>
-        <p>
-          Hypertext Markup
-          <br />
-          Language
-        </p>
+        <h4>🏆 &nbsp;TS </h4>
+        <p>Typescript</p>
         <span>
-          <img src="img/tech/html-icon.svg" alt="html-icon" />
+          <img src="img/tech/ts-icon.svg" alt="js-icon" />
         </span>
       </li>
       <li className="item">
         <CharkmarkIcon />
-        <h4>CSS</h4>
-        <p>
-          Cascading Style Sheets
-          <br />
-          &nbsp;
-        </p>
-        <span>
-          <img src="img/tech/css-icon.svg" alt="css-icon" />
-        </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>SCSS</h4>
-        <p>
-          Syntactically Awesome
-          <br /> Style Sheets
-        </p>
-        <span>
-          <img src="img/tech/sass-icon.svg" alt="sass-icon" />
-        </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>🏆 &nbsp;JS </h4>
-        <p>
-          Javascript
-          <br />
-          king of the web dev
-        </p>
+        <h4>JS</h4>
+        <p>Javascript</p>
         <span>
           <img src="img/tech/js-icon.svg" alt="js-icon" />
         </span>
@@ -78,6 +47,52 @@ const Skillset = () => {
       </li>
       <li className="item">
         <CharkmarkIcon />
+        <h4>Nodejs</h4>
+        <p>
+          Back-end JavaScript
+          <br /> runtime environment
+        </p>
+        <span>
+          <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
+        <h4>Graphql</h4>
+        <p>
+          Query language for API <br />
+          &nbsp;
+        </p>
+        <span>
+          <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
+        <h4>MongoDB</h4>
+        <p>No-SQL Database</p>
+        <span>
+          <img src="img/tech/mongodb-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
+        <h4>Docker</h4>
+        <p>Containerization</p>
+        <span>
+          <img src="img/tech/docker-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
+        <h4>K8S</h4>
+        <p>Kubernetes, Container orchestration</p>
+        <span>
+          <img src="img/tech/Kubernetes-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
         <h4>Reduxjs</h4>
         <p>
           State container
@@ -88,6 +103,29 @@ const Skillset = () => {
         </span>
       </li>
       <li className="item">
+        <CharkmarkIcon />
+        <h4>SCSS</h4>
+        <p>
+          Syntactically Awesome
+          <br /> Style Sheets
+        </p>
+        <span>
+          <img src="img/tech/sass-icon.svg" alt="sass-icon" />
+        </span>
+      </li>
+      {/* <li className="item">
+        <CharkmarkIcon />
+        <h4>CSS</h4>
+        <p>
+          Cascading Style Sheets
+          <br />
+          &nbsp;
+        </p>
+        <span>
+          <img src="img/tech/css-icon.svg" alt="css-icon" />
+        </span>
+      </li> */}
+      {/* <li className="item">
         <CharkmarkIcon />
         <h4>Vuejs</h4>
         <p>
@@ -119,41 +157,7 @@ const Skillset = () => {
             }}
           />
         </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>PHP</h4>
-        <p>
-          General-purpose <br />
-          Scripting language
-          <br />
-        </p>
-        <span>
-          <img src="img/tech/php2-icon.svg" alt="graphql-icon" />
-        </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>Nodejs</h4>
-        <p>
-          Back-end JavaScript
-          <br /> runtime environment
-        </p>
-        <span>
-          <img src="img/tech/nodejs-icon.svg" alt="nodejs-icon" />
-        </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>Graphql</h4>
-        <p>
-          Query language for API <br />
-          &nbsp;
-        </p>
-        <span>
-          <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
-        </span>
-      </li>
+      </li> */}
     </ul>
   );
 };

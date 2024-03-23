@@ -86,13 +86,15 @@
         border: 2px $color-grey solid;
         padding: 0.5rem;
         border-radius: 20px;
-        width: 13rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 1rem;
+        width: 10rem;
+        // display: grid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       &--1 {
         position: absolute;
+        grid-column-gap: 1rem;
         top: 0;
         left: 0;
       }

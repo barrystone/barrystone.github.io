@@ -12,7 +12,7 @@ const Header = () => {
         <div className="header-animation header-animation--5"></div>
         <div className="header-animation header-animation--6"></div>
         <h1 className="heading-primary--main " text-shadow="barrystone">
-          barrystone
+          BarryStone
         </h1>
         <div className="header__left">
           <div className="header__button-box">
@@ -37,12 +37,12 @@ const Header = () => {
             <h1 className="heading-primary">
               <p className="animate__animated animate__rotateInDownLeft ">
                 <span className="heading-primary--sub  heading-primary--sub-1 ">
-                  My name is
+                  Software Engineer
                 </span>
               </p>
-              <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft">
+              {/* <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft">
                 Learning & making
-              </span>
+              </span> */}
             </h1>
           </div>
           <div className="header__link-box animate__animated  animate__fadeInUpBig">

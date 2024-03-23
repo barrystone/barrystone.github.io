@@ -31,53 +31,41 @@ const about = () => {
                 <div className="infocard__top-textbox">
                   <div className="infocard__top-textbox--1">
                     <p>
-                      Learning <br />
-                      and <br />
-                      Making
+                      <br />
+                      Learning
                     </p>
                   </div>
                   <div className="infocard__top-textbox--2">
                     <p>
-                      Learning <br />
-                      and <br />
+                      <br />
                       Making
                     </p>
                   </div>
                 </div>
                 <div className="infocard__top-iconsbox">
                   <div className="infocard__top-iconsbox--1">
+                    <a
+                      href="https://medium.com/@barrystone-med"
+                      target="_black"
+                    >
+                      <figure className="infocard__top-iconsbox-icon">
+                        <img
+                          src="/img/social/medium-icon.svg"
+                          alt="medium-icon"
+                        />
+                        <figcaption>Medium</figcaption>
+                      </figure>
+                    </a>
                     <a href="https://hackmd.io/@barrystone" target="_black">
                       <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
                         <img src="/img/design/note-icon.svg" alt="note-icon" />
                         <figcaption>Hackmd</figcaption>
-                      </figure>
-                    </a>
-                    <a href="https://github.com/barrystone" target="_black">
-                      <figure className="infocard__top-iconsbox-icon">
-                        <img
-                          src="/img/social/github-icon.svg"
-                          alt="github-icon"
-                        />
-                        <figcaption>Github</figcaption>
-                      </figure>
-                    </a>
-                    <a href="http://frontendmentor.slack.com/" target="_black">
-                      <figure className="infocard__top-iconsbox-icon">
-                        <img
-                          src="/img/social/slack-icon.svg"
-                          alt="slack-icon"
-                        />
-                        <figcaption>Slack</figcaption>
                       </figure>
                     </a>
                   </div>
                   <div className="infocard__top-iconsbox--2">
-                    <a href="https://hackmd.io/@barrystone" target="_black">
-                      <figure className="infocard__top-iconsbox-icon infocard__top-iconsbox-icon--hackmd">
-                        <img src="/img/design/note-icon.svg" alt="note-icon" />
-                        <figcaption>Hackmd</figcaption>
-                      </figure>
-                    </a>
+                    {/* empty <span/> for scss grid layout */}
+                    <span />
                     <a href="https://github.com/barrystone" target="_black">
                       <figure className="infocard__top-iconsbox-icon">
                         <img
@@ -85,15 +73,6 @@ const about = () => {
                           alt="github-icon"
                         />
                         <figcaption>Github</figcaption>
-                      </figure>
-                    </a>
-                    <a href="http://frontendmentor.slack.com/" target="_black">
-                      <figure className="infocard__top-iconsbox-icon">
-                        <img
-                          src="/img/social/slack-icon.svg"
-                          alt="slack-icon"
-                        />
-                        <figcaption>Slack</figcaption>
                       </figure>
                     </a>
                   </div>
@@ -104,21 +83,21 @@ const about = () => {
                 <ul>
                   <li>
                     <p>
-                      名字： <span>石在元</span>
+                      姓名： <span>石在元</span>
                     </p>
                   </li>
                   <li>
                     <p>暱稱： barrystone</p>
                   </li>
                   <li>
-                    <p>職稱： Web developer</p>
+                    <p>職稱： Software Engineer</p>
                   </li>
-                  <li>
+                  {/* <li>
                     <p>畢業： NPTU</p>
                   </li>
                   <li>
                     <p>主修： Computer Science</p>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="infocard__bottom">
@@ -144,13 +123,8 @@ const about = () => {
           <div className="about__mid_left">
             <div className="about__mid_left-textbox">
               <div className="about__mid_left-textbox--1">
-                <p>
-                  Full-stack{' '}
-                  <span>
-                    (Front-end <span>better</span>)
-                  </span>
-                </p>
-                <p>Web Developer</p>
+                <p>Full-stack </p>
+                <p>R&D Software Engineer</p>
               </div>
               <div className="about__mid_left-buttonbox">
                 <Link
@@ -163,10 +137,10 @@ const about = () => {
                 </Link>
               </div>
               <div className="about__mid_left-textbox--2">
-                <p>Love coding & development</p>
+                <p>Love coding & Development</p>
               </div>
               <div className="about__mid_left-textbox--3">
-                <p>and enjoy the process</p>
+                <p>Enjoy the process</p>
               </div>
               <figure className="about__mid_left-codetime">
                 <img src="/img/data/wakatime210525.png" alt="me-avatar" />
