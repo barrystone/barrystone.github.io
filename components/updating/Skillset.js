@@ -58,6 +58,14 @@ const Skillset = () => {
       </li>
       <li className="item">
         <CharkmarkIcon />
+        <h4>MongoDB</h4>
+        <p>No-SQL Database</p>
+        <span>
+          <img src="img/tech/mongodb-icon.svg" alt="nodejs-icon" />
+        </span>
+      </li>
+      <li className="item">
+        <CharkmarkIcon />
         <h4>Graphql</h4>
         <p>
           Query language for API <br />
@@ -65,14 +73,6 @@ const Skillset = () => {
         </p>
         <span>
           <img src="img/tech/graphql-icon.svg" alt="graphql-icon" />
-        </span>
-      </li>
-      <li className="item">
-        <CharkmarkIcon />
-        <h4>MongoDB</h4>
-        <p>No-SQL Database</p>
-        <span>
-          <img src="img/tech/mongodb-icon.svg" alt="nodejs-icon" />
         </span>
       </li>
       <li className="item">
