@@ -6,7 +6,7 @@ const about = () => {
   return (
     <div id="aboutpage">
       <Head>
-        <title>barrystone 關於</title>
+        <title>Barrystone - About Me</title>
       </Head>
       <div className="about">
         <header className="about__top">
@@ -16,11 +16,11 @@ const about = () => {
               as={process.env.BACKEND_URL + "/"}
               className="btn-tertiary"
             >
-              首頁
+              Home
             </Link>
           </div>
           <div className="about__top-pagename">
-            <span>關於個人</span>
+            <span>About</span>
           </div>
         </header>
         <main className="about__mid">
@@ -89,7 +89,7 @@ const about = () => {
                     </p>
                   </li>
                   <li>
-                    <p>暱稱： barrystone</p>
+                    <p>暱稱： Barrystone</p>
                   </li>
                   <li>
                     <p>職稱： Software Engineer</p>

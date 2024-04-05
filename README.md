@@ -1,6 +1,6 @@
 # barrystone.github.io
 
-Personal website of Barrystone.
+Barrystone's personal website.
 
 - Link: https://barrystone.github.io/
 

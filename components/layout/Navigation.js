@@ -23,16 +23,16 @@ const Navigation = () => {
               as={process.env.BACKEND_URL + "/about"}
               className="navigation__link"
             >
-              關於個人
+              關於個人 About Me
             </Link>
           </li>
           <li className="navigation__item">
             <Link
-              href="/note"
-              as={process.env.BACKEND_URL + "/note"}
+              href="/space"
+              as={process.env.BACKEND_URL + "/space"}
               className="navigation__link"
             >
-              公開筆記
+              虛擬空間 Virtual Space
             </Link>
           </li>
         </ul>

@@ -10,6 +10,7 @@
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.1",
     "logrocket": "^1.0.14",
     "logrocket-react": "^4.0.1",
     "next": "^14.1.4",

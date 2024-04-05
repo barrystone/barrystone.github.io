@@ -27,13 +27,13 @@ const Header = () => {
               </p>
             </Link>
             <Link
-              href="/note"
-              as={process.env.BACKEND_URL + "/note"}
+              href="/space"
+              as={process.env.BACKEND_URL + "/space"}
               className="btn-primary btn-primary--2"
             >
               <p>
-                筆記 <br />
-                <span>Note</span>
+                空間 <br />
+                <span>Space</span>
               </p>
             </Link>
           </div>
