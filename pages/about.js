@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from 'next/head';
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
 
 const about = () => {
   return (
@@ -11,10 +11,12 @@ const about = () => {
       <div className="about">
         <header className="about__top">
           <div className="about__top-buttonsbox">
-            <Link href="/" as={process.env.BACKEND_URL + '/'}>
-              <a className="btn-tertiary" href="">
-                首頁
-              </a>
+            <Link
+              href="/"
+              as={process.env.BACKEND_URL + "/"}
+              className="btn-tertiary"
+            >
+              首頁
             </Link>
           </div>
           <div className="about__top-pagename">
@@ -129,11 +131,10 @@ const about = () => {
               <div className="about__mid_left-buttonbox">
                 <Link
                   href="/#aboutSection"
-                  as={process.env.BACKEND_URL + '/#aboutSection'}
+                  as={process.env.BACKEND_URL + "/#aboutSection"}
+                  className="btn-show"
                 >
-                  <a href="" className="btn-show">
-                    專長技能
-                  </a>
+                  專長技能
                 </Link>
               </div>
               <div className="about__mid_left-textbox--2">
