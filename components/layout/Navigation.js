@@ -23,7 +23,7 @@ const Navigation = () => {
               as={process.env.BACKEND_URL + "/about"}
               className="navigation__link"
             >
-              關於個人 About Me
+              About Me
             </Link>
           </li>
           <li className="navigation__item">
@@ -32,7 +32,7 @@ const Navigation = () => {
               as={process.env.BACKEND_URL + "/space"}
               className="navigation__link"
             >
-              虛擬空間 Virtual Space
+              Virtual Space
             </Link>
           </li>
         </ul>

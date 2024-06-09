@@ -126,15 +126,17 @@ const about = () => {
             <div className="about__mid_left-textbox">
               <div className="about__mid_left-textbox--1">
                 <p>Full-stack </p>
-                <p>R&D Software Engineer</p>
+                <p>Software Engineer</p>
               </div>
               <div className="about__mid_left-buttonbox">
                 <Link
-                  href="/#aboutSection"
-                  as={process.env.BACKEND_URL + "/#aboutSection"}
+                  href={"https://wakatime.com/@barry"}
+                  target="_blank"
+                  // href="/#aboutSection"
+                  // as={process.env.BACKEND_URL + "/#aboutSection"}
                   className="btn-show"
                 >
-                  專長技能
+                  Coding time
                 </Link>
               </div>
               <div className="about__mid_left-textbox--2">
@@ -144,9 +146,9 @@ const about = () => {
                 <p>Enjoy the process</p>
               </div>
               <figure className="about__mid_left-codetime">
-                <img src="/img/data/wakatime210525.png" alt="me-avatar" />
+                <img src="/img/data/wakatime240609.png" alt="me-avatar" />
                 <figcaption>
-                  My coding time doing in 2021.05.11 ~ 2021.05.25
+                  My coding time doing in 2024.06.03 ~ 2024.06.09
                 </figcaption>
               </figure>
             </div>

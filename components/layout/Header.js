@@ -39,11 +39,11 @@ const Header = () => {
           </div>
           <div className="header__text-box">
             <h1 className="heading-primary">
-              <p className="animate__animated animate__rotateInDownLeft ">
+              {/* <p className="animate__animated animate__rotateInDownLeft ">
                 <span className="heading-primary--sub  heading-primary--sub-1 ">
                   Software Engineer
                 </span>
-              </p>
+              </p> */}
               {/* <span className="heading-primary--sub heading-primary--sub-2 animate__animated  animate__bounceInLeft">
                 Learning & making
               </span> */}
@@ -63,8 +63,9 @@ const Header = () => {
         <div className="header__info">
           <div className="header__info-textbox-1">#</div>
           <div className="header__info-textbox-2">
-            <p>網站還在開發中...</p>
-            <p>更多功能敬請期待！</p>
+            {/* <p>網站還在開發中...</p>
+            <p>更多功能敬請期待！</p> */}
+            <p>Software Engineer</p>
           </div>
         </div>
       </div>
