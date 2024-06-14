@@ -6,7 +6,7 @@ const ResumeLinkTemplate = ({
   projectsData,
   achievementData,
   language,
-  projectsSource: { startElement, elementField }
+  projectsSource: { startElement, elementField },
 }) => {
   const projectFields = projectsData[0];
   const projects = projectsData.slice(1);
@@ -15,9 +15,9 @@ const ResumeLinkTemplate = ({
   // Language 'en' & 'ch' field content.
   const headTitle =
     language === 'en'
-      ? `Barry Shi's Projects & Achievements`
+      ? `Barry Shi's Projects & Relative Experience`
       : language === 'ch'
-      ? `Barry Shi 專案與成果經歷`
+      ? `Barry Shi 專案與相關經歷`
       : null;
   const switchLangTitle =
     language === 'en' ? `中文繁體` : language === 'ch' ? `English` : null;
@@ -25,9 +25,9 @@ const ResumeLinkTemplate = ({
     language === 'en' ? `Others :` : language === 'ch' ? `其他專案:` : null;
   const skillprojectsTitle =
     language === 'en'
-      ? ` Skills correspond to Github public project links`
+      ? `Skills mapping to link of Github public repos`
       : language === 'ch'
-      ? ` 技能對應Github已公開專案連結`
+      ? `技能對應 Github 公開專案連結`
       : null;
   const switchLangURL =
     language === 'en'
@@ -38,7 +38,11 @@ const ResumeLinkTemplate = ({
   const projectsTitle =
     language === 'en' ? `Projects` : language === 'ch' ? `專案` : null;
   const achievementsTitle =
-    language === 'en' ? `Achievements` : language === 'ch' ? `成果經歷` : null;
+    language === 'en'
+      ? `Relative Experience`
+      : language === 'ch'
+      ? `相關經歷`
+      : null;
 
   return (
     <div id="resumelinkspage">
@@ -82,7 +86,6 @@ const ResumeLinkTemplate = ({
                     <div className="projectfield">
                       {/* project field */}
                       <span>{projectFields[index + 1].split(',')[1]}:</span>
-
                       <br />
                       {/* For my custom field in google sheet (pdf download field)*/}
                       {index === 2 ? (
@@ -98,6 +101,11 @@ const ResumeLinkTemplate = ({
                     </div>
                   ) : null
                 )}
+                <div className="projectfield">
+                  {/* project field */}
+                  <span>Skills:</span>
+                  {/* For my custom field in google sheet (pdf download field)*/}
+                </div>
               </li>
             ))}
           </ul>
