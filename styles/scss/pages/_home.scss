@@ -69,6 +69,8 @@ $section-default-height: 65rem;
         right: 10%;
         font-weight: bold;
         padding: 1.5rem 3rem;
+        margin-right: 5rem;
+        margin-top: 1.5rem;
         background-color: $color-white-dark;
 
         @include respond(tab-land) {
@@ -84,9 +86,10 @@ $section-default-height: 65rem;
           align-items: center;
         }
         @include respond(phone) {
-          margin-right: 1rem;
+          margin-right: 2rem;
+          margin-top: 2.5rem;
           transform: scale(0.5);
-          top: 2%;
+          top: 5%;
         }
         @include respond(phone-small) {
           transform: scale(0.4);
@@ -112,7 +115,7 @@ $section-default-height: 65rem;
           align-items: center;
         }
         @include respond(phone) {
-          top: 13%;
+          top: 18%;
           transform: scale(0.8);
         }
       }

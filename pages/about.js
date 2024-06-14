@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Head from "next/head";
+import React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const about = () => {
   return (
@@ -13,7 +13,7 @@ const about = () => {
           <div className="about__top-buttonsbox">
             <Link
               href="/"
-              as={process.env.BACKEND_URL + "/"}
+              as={process.env.BACKEND_URL + '/'}
               className="btn-tertiary"
             >
               Home
@@ -92,7 +92,7 @@ const about = () => {
                     <p>暱稱： Barrystone</p>
                   </li>
                   <li>
-                    <p>職稱： Software Engineer</p>
+                    <p>職稱： Engineer</p>
                   </li>
                   {/* <li>
                     <p>畢業： NPTU</p>
@@ -130,13 +130,13 @@ const about = () => {
               </div>
               <div className="about__mid_left-buttonbox">
                 <Link
-                  href={"https://wakatime.com/@barry"}
+                  href={'https://wakatime.com/@barry'}
                   target="_blank"
                   // href="/#aboutSection"
                   // as={process.env.BACKEND_URL + "/#aboutSection"}
                   className="btn-show"
                 >
-                  Coding time
+                  Code Dist.
                 </Link>
               </div>
               <div className="about__mid_left-textbox--2">

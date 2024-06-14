@@ -150,6 +150,10 @@ $itemVerticalSpacing: 0.3rem;
       top: 50%;
       right: 0;
       transform: translateX(20%) translateY(-70%);
+
+      @include respond(phone) {
+        transform: translateX(100%) translateY(-70%);
+      }
     }
   }
 
@@ -160,12 +164,20 @@ $itemVerticalSpacing: 0.3rem;
 
     .checkmark {
       left: 19rem;
+
+      @include respond(phone) {
+        left: 15rem;
+      }
     }
 
     span {
       top: 50%;
       left: 0;
       transform: translateX(-20%) translateY(-70%);
+
+      @include respond(phone) {
+        transform: translateX(-100%) translateY(-70%);
+      }
     }
   }
 }

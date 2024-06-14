@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
           <div className="header__button-box">
             <Link
               href="/about"
-              as={process.env.BACKEND_URL + "/about"}
+              as={process.env.BACKEND_URL + '/about'}
               className="btn-primary"
             >
               <p>
@@ -28,7 +28,7 @@ const Header = () => {
             </Link>
             <Link
               href="/space"
-              as={process.env.BACKEND_URL + "/space"}
+              as={process.env.BACKEND_URL + '/space'}
               className="btn-primary btn-primary--2"
             >
               <p>
@@ -65,7 +65,11 @@ const Header = () => {
           <div className="header__info-textbox-2">
             {/* <p>網站還在開發中...</p>
             <p>更多功能敬請期待！</p> */}
-            <p>Software Engineer</p>
+            <p>
+              A Software Development
+              <br />
+              Enthusiast
+            </p>
           </div>
         </div>
       </div>

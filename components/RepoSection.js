@@ -13,7 +13,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
     slidesToScroll: 3,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
   };
 
   const [reposData, setReposData] = useState([]);
@@ -31,14 +31,14 @@ const RepoSection = ({ reposData: staticReposData }) => {
           ...sliderSettings,
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 1000
+          speed: 1000,
         });
       } else {
         setRwdSlideSettings({
           ...sliderSettings,
           slidesToShow: 2,
           slidesToScroll: 2,
-          speed: 2000
+          speed: 2000,
         });
       }
     } else {
@@ -46,7 +46,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
         ...sliderSettings,
         slidesToShow: 3,
         slidesToScroll: 3,
-        speed: 2000
+        speed: 2000,
       });
     }
   };
@@ -92,61 +92,65 @@ const RepoSection = ({ reposData: staticReposData }) => {
       </div>
       <div className="section-repo__repos">
         <Slider {...RwdSlideSettings}>
-          {reposData.map((repo, index) => (
-            <div className="repo-wrapper" key={index}>
-              <div className="repo">
-                <div className="repo__title">
-                  <a href={repo.html_url} target="_blank">
-                    {repo.name}
-                  </a>
-                </div>
-                <div className="repo__content">
-                  <div className="repo-description">
-                    <div className="repo-description--title">
-                      <span>
-                        <p>簡介</p>
-                      </span>
-                      {/* <div className="repo-language"> */}
-
-                      {/* </div> */}
-                      <img
-                        src={`img/tech/${languageImg(
-                          repo.language ? repo.language.toLowerCase() : 'coding'
-                        )}.svg`}
-                        alt={`${repo.language}`}
-                      />
-                    </div>
-
-                    <article className="repo-description--text">
-                      <p>
-                        {repo.description
-                          ? repo.description.toString().length <= 60
-                            ? repo.description
-                            : repo.description.slice(0, 60) + ' ...'
-                          : ' 尚未有簡介  !'}
-                      </p>
-                    </article>
+          {reposData &&
+            reposData.length > 1 &&
+            reposData.map((repo, index) => (
+              <div className="repo-wrapper" key={index}>
+                <div className="repo">
+                  <div className="repo__title">
+                    <a href={repo.html_url} target="_blank">
+                      {repo.name}
+                    </a>
                   </div>
-                  <div className="repo-star">
-                    <div className="repo-star--icon">
-                      <img src="/img/design/star-icon.svg" alt="" />
+                  <div className="repo__content">
+                    <div className="repo-description">
+                      <div className="repo-description--title">
+                        <span>
+                          <p>簡介</p>
+                        </span>
+                        {/* <div className="repo-language"> */}
+
+                        {/* </div> */}
+                        <img
+                          src={`img/tech/${languageImg(
+                            repo.language
+                              ? repo.language.toLowerCase()
+                              : 'coding'
+                          )}.svg`}
+                          alt={`${repo.language}`}
+                        />
+                      </div>
+
+                      <article className="repo-description--text">
+                        <p>
+                          {repo.description
+                            ? repo.description.toString().length <= 60
+                              ? repo.description
+                              : repo.description.slice(0, 60) + ' ...'
+                            : ' 尚未有簡介  !'}
+                        </p>
+                      </article>
                     </div>
-                    <div className="repo-star--number">
-                      X<span>{repo.stargazers_count}</span>
+                    <div className="repo-star">
+                      <div className="repo-star--icon">
+                        <img src="/img/design/star-icon.svg" alt="" />
+                      </div>
+                      <div className="repo-star--number">
+                        X<span>{repo.stargazers_count}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="repo-fork">
-                    <div className="repo-fork--icon">
-                      <img src="/img/design/fork-icon.svg" alt="" />
-                    </div>
-                    <div className="repo-fork--number">
-                      X <span>{repo.forks}</span>
+                    <div className="repo-fork">
+                      <div className="repo-fork--icon">
+                        <img src="/img/design/fork-icon.svg" alt="" />
+                      </div>
+                      <div className="repo-fork--number">
+                        X <span>{repo.forks}</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </Slider>
       </div>
     </section>

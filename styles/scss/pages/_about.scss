@@ -29,6 +29,12 @@
       &-buttonsbox {
         position: absolute;
         left: 4rem;
+
+        @include respond(phone) {
+          left: 2rem;
+          scale: 0.8;
+        }
+
         &:hover {
           // transform: translateX(-0.5%);
           // transform: scale(0.99);
@@ -59,6 +65,10 @@
         box-shadow: rgba($color-black, 0.19) 0px 10px 20px,
           rgba($color-black, 0.23) 0px 3px 6px;
         animation: 0.1s forwards enteronleft ease;
+
+        @include respond(phone) {
+          scale: 0.8;
+        }
       }
     }
 
@@ -70,6 +80,8 @@
 
       @include respond(tab-land) {
         flex-direction: column;
+        // width: 98%;
+        // margin: auto;
       }
 
       &_left {
@@ -90,12 +102,20 @@
             margin-bottom: 5rem;
           }
 
+          @include respond(phone) {
+            width: 90%;
+          }
+
           &--1 {
             height: 15rem;
             width: 100%;
             p {
               font-size: 2.7rem;
               line-height: 5rem;
+
+              @include respond(phone) {
+                font-size: 2rem;
+              }
               span {
                 font-size: 2rem;
                 margin-left: 0.5rem;
@@ -131,10 +151,19 @@
 
         &-codetime {
           height: 30rem;
+
+          @include respond(phone) {
+            height: 25rem;
+          }
+
           img {
             margin-top: 3rem;
             max-height: 25rem;
             max-width: 40rem;
+
+            @include respond(phone) {
+              max-width: 100%;
+            }
           }
 
           figcaption {

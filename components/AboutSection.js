@@ -15,11 +15,11 @@ const AboutSection = () => {
     const enterAnimation = () => {
       const aboutElement = document
         .getElementById('aboutSection')
-        .getBoundingClientRect();
+        ?.getBoundingClientRect();
       if (
-        aboutElement.top >= 0 - aboutElement.height / 4 &&
-        aboutElement.top <=
-          window.innerHeight - aboutElement.height + aboutElement.height / 4
+        aboutElement?.top >= 0 - aboutElement?.height / 4 &&
+        aboutElement?.top <=
+          window.innerHeight - aboutElement?.height + aboutElement?.height / 4
       ) {
         window.requestAnimationFrame(() => {
           skillsetClasslist.add('skillset--show');
@@ -90,7 +90,7 @@ const AboutSection = () => {
         </div>
 
         <div className="section-about__textbox-1">
-          <p className=" paragraph-big--3">NPTU Computer Science</p>
+          <p className=" paragraph-big--3">Research & Development Engineer</p>
         </div>
         <div className="section-about__textbox-2">
           <h3 className="heading-tertiary paragraph-big--4" id="skill">
