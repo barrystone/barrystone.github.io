@@ -1,12 +1,12 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 // import styles from '../styles/Home.module.css';
-import Header from "../components/layout/Header";
-import AboutSection from "../components/AboutSection";
-import RepoSection from "../components/RepoSection";
-import NoteSection from "../components/NoteSection";
-import Footer from "../components/layout/Footer";
-import Navigation from "../components/layout/Navigation";
+import Header from '../components/layout/Header';
+import AboutSection from '../components/AboutSection';
+import RepoSection from '../components/RepoSection';
+import NoteSection from '../components/NoteSection';
+import Footer from '../components/layout/Footer';
+import Navigation from '../components/layout/Navigation';
 
 const CustomHead = () => {
   return (
@@ -20,7 +20,7 @@ const CustomHead = () => {
   );
 };
 
-export default function Home({ reposData }) {
+export default function Home({ reposData }: any) {
   return (
     <div>
       <CustomHead />
@@ -43,7 +43,7 @@ export default function Home({ reposData }) {
 }
 
 export async function getStaticProps() {
-  const repoApi = "https://api.github.com/users/barrystone/repos?sort=updated";
+  const repoApi = 'https://api.github.com/users/barrystone/repos?sort=updated';
   const reposData = await fetch(repoApi).then((res) => res.json());
   // const reposData = null;
   return {

@@ -1,4 +1,4 @@
-export default function languageImg(e) {
+export default function languageImg(e: string) {
   switch (e) {
     case 'jupyter notebook':
     case 'python':

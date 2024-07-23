@@ -1,5 +1,5 @@
-export default function analyzeReadme(data) {
-  let notesData = {};
+export default function analyzeReadme(data: any) {
+  let notesData: { [key: string]: any[] } = {};
   for (let i = 0; i < data.length; i++) {
     if (data[i] == '#' && data[i + 1] == '#') {
       let j = i + 3;
@@ -41,7 +41,7 @@ export default function analyzeReadme(data) {
             }
           }
           // console.log('title:', title,' noteName:', noteName,' noteUrl:', noteUrl);
-          let note = {};
+          let note: { [key: string]: string } = {};
           note[noteName] = noteUrl;
           notesData[title] = [...notesData[title], note];
         }

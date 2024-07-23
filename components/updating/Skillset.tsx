@@ -1,6 +1,8 @@
 import React from 'react';
 
-const CharkmarkIcon = ({ border }) => (
+const CharkmarkIcon = ({
+  border
+}: any) => (
   <svg
     className="checkmark"
     xmlns="http://www.w3.org/2000/svg"

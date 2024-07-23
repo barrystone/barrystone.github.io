@@ -10,19 +10,23 @@ const AboutSection = () => {
   }, []);
 
   const aboutAnimation = () => {
-    const skillsetClasslist = document.querySelector('.skillset').classList;
+    const skillsetElement = document.querySelector('.skillset');
+    const skillsetClasslist = skillsetElement
+      ? skillsetElement.classList
+      : null;
 
     const enterAnimation = () => {
       const aboutElement = document
         .getElementById('aboutSection')
         ?.getBoundingClientRect();
       if (
-        aboutElement?.top >= 0 - aboutElement?.height / 4 &&
-        aboutElement?.top <=
-          window.innerHeight - aboutElement?.height + aboutElement?.height / 4
+        aboutElement && // Add null check for aboutElement
+        aboutElement.top >= 0 - aboutElement.height / 4 &&
+        aboutElement.top <=
+          window.innerHeight - aboutElement.height + aboutElement.height / 4
       ) {
         window.requestAnimationFrame(() => {
-          skillsetClasslist.add('skillset--show');
+          skillsetClasslist?.add('skillset--show');
         });
 
         window.removeEventListener('scroll', enterAnimation);
@@ -31,38 +35,38 @@ const AboutSection = () => {
     window.addEventListener('scroll', enterAnimation);
 
     // skillSet title hover animation
-    document.getElementById('skill').addEventListener('mouseleave', () => {
+    document.getElementById('skill')?.addEventListener('mouseleave', () => {
       window.requestAnimationFrame(() => {
-        skillsetClasslist.add('skillset--show');
+        skillsetClasslist?.add('skillset--show');
       });
     });
-    document.getElementById('skill').addEventListener('mouseover', () => {
-      skillsetClasslist.remove('skillset--show');
+    document.getElementById('skill')?.addEventListener('mouseover', () => {
+      skillsetClasslist?.remove('skillset--show');
     });
 
     // projectContent title
     const projectContentTitle = document.getElementById('collects');
-    projectContentTitle.addEventListener('click', () => {
+    projectContentTitle?.addEventListener('click', () => {
       window.open('https://github.com/barrystone', '_blank');
     });
-    projectContentTitle.addEventListener('mouseover', () => {
+    projectContentTitle?.addEventListener('mouseover', () => {
       projectContentTitle.innerHTML = 'Github';
     });
-    projectContentTitle.addEventListener('mouseleave', () => {
+    projectContentTitle?.addEventListener('mouseleave', () => {
       projectContentTitle.innerHTML = '我的作品';
       projectContentTitle.style.cursor = 'pointer';
     });
   };
 
   const screwsRotate = () => {
-    const rotete = (id) => {
+    const rotete = (id: any) => {
       const screws = document.querySelectorAll('.section-about__screwbox');
-      document.getElementById(id).addEventListener('mouseover', () => {
+      document.getElementById(id)?.addEventListener('mouseover', () => {
         for (let screw of screws) {
           screw.classList.add('section-about__screwbox--rotate');
         }
       });
-      document.getElementById(id).addEventListener('mouseleave', () => {
+      document.getElementById(id)?.addEventListener('mouseleave', () => {
         for (let screw of screws) {
           screw.classList.remove('section-about__screwbox--rotate');
         }

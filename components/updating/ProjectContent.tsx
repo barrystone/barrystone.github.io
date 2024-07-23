@@ -11,7 +11,7 @@ const projectContent = () => {
   return (
     <div className="brick">
       <ul>
-        {updatingData.map((e, index) => (
+        {updatingData.map((e: any, index: any) => (
           <li key={index}>
             <a
               href={`https://github.com/barrystone/` + e.name}

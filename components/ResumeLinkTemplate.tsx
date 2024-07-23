@@ -7,7 +7,7 @@ const ResumeLinkTemplate = ({
   achievementData,
   language,
   projectsSource: { startElement, elementField },
-}) => {
+}: any) => {
   const projectFields = projectsData[0];
   const projects = projectsData.slice(1);
   const achievements = achievementData.slice(1);
@@ -51,9 +51,11 @@ const ResumeLinkTemplate = ({
       </Head>
       <div className="resumelinks">
         <div className="switchLang">
-          <Link href={switchLangURL} as={process.env.BACKEND_URL}>
-            {switchLangTitle}
-          </Link>
+          {switchLangURL && (
+            <Link href={switchLangURL} as={process.env.BACKEND_URL}>
+              {switchLangTitle}
+            </Link>
+          )}
         </div>
         <div className="github">
           <span>{githubTitle}</span>
@@ -69,7 +71,7 @@ const ResumeLinkTemplate = ({
         <section>
           <h2>{projectsTitle}</h2>
           <ul>
-            {projects.map((e, idx) => (
+            {projects.map((e: any, idx: any) => (
               <li>
                 <img src={e[4]} alt="" className="projectimg" />
                 <br />
@@ -81,7 +83,7 @@ const ResumeLinkTemplate = ({
                 </span>
                 <br />
                 {/* project fields */}
-                {e.slice(1).map((field, index) =>
+                {e.slice(1).map((field: any, index: any) =>
                   field && index < 3 ? (
                     <div className="projectfield">
                       {/* project field */}
@@ -113,7 +115,7 @@ const ResumeLinkTemplate = ({
         <section>
           <h2>{achievementsTitle}</h2>
           <ul>
-            {achievements.map((e) => (
+            {achievements.map((e: any) => (
               <li>
                 {/* 中文[0] or EN[2] elementField */}
                 <span>{e[elementField]}:</span>

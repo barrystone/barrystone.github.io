@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Navigation = () => {
   return (
@@ -20,7 +20,7 @@ const Navigation = () => {
           <li className="navigation__item">
             <Link
               href="/about"
-              as={process.env.BACKEND_URL + "/about"}
+              as={process.env.BACKEND_URL + '/about'}
               className="navigation__link"
             >
               About Me
@@ -29,7 +29,7 @@ const Navigation = () => {
           <li className="navigation__item">
             <Link
               href="/space"
-              as={process.env.BACKEND_URL + "/space"}
+              as={process.env.BACKEND_URL + '/space'}
               className="navigation__link"
             >
               Virtual Space

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import languageImg from '../../utils/languageImg';
 
-const Itemscircle = ({ name, index, image }) => {
+const Itemscircle = ({ name, index, image }: any) => {
   const initialRepoLanguagesData = {
     unfetched: 100,
-    null: 100,
-    null: 190
+    null: 190,
+    fetched: 0,
+    error: 0,
   };
 
   const [repoLanguages, setRepoLauange] = useState(initialRepoLanguagesData);
@@ -21,9 +22,10 @@ const Itemscircle = ({ name, index, image }) => {
         // console.log(`data ${name}: `, data);
       } catch (err) {
         setRepoLauange({
+          unfetched: 0,
+          null: 0,
           fetched: 100,
-          error: 100,
-          error: 190
+          error: 190,
         });
       }
     };
@@ -33,13 +35,13 @@ const Itemscircle = ({ name, index, image }) => {
 
   // !!circleRadius SHOULD BE SAME AS $circle-radius: variable  in _itermscircle.scss
   const circleRadius = 4.2;
-  const LauguagesPercentage = (x) =>
-    x / Object.values(repoLanguages).reduce((acc, cur) => acc + cur);
+  const LauguagesPercentage = (x: any) =>
+    x / Object.values(repoLanguages).reduce((acc: any, cur: any) => acc + cur);
 
   // Reversing value, because we just can pass keyfrom 0%(start),
   // i want pass keyframe 100%(end) for our stroke direction but can't ,
   // so iam decide reverse it(1 -percentage)
-  const LauguagesPercentageStroke = (x) =>
+  const LauguagesPercentageStroke = (x: any) =>
     ((1 - LauguagesPercentage(x)) * circleRadius * 6.28).toString() + 'rem';
 
   return (
@@ -76,7 +78,7 @@ const Itemscircle = ({ name, index, image }) => {
                     style={{
                       strokeDashoffset: LauguagesPercentageStroke(
                         Object.values(repoLanguages)[index]
-                      )
+                      ),
                     }}
                   />
                 </svg>

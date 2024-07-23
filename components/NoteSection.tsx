@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import analyzeReadme from '../utils/analyzeReadme';
 
 const NoteSection = () => {
-  const [notes, setNotes] = useState({});
+  const [notes, setNotes] = useState<{ [key: string]: any }>({});
 
   useEffect(() => {
     fetchNotes();
@@ -23,7 +23,7 @@ const NoteSection = () => {
         const serverSideData = await res.json();
         setNotes(serverSideData.analyzedData);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.log('error', err.message);
     }
   };
@@ -47,7 +47,7 @@ const NoteSection = () => {
                   <p>{e}</p>
                 </div>
                 <ul key={idx}>
-                  {notes[e].splice(0, listNotes).map((f, index) => (
+                  {notes[e].splice(0, listNotes).map((f: any, index: any) => (
                     <li
                       key={index}
                       className={
@@ -57,18 +57,19 @@ const NoteSection = () => {
                             ''
                       }
                     >
-                      <a href={Object.values(f)} target="_blank">
+                      <a href={Object.values(f).toString()} target="_blank">
                         {Object.keys(f)}
                       </a>
                     </li>
                   ))}
+
                   {notes[e].length > 0 ? (
                     <li
                       style={{
                         listStyle: 'none',
                         letterSpacing: '.3rem',
                         fontSize: '1.8rem',
-                        marginTop: '-1.5rem'
+                        marginTop: '-1.5rem',
                       }}
                     >
                       ...

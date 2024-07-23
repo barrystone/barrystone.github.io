@@ -4,7 +4,7 @@ import languageImg from '../utils/languageImg';
 
 // import ReposDataTesting from '../_data/reposData_210524.json';
 
-const RepoSection = ({ reposData: staticReposData }) => {
+const RepoSection = ({ reposData: staticReposData }: { reposData: any[] }) => {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -16,7 +16,7 @@ const RepoSection = ({ reposData: staticReposData }) => {
     autoplaySpeed: 3000,
   };
 
-  const [reposData, setReposData] = useState([]);
+  const [reposData, setReposData] = useState<any[]>([]);
   const [RwdSlideSettings, setRwdSlideSettings] = useState(sliderSettings);
 
   const onRwdSlideSettings = () => {
