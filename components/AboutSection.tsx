@@ -1,81 +1,100 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import ProjectContent from '../components/updating/ProjectContent';
 import Skillset from './updating/Skillset';
 
 const AboutSection = () => {
   useEffect(() => {
-    aboutAnimation();
-    screwsRotate();
-  }, []);
-
-  const aboutAnimation = () => {
     const skillsetElement = document.querySelector('.skillset');
-    const skillsetClasslist = skillsetElement
-      ? skillsetElement.classList
-      : null;
+    const skillsetClasslist = skillsetElement?.classList;
 
-    const enterAnimation = () => {
-      const aboutElement = document
-        .getElementById('aboutSection')
-        ?.getBoundingClientRect();
-      if (
-        aboutElement && // Add null check for aboutElement
-        aboutElement.top >= 0 - aboutElement.height / 4 &&
-        aboutElement.top <=
-          window.innerHeight - aboutElement.height + aboutElement.height / 4
-      ) {
-        window.requestAnimationFrame(() => {
-          skillsetClasslist?.add('skillset--show');
-        });
-
-        window.removeEventListener('scroll', enterAnimation);
-      }
-    };
-    window.addEventListener('scroll', enterAnimation);
-
-    // skillSet title hover animation
-    document.getElementById('skill')?.addEventListener('mouseleave', () => {
+    const handleSkillMouseLeave = () => {
       window.requestAnimationFrame(() => {
         skillsetClasslist?.add('skillset--show');
       });
-    });
-    document.getElementById('skill')?.addEventListener('mouseover', () => {
-      skillsetClasslist?.remove('skillset--show');
-    });
-
-    // projectContent title
-    const projectContentTitle = document.getElementById('collects');
-    projectContentTitle?.addEventListener('click', () => {
-      window.open('https://github.com/barrystone', '_blank');
-    });
-    projectContentTitle?.addEventListener('mouseover', () => {
-      projectContentTitle.innerHTML = 'Github';
-    });
-    projectContentTitle?.addEventListener('mouseleave', () => {
-      projectContentTitle.innerHTML = '我的作品';
-      projectContentTitle.style.cursor = 'pointer';
-    });
-  };
-
-  const screwsRotate = () => {
-    const rotete = (id: any) => {
-      const screws = document.querySelectorAll('.section-about__screwbox');
-      document.getElementById(id)?.addEventListener('mouseover', () => {
-        for (let screw of screws) {
-          screw.classList.add('section-about__screwbox--rotate');
-        }
-      });
-      document.getElementById(id)?.addEventListener('mouseleave', () => {
-        for (let screw of screws) {
-          screw.classList.remove('section-about__screwbox--rotate');
-        }
-      });
     };
 
-    rotete('skill');
-    rotete('work-arrow');
-  };
+    const handleSkillMouseOver = () => {
+      skillsetClasslist?.remove('skillset--show');
+    };
+
+    const handleProjectContentClick = () => {
+      window.open('https://github.com/barrystone', '_blank');
+    };
+
+    const handleProjectContentMouseOver = () => {
+      const projectContentTitle = document.getElementById('collects');
+      if (projectContentTitle) {
+        projectContentTitle.innerHTML = 'Github';
+      }
+    };
+
+    const handleProjectContentMouseLeave = () => {
+      const projectContentTitle = document.getElementById('collects');
+      if (projectContentTitle) {
+        projectContentTitle.innerHTML = '我的作品';
+        projectContentTitle.style.cursor = 'pointer';
+      }
+    };
+
+    const handleScrewMouseOver = () => {
+      const screws = document.querySelectorAll('.section-about__screwbox');
+      screws.forEach((screw) =>
+        screw.classList.add('section-about__screwbox--rotate')
+      );
+    };
+
+    const handleScrewMouseLeave = () => {
+      const screws = document.querySelectorAll('.section-about__screwbox');
+      screws.forEach((screw) =>
+        screw.classList.remove('section-about__screwbox--rotate')
+      );
+    };
+
+    const skillElement = document.getElementById('skill');
+    const projectContentTitle = document.getElementById('collects');
+    const workArrowElement = document.getElementById('work-arrow');
+
+    skillElement?.addEventListener('mouseleave', handleSkillMouseLeave);
+    skillElement?.addEventListener('mouseover', handleSkillMouseOver);
+    projectContentTitle?.addEventListener('click', handleProjectContentClick);
+    projectContentTitle?.addEventListener(
+      'mouseover',
+      handleProjectContentMouseOver
+    );
+    projectContentTitle?.addEventListener(
+      'mouseleave',
+      handleProjectContentMouseLeave
+    );
+    skillElement?.addEventListener('mouseover', handleScrewMouseOver);
+    skillElement?.addEventListener('mouseleave', handleScrewMouseLeave);
+    workArrowElement?.addEventListener('mouseover', handleScrewMouseOver);
+    workArrowElement?.addEventListener('mouseleave', handleScrewMouseLeave);
+
+    return () => {
+      skillElement?.removeEventListener('mouseleave', handleSkillMouseLeave);
+      skillElement?.removeEventListener('mouseover', handleSkillMouseOver);
+      projectContentTitle?.removeEventListener(
+        'click',
+        handleProjectContentClick
+      );
+      projectContentTitle?.removeEventListener(
+        'mouseover',
+        handleProjectContentMouseOver
+      );
+      projectContentTitle?.removeEventListener(
+        'mouseleave',
+        handleProjectContentMouseLeave
+      );
+      skillElement?.removeEventListener('mouseover', handleScrewMouseOver);
+      skillElement?.removeEventListener('mouseleave', handleScrewMouseLeave);
+      workArrowElement?.removeEventListener('mouseover', handleScrewMouseOver);
+      workArrowElement?.removeEventListener(
+        'mouseleave',
+        handleScrewMouseLeave
+      );
+    };
+  }, []);
 
   return (
     <section className="section section-about" id="aboutSection">

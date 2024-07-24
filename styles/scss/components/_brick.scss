@@ -64,8 +64,8 @@
           transform: perspective(600px) rotateY(30deg);
           padding-left: 7%;
           background: $color-white;
-
-          // border: 5px solid $color-secondary !important;
+          animation: none;
+          border: 3px solid $color-secondary-dark-2 !important;
         }
 
         > a {
@@ -91,7 +91,8 @@
             $color-secondary-dark
           );
 
-          // border: 5px solid $color-white !important;
+          animation: none;
+          border: 3px solid $color-white !important;
         }
 
         > a {

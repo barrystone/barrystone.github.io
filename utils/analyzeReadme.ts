@@ -1,5 +1,7 @@
+export type NotesData = { [key: string]: { [key: string]: string }[] };
+
 export default function analyzeReadme(data: any) {
-  let notesData: { [key: string]: any[] } = {};
+  let notesData: NotesData = {};
   for (let i = 0; i < data.length; i++) {
     if (data[i] == '#' && data[i + 1] == '#') {
       let j = i + 3;

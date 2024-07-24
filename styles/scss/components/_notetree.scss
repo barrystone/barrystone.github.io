@@ -67,11 +67,11 @@
         font-size: 1.5rem;
         text-decoration: none;
         color: $color-black;
-        text-decoration: underline $color-white 3px;
-        transition: text-decoration 0.2s;
+        border-bottom: transparent 3px solid;
+        transition: border-bottom 0.3s;
 
         &:hover {
-          text-decoration: underline $color-secondary-light 3px;
+          border-bottom: $color-secondary-light 3px solid;
         }
       }
     }

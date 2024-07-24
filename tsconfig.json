@@ -106,12 +106,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "pages/_app.js",
-    "env-config.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "env-config.js"],
   "exclude": ["node_modules"]
 }

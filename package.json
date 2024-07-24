@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@react-three/drei": "^9.105.1",
+    "framer-motion": "^11.3.12",
     "logrocket": "^1.0.14",
     "logrocket-react": "^4.0.1",
     "next": "^14.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-slick": "^0.30.2",
+    "react-visibility-sensor": "^5.1.1",
     "sharp": "^0.31.0",
     "slick-carousel": "^1.8.1"
   },
